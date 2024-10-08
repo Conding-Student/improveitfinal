@@ -1,0 +1,33 @@
+{
+	"events": [
+		{
+			"background": "res://Scenes/pictures/intro/thief.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Survival in the orphanage has never been easy. You’ve done what you had to stolen what you needed not because you wanted to. "
+		},
+		{
+			"background": "res://Scenes/pictures/intro/guilt.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But because it was the only way. But every theft weighs heavy on your conscience, a burden you can’t shake."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1727427110.json",
+		"name": "introductionp1"
+	}
+}
