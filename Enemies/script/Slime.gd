@@ -7,7 +7,7 @@ export var MAX_SPEED = 50
 export var FRICTION = 200
 export var WANDER_TARGET_RANGE = 4
 export var slime_id: String = ""  # Unique ID for each bat
-
+onready var quiz_sign = $Enemy_quiz_sign
 enum {
 	IDLE,
 	WANDER,
@@ -29,6 +29,7 @@ onready var animationPlayer = $AnimationPlayer
 onready var bat_sounds = $bat_sounds
 
 func _ready():
+	quiz_sign.show()
 	# Check the state from the Global singleton
 	if not Global.get_bat_state(slime_id):
 		#print("Bat is dead on load, removing from scene: ID =", bat_id)  # Debugging print

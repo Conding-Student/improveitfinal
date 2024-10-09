@@ -99,7 +99,7 @@ func restarting():
 	Global.player_initial_position = Vector2(0,0)
 	Global.player_position_retain = false
 	Global.player_position_engaged = Vector2(0,0)
-	
+	Global.load_game_position = false
 	start_level_trigger = false
 
 	# Reset enemy-related variables

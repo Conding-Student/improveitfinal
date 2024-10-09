@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://World/world objects/forest1.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/KinematicBody2D.tscn" type="PackedScene" id=2]
@@ -30,6 +30,8 @@
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=28]
 [ext_resource path="res://intro/pause_menu.tscn" type="PackedScene" id=29]
 [ext_resource path="res://Enemies/flying_bug.tscn" type="PackedScene" id=30]
+[ext_resource path="res://World/magical chest.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Enemies/Slime.tscn" type="PackedScene" id=32]
 
 [sub_resource type="TileSet" id=1]
 0/name = "16oga.png 0"
@@ -78,6 +80,12 @@
 [sub_resource type="CircleShape2D" id=3]
 radius = 48.0104
 
+[sub_resource type="CircleShape2D" id=4]
+radius = 45.0
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 45.0
+
 [sub_resource type="DynamicFont" id=2]
 size = 5
 font_data = ExtResource( 25 )
@@ -122,7 +130,8 @@ tile_data = PoolIntArray( 65540, 0, 65536, 65544, 0, 0, 65558, 0, 0, 131086, 0, 
 position = Vector2( 3, 467 )
 
 [node name="player" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 228, -82 )
+position = Vector2( 198, -59 )
+z_index = 1
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/player"]
 remote_path = NodePath("../../../Camera2D")
@@ -253,22 +262,65 @@ position = Vector2( 70, 97 )
 [node name="house_long14" parent="YSort/objects" instance=ExtResource( 22 )]
 position = Vector2( 100, -149 )
 
-[node name="YSort" type="YSort" parent="YSort"]
+[node name="enemies" type="YSort" parent="YSort"]
 
-[node name="flying_bug" parent="YSort/YSort" instance=ExtResource( 30 )]
+[node name="flying_bug" parent="YSort/enemies" instance=ExtResource( 30 )]
 position = Vector2( 320, -112 )
 slime_id = "bug3"
 
-[node name="Area2D" type="Area2D" parent="YSort/YSort/flying_bug"]
+[node name="Area2D" type="Area2D" parent="YSort/enemies/flying_bug"]
 collision_layer = 128
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/YSort/flying_bug/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/enemies/flying_bug/Area2D"]
 position = Vector2( 0, -5 )
 shape = SubResource( 3 )
 
+[node name="flying_bug2" parent="YSort/enemies" instance=ExtResource( 30 )]
+position = Vector2( 150, -149 )
+slime_id = "bug4"
+
+[node name="Area2D" type="Area2D" parent="YSort/enemies/flying_bug2"]
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/enemies/flying_bug2/Area2D"]
+position = Vector2( 0, -5 )
+shape = SubResource( 3 )
+
+[node name="Slime4" parent="YSort/enemies" instance=ExtResource( 32 )]
+position = Vector2( 48, -422 )
+slime_id = "slime4"
+
+[node name="quiz" type="Area2D" parent="YSort/enemies/Slime4"]
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/enemies/Slime4/quiz"]
+position = Vector2( -2, -8 )
+shape = SubResource( 4 )
+disabled = true
+
+[node name="Slime3" parent="YSort/enemies" instance=ExtResource( 32 )]
+position = Vector2( 224, -307 )
+slime_id = "slime3"
+
+[node name="quiz" type="Area2D" parent="YSort/enemies/Slime3"]
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/enemies/Slime3/quiz"]
+position = Vector2( -2, -8 )
+shape = SubResource( 5 )
+disabled = true
+
+[node name="loots" type="YSort" parent="YSort"]
+
+[node name="magical_chest" parent="YSort/loots" instance=ExtResource( 31 )]
+position = Vector2( 13, -128 )
+
 [node name="Camera2D" parent="." instance=ExtResource( 23 )]
-position = Vector2( 231, 385 )
+position = Vector2( 201, 408 )
 
 [node name="BottomRight" parent="Camera2D/Limits" index="1"]
 position = Vector2( 464, 432 )
@@ -310,7 +362,27 @@ custom_fonts/font = SubResource( 2 )
 align = 1
 valign = 1
 
-[connection signal="body_shape_entered" from="YSort/YSort/flying_bug/Area2D" to="." method="_on_Area2D_body_shape_enteredbug1"]
+[node name="classoria_instituteOutside_pos" type="Position2D" parent="."]
+position = Vector2( 32, 36 )
+
+[node name="classoria_instituteOutside" parent="." instance=ExtResource( 24 )]
+position = Vector2( 3, 37 )
+rotation = 3.14159
+
+[node name="CollisionShape2D" parent="classoria_instituteOutside" index="0"]
+disabled = true
+
+[node name="arrow_path_gate" type="TileMap" parent="."]
+format = 1
+
+[node name="arrow_path_research" type="TileMap" parent="."]
+format = 1
+
+[connection signal="body_shape_entered" from="YSort/enemies/flying_bug/Area2D" to="." method="_on_Area2D_body_shape_enteredbug1"]
+[connection signal="body_shape_entered" from="YSort/enemies/flying_bug2/Area2D" to="." method="_on_Area2D_body_shape_enteredbug2"]
+[connection signal="body_shape_entered" from="YSort/enemies/Slime4/quiz" to="." method="_on_quiz_body_shape_entered_slime4"]
+[connection signal="body_shape_entered" from="YSort/enemies/Slime3/quiz" to="." method="_on_quiz_body_shape_entered_slime3"]
 [connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
 
 [editable path="Camera2D"]
+[editable path="classoria_instituteOutside"]

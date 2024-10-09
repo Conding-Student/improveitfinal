@@ -441,14 +441,17 @@
 								"timeline-1728090797.json",
 								"timeline-1728263190.json",
 								"timeline-1728265622.json",
-								"timeline-1728350014.json"
+								"timeline-1728350014.json",
+								"timeline-1728393193.json",
+								"timeline-1728466034.json",
+								"timeline-1728470446.json"
 							],
 							"folders": {
 
 							},
 							"metadata": {
 								"color": null,
-								"folded": true
+								"folded": false
 							}
 						},
 						"instructions": {
@@ -535,7 +538,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						},
 						"starter": {

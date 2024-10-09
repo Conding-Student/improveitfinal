@@ -15,8 +15,9 @@ onready var softCollision = $SoftCollision
 onready var wanderController = $WanderController
 onready var stats = $Stats
 onready var hurtbox = $Hurtbox
+onready var fight_sign = $Enemy_quiz_sign
 
-
+onready var hurtbox_collision = $Hurtbox/CollisionShape2D
 
 enum {
 	IDLE,
@@ -30,6 +31,7 @@ var last_direction = Vector2.RIGHT  # Store the last movement direction
 var knockback = Vector2.ZERO
 
 func _ready():
+	quiz_type_sign()
 	# Check the state from the Global singleton
 	if not Global.get_bat_state(bug_id):
 		#print("Bat is dead on load, removing from scene: ID =", bat_id)  # Debugging print
@@ -78,6 +80,7 @@ func pick_random_state(state_list):
 func seek_player():
 	if playerDetectionZone.can_see_player():
 		state = CHASE
+		
 
 func accelerate_towards_point(point, delta):
 	var direction = global_position.direction_to(point)
@@ -95,6 +98,11 @@ func _on_Stats_no_health():
 	var enemyDeathEffect = deatheffect.instance()
 	get_parent().add_child(enemyDeathEffect)
 	enemyDeathEffect.global_position = global_position
+
+func quiz_type_sign():
+	if Global2.is_badge_complete("badge16"):
+		fight_sign.show()
+		hurtbox_collision.disabled = true
 
 func _on_Hurtbox_invincibility_started():
 	animation.play("Start")

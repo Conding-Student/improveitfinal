@@ -7,6 +7,11 @@ onready var resume = $TopUi/pause_menu/pause_menu/Panel/VBoxContainer/resume as 
 onready var player = $YSort/player
 onready var player_controller_joystick = $YSort/player/Controller/joystick
 onready var place_name = $TopUi/Label2
+onready var slime4_quiz_collision = $YSort/enemies/Slime4/quiz/CollisionShape2D
+onready var slime3_quiz_collision = $YSort/enemies/Slime3/quiz/CollisionShape2D
+onready var slime3 = $YSort/enemies/Slime3
+onready var slime4 = $YSort/enemies/Slime4
+onready var path_to_researchcenter = $classoria_instituteOutside/CollisionShape2D
 var current_map = "res://levels/Chapter2_maps/classoriaMain.tscn"
 var starting_player_position = Vector2  (160, 33)
 var bat_ids_to_check = ["demon1", "demon2","demon3","demon4","demon5","demon6","demon7","demon8","demon9","demon10","stone1","stone2","stone3","stone4"] 
@@ -16,7 +21,7 @@ var bat_ids_to_check = ["demon1", "demon2","demon3","demon4","demon5","demon6","
 func _ready():
 	set_overall_initial_position()
 	set_player_position()
-	
+	checking_stage3()
 	place_name.text = "Classoria Market Center"
 	resume.connect("pressed", self, "resume_the_game")
 	Global.set_map(current_map)
@@ -69,6 +74,18 @@ func _on_pause_game_pressed():
 	topui.visible = false
 	player_controller.visible = false
 	pause_ui.show()
+
+######### Accessing stage 3 #################
+func checking_stage3():
+	if Global2.is_badge_complete("badge23"):
+		slime4_quiz_collision.disabled = false
+		path_to_researchcenter.disabled = false
+	elif Global2.is_badge_complete("badge22"):
+		slime3_quiz_collision.disabled = false
+	
+	else:
+		slime3.queue_free()
+		slime4.queue_free()
 
 
 ############## interactions ################
@@ -140,6 +157,213 @@ func _on_Area2D_body_shape_enteredbug1(body_rid, body, body_shape_index, local_s
 	Global2.correct_answer_ch4_4 = true
 	Global2.correct_answer_ch5_2 = true
 	Global2.dialogue_name = "bug5"
+	print("quiz on bug 2 is activated")
+	print(Global.from_level)
+	SceneTransition.change_scene("res://intro/question_panel_withbugs.tscn")
+
+
+func _on_Area2D_body_shape_enteredbug2(body_rid, body, body_shape_index, local_shape_index):
+	Global2.set_question(0, "Which type of loop always runs at least once?")
+	Global2.set_answers(0, "for")
+	Global2.set_answers(1, "while")
+	Global2.set_answers(2, "do-while")
+	Global2.set_answers(3, "foreach")
+	Global2.set_feedback(0, "Incorrect. A for loop only runs if the condition is true from the start.")
+	Global2.set_feedback(1, "Incorrect. A while loop might not run if the condition is false initially.")
+	Global2.set_feedback(2, "Correct! A do-while loop checks the condition after executing the loop body.")
+	Global2.set_feedback(3, "Incorrect. A foreach loop iterates over a collection, but it doesn't guarantee at least one iteration.")
+	
+	
+	Global2.set_question(1, "Which loop is best used when the number of iterations is known in advance?")
+	Global2.set_answers(4, "While")
+	Global2.set_answers(5, "Do-while")
+	Global2.set_answers(6, "For")
+	Global2.set_answers(7, "infinite")
+	Global2.set_feedback(4, "Incorrect. A while loop is more flexible for unknown iterations. Consider the loop that is structured for a known count.")
+	Global2.set_feedback(5, "Incorrect. A do-while loop still depends on a condition and may not limit iterations.")
+	Global2.set_feedback(6, "Correct! The for loop is ideal for scenarios with a predefined number of iterations.")
+	Global2.set_feedback(7, "Incorrect. An infinite loop doesn't stop and isn't used for specific counts. Think about loops with clear starting and ending points.")
+	
+	
+	Global2.set_question(2, "Which loop type is best when you don’t know how many iterations are needed?")
+	Global2.set_answers(8, "For")
+	Global2.set_answers(9, "While")
+	Global2.set_answers(10, "Do-While")
+	Global2.set_answers(11, "Break")
+	Global2.set_feedback(8, "Incorrect. A for loop is used when the iteration count is known.")
+	Global2.set_feedback(9, "Correct! A while loop runs as long as a condition remains true, without a fixed number of iterations.")
+	Global2.set_feedback(10, "Incorrect. A do-while loop also works with unknown iterations but always runs at least once.")
+	Global2.set_feedback(11, "Incorrect. break is used to exit loops early, not for uncertain iteration counts.")
+	
+	
+	Global2.set_question(3, "What can be used to exit a loop early?")
+	Global2.set_answers(12, "return")
+	Global2.set_answers(13, "continue")
+	Global2.set_answers(14, "break")
+	Global2.set_answers(15, "skip")
+	Global2.set_feedback(12, "Incorrect. return is used to exit methods, not loops.")
+	Global2.set_feedback(13, "Incorrect. continue skips the current iteration but doesn't exit the loop.")
+	Global2.set_feedback(14, "Correct! The break statement exits the loop immediately.")
+	Global2.set_feedback(15, "Incorrect. skip is not a valid C# keyword for exiting a loop.")
+	
+	
+	Global2.set_question(4, "What keyword skips the rest of the loop iteration and moves to the next one?")
+	Global2.set_answers(16, "break")
+	Global2.set_answers(17, "continue")
+	Global2.set_answers(18, "exit")
+	Global2.set_answers(19, "stop")
+	Global2.set_feedback(16, "Incorrect. break exits the entire loop, not just the current iteration.")
+	Global2.set_feedback(17, "Correct! The continue statement skips the current iteration and proceeds with the next one.")
+	Global2.set_feedback(18, "Incorrect. exit is used for terminating an application, not skipping loop iterations.")
+	Global2.set_feedback(19, "Incorrect. stop is not a valid C# keyword for loop control.")
+	
+	
+	Global.load_game_position = true
+	Global2.load_enemy_data("res://Battlescenes/tres/bat2.tres")
+	Global2.correct_answer_ch1_3 = true
+	Global2.correct_answer_ch2_3 = true
+	Global2.correct_answer_ch3_2 = true
+	Global2.correct_answer_ch4_3 = true
+	Global2.correct_answer_ch5_2 = true
+	Global2.dialogue_name = "bug6"
+	print("quiz on bug 2 is activated")
+	
+	SceneTransition.change_scene("res://intro/question_panel_withbugs.tscn")
+
+
+func _on_quiz_body_shape_entered_slime3(body_rid, body, body_shape_index, local_shape_index):
+	Global2.set_question(0, "What is the output?")
+	Global2.set_answers(0, "3")
+	Global2.set_answers(1, "6")
+	Global2.set_answers(2, "9")
+	Global2.set_answers(3, "0")
+	Global2.set_feedback(0, "Incorrect. The loop adds 1 + 2 + 3, so the result is higher.")
+	Global2.set_feedback(1, "Correct! The loop adds 1 + 2 + 3, giving a sum of 6.")
+	Global2.set_feedback(2, "Incorrect. 9 is too high for this loop.")
+	Global2.set_feedback(3, "Incorrect. The sum is updated inside the loop.")
+	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/level2/analyzing/Question - 1.png")
+	
+	Global2.set_question(1, "What is the output?")
+	Global2.set_answers(4, "2")
+	Global2.set_answers(5, "4")
+	Global2.set_answers(6, "0")
+	Global2.set_answers(7, "1")
+	Global2.set_feedback(4, "Correct! The loop runs twice: for i = 0 and i = 2, so count becomes 2.")
+	Global2.set_feedback(5, "Incorrect. The loop increments i by 2, so it only runs twice.")
+	Global2.set_feedback(6, "Incorrect. The count is incremented in the loop.")
+	Global2.set_feedback(7, "Incorrect. The loop runs twice, not once.")
+	Global2.set_picture_path(1,"res://intro/picture/question/chapter2/level2/analyzing/Question - 2.png")
+	
+	Global2.set_question(2, "What is the output?")
+	Global2.set_answers(8, "1 2")
+	Global2.set_answers(9, "1 2 3")
+	Global2.set_answers(10, "1")
+	Global2.set_answers(11, "0")
+	Global2.set_feedback(8, "Correct! The loop prints 1, then 2, and stops because i becomes 3.")
+	Global2.set_feedback(9, "Incorrect. The loop stops before printing 3.")
+	Global2.set_feedback(10, "Incorrect. The loop runs more than once.")
+	Global2.set_feedback(11, "Incorrect. i starts at 1, not 0.")
+	Global2.set_picture_path(2,"res://intro/picture/question/chapter2/level2/analyzing/Question - 3.png")
+	
+	Global2.set_question(3, "What can be used to exit a loop early?")
+	Global2.set_answers(12, "return")
+	Global2.set_answers(13, "continue")
+	Global2.set_answers(14, "break")
+	Global2.set_answers(15, "skip")
+	Global2.set_feedback(12, "Incorrect. return is used to exit methods, not loops.")
+	Global2.set_feedback(13, "Incorrect. continue skips the current iteration but doesn't exit the loop.")
+	Global2.set_feedback(14, "Correct! The break statement exits the loop immediately.")
+	Global2.set_feedback(15, "Incorrect. skip is not a valid C# keyword for exiting a loop.")
+	Global2.set_picture_path(3, "res://intro/picture/question/chapter2/level2/analyzing/Question - 4.png")
+	
+	Global2.set_question(4, "What keyword skips the rest of the loop iteration and moves to the next one?")
+	Global2.set_answers(16, "break")
+	Global2.set_answers(17, "continue")
+	Global2.set_answers(18, "exit")
+	Global2.set_answers(19, "stop")
+	Global2.set_feedback(16, "Incorrect. break exits the entire loop, not just the current iteration.")
+	Global2.set_feedback(17, "Correct! The continue statement skips the current iteration and proceeds with the next one.")
+	Global2.set_feedback(18, "Incorrect. exit is used for terminating an application, not skipping loop iterations.")
+	Global2.set_feedback(19, "Incorrect. stop is not a valid C# keyword for loop control.")
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/level2/analyzing/Question - 5.png")
+	
+	Global.load_game_position = true
+	Global2.load_enemy_data("res://Battlescenes/tres/slime(classoria).tres")
+	Global2.correct_answer_ch1_2 = true
+	Global2.correct_answer_ch2_1 = true
+	Global2.correct_answer_ch3_1 = true
+	Global2.correct_answer_ch4_3 = true
+	Global2.correct_answer_ch5_2 = true
+	Global2.dialogue_name = "bug7"
+	print("quiz on bug 2 is activated")
+	
+	SceneTransition.change_scene("res://intro/question_panel_withbugs.tscn")
+
+
+func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_shape_index):
+	Global2.set_question(0, "Complete the for loop to print numbers from 1 to 5.")
+	Global2.set_answers(0, "i <= 5")
+	Global2.set_answers(1, "i < 5")
+	Global2.set_answers(2, "i >= 5")
+	Global2.set_answers(3, "i == 5")
+	Global2.set_feedback(0, "Correct! The loop will run from 1 to 5 as required.")
+	Global2.set_feedback(1, "Incorrect. This will only print numbers from 1 to 4.")
+	Global2.set_feedback(2, "Incorrect. The loop condition will not run.")
+	Global2.set_feedback(3, "Incorrect. The loop will not iterate as needed.")
+	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/level2/analyzing/Question - 1.png")
+	
+	Global2.set_question(1, "Fix this while loop to stop when x is 5.")
+	Global2.set_answers(4, "x > 5")
+	Global2.set_answers(5, "x < 5")
+	Global2.set_answers(6, "x == 5")
+	Global2.set_answers(7, "x <= 5")
+	Global2.set_feedback(4, "Incorrect. The loop will not run with this condition.")
+	Global2.set_feedback(5, "Correct! The loop runs while x is less than 5.")
+	Global2.set_feedback(6, "Incorrect. This will make the loop never run.")
+	Global2.set_feedback(7, "Partially correct, but this will print up to 5, not 4.")
+	Global2.set_picture_path(1,"res://intro/picture/question/chapter2/level2/analyzing/Question - 2.png")
+	
+	Global2.set_question(2, "Complete the do-while loop to keep asking for input until the user enters 'n'.")
+	Global2.set_answers(8, "input == 'n'")
+	Global2.set_answers(9, "input != 'n'")
+	Global2.set_answers(10, "input = 'n'")
+	Global2.set_answers(11, "input > 'n'")
+	Global2.set_feedback(8, "Incorrect. This will stop the loop after one input.")
+	Global2.set_feedback(9, "Correct! The loop will continue until the user enters 'n'.")
+	Global2.set_feedback(10, "Incorrect. This is an assignment, not a comparison.")
+	Global2.set_feedback(11, "Incorrect. Strings are compared differently in C#.")
+	Global2.set_picture_path(2,"res://intro/picture/question/chapter2/level2/analyzing/Question - 3.png")
+	
+	Global2.set_question(3, "Fix the for loop to count down from 5 to 1.")
+	Global2.set_answers(12, "i > 1")
+	Global2.set_answers(13, "i <= 1")
+	Global2.set_answers(14, "i >= 1")
+	Global2.set_answers(15, "i != 1")
+	Global2.set_feedback(12, "Incorrect. This will stop at 2, not 1.")
+	Global2.set_feedback(13, "Incorrect. This condition is backwards for counting down.")
+	Global2.set_feedback(14, "Correct! This will print from 5 down to 1.")
+	Global2.set_feedback(15, "Incorrect. This will skip 1.")
+	Global2.set_picture_path(3, "res://intro/picture/question/chapter2/level2/analyzing/Question - 4.png")
+	
+	Global2.set_question(4, "Finish the loop to sum numbers from 1 to 3.")
+	Global2.set_answers(16, "i <= 3")
+	Global2.set_answers(17, "i > 3")
+	Global2.set_answers(18, "i == 3")
+	Global2.set_answers(19, "i < 3")
+	Global2.set_feedback(16, "Correct! This will sum 1 + 2 + 3.")
+	Global2.set_feedback(17, "Incorrect. The loop will never run.")
+	Global2.set_feedback(18, "Incorrect. This will only add 3.")
+	Global2.set_feedback(19, "Incorrect. This will only sum 1 + 2.")
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/level2/analyzing/Question - 5.png")
+	
+	Global.load_game_position = true
+	Global2.load_enemy_data("res://Battlescenes/tres/slime(classoria).tres")
+	Global2.correct_answer_ch1_1 = true
+	Global2.correct_answer_ch2_2 = true
+	Global2.correct_answer_ch3_3 = true
+	Global2.correct_answer_ch4_3 = true
+	Global2.correct_answer_ch5_1 = true
+	Global2.dialogue_name = "bug8"
 	print("quiz on bug 2 is activated")
 	
 	SceneTransition.change_scene("res://intro/question_panel_withbugs.tscn")
