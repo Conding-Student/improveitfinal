@@ -78,20 +78,20 @@ func set_health(health, max_health, picture):
 	enemy_health_bar.value = health  # Set current health
 	enemy_health_bar.get_node("Label").text = "HP: %d/%d" % [health, max_health]  # Update label
 	enemy_picture.texture = picture  # Set the picture (TextureRect)
-	print("Health after setting: ", health, " / ", max_health)  # Debugging print
+	#print("Health after setting: ", health, " / ", max_health)  # Debugging print
 
 # Function to deal damage and update health
 func deal_damage(damage_amount):
 	enemy_hit.play() #playing sounds when hit the enemy
-	print("Damage dealt: ", damage_amount)  # Debugging print
+	#print("Damage dealt: ", damage_amount)  # Debugging print
 	# Reduce health by damage dealt, ensuring it doesn't go below 0
 	current_enemy_health = max(0, current_enemy_health - damage_amount)
-	print("Health after damage: ", current_enemy_health)  # Debugging print
+	#print("Health after damage: ", current_enemy_health)  # Debugging print
    # Update the health in the UI
 	set_health(current_enemy_health, Global2.enemy_data.health, Global2.enemy_data.texture)
 	# Check if the enemy is dead
 	if current_enemy_health <= 0:
-		print("Enemy is dead!")
+		#print("Enemy is dead!")
 		animation_player.play("health_hide")
 		animation_player.play("enemy_damage")
 # Called when the node is added to the scene
@@ -102,6 +102,7 @@ func _ready():
 	if Global2.enemy_data != null:
 		# Set initial health from the enemy data
 		current_enemy_health = Global2.enemy_data.health
+		#
 		print("Initial health set to: ", current_enemy_health)  # Debugging print
 		# Set the health, max health, and texture in the UI
 		set_health(current_enemy_health, Global2.enemy_data.health, Global2.enemy_data.texture)
@@ -263,19 +264,19 @@ func value_activating(param):
 		Global.set_bat_state("bug2", false) 
 		var bat_ids_to_check = ["bug1", "bug2"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
-			print("All specified bat states are false.")
+			#print("All specified bat states are false.")
 			Global2.completed_badge("badge17")
 			
 			SceneTransition.change_scene("res://intro/stages_complete.tscn")
 		else:
-			print("Some specified bat states are true.")
+			#print("Some specified bat states are true.")
 			
 			SceneTransition.change_scene("res://intro/evaluation.tscn")
 	elif param == "bug1":
 		Global.set_bat_state("bug1", false) 
 		var bat_ids_to_check = ["bug1", "bug2"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
-			print("All specified bat states are false.")
+			#print("All specified bat states are false.")
 			Global2.complete_badge("badge17")
 			
 			SceneTransition.change_scene("res://intro/stages_complete.tscn")
@@ -289,7 +290,7 @@ func value_activating(param):
 		Global.set_bat_state("slime2", false) 
 		var bat_ids_to_check = ["slime1", "slime2"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
-			print("All specified slime states are false.")
+			#print("All specified slime states are false.")
 			Dialogic.set_variable("gandalf", 8)
 			Global2.complete_badge("badge20")
 			SceneTransition.change_scene("res://intro/stages_complete.tscn")
@@ -301,7 +302,7 @@ func value_activating(param):
 		Global.set_bat_state("slime1", false) 
 		var bat_ids_to_check = ["slime1", "slime2"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
-			print("All specified slime states are false.")
+			#print("All specified slime states are false.")
 			Global2.complete_badge("badge20")
 			Dialogic.set_variable("gandalf", 8)
 			SceneTransition.change_scene("res://intro/stages_complete.tscn")
@@ -314,7 +315,7 @@ func value_activating(param):
 		Global.set_bat_state("bug4", false) 
 		var bat_ids_to_check = ["bug3", "bug4"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
-			print("All specified slime states are false.")
+			#print("All specified slime states are false.")
 			Global2.complete_badge("badge22")
 			SceneTransition.change_scene("res://intro/stages_complete.tscn")
 		else:
@@ -324,7 +325,7 @@ func value_activating(param):
 		Global.set_bat_state("bug3", false) 
 		var bat_ids_to_check = ["bug3", "bug4"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
-			print("All specified slime states are false.")
+			#print("All specified slime states are false.")
 			Global2.complete_badge("badge22")
 			SceneTransition.change_scene("res://intro/stages_complete.tscn")
 		else:

@@ -1,0 +1,29 @@
+{
+	"events": [
+		{
+			"background": "",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Valen stands over the fallen Bug Commander. Around him, the remaining bugs, who had been lurking in the shadows and watching \nthe battle, suddenly grow restless. As the commander’s body lies motionless, their confidence breaks. One by one, they begin to back away, their fear palpable in the air"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Badge receive"
+		},
+		{
+			"change_scene": "res://levels/Chapter2_maps/gandalfHouse_ground.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1728560366.json",
+		"name": "bug9"
+	}
+}

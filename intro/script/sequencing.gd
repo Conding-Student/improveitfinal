@@ -46,6 +46,7 @@ func hide_everything():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	GlobalCanvasModulate.reset_to_default()
 	# Connect the player's no_health signal to the _on_no_health function
 	stats.connect("no_health", self, "_on_no_health")
 	# Hide the button initially

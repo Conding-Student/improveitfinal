@@ -11,14 +11,33 @@ onready var slime4_quiz_collision = $YSort/enemies/Slime4/quiz/CollisionShape2D
 onready var slime3_quiz_collision = $YSort/enemies/Slime3/quiz/CollisionShape2D
 onready var slime3 = $YSort/enemies/Slime3
 onready var slime4 = $YSort/enemies/Slime4
+
+############## arrow path and path ######################
 onready var path_to_researchcenter = $classoria_instituteOutside/CollisionShape2D
+onready var arrow_path_gate = $arrow_path_gate
+onready var arrow_path_research = $arrow_path_research
+############## arrow path and path ######################
+################# escaped variable ######################
+onready var stone1 = $YSort/enemies/escape/infinite_stone
+onready var stone2 = $YSort/enemies/escape/infinite_stone2
+onready var stone3 = $YSort/enemies/escape/infinite_stone3
+onready var stone4 = $YSort/enemies/escape/infinite_stone4
+onready var stone5  = $YSort/enemies/escape/infinite_stone5
+onready var stone6  = $YSort/enemies/escape/infinite_stone6
+onready var stone7  = $YSort/enemies/escape/infinite_stone7
+onready var stone8  = $YSort/enemies/escape/infinite_stone8
+onready var stone9  = $YSort/enemies/escape/infinite_stone9
+onready var stone10  = $YSort/enemies/escape/infinite_stone10
+################# escaped variable ######################
 var current_map = "res://levels/Chapter2_maps/classoriaMain.tscn"
-var starting_player_position = Vector2  (160, 33)
+var starting_player_position = Vector2  (25, -429)
 var bat_ids_to_check = ["demon1", "demon2","demon3","demon4","demon5","demon6","demon7","demon8","demon9","demon10","stone1","stone2","stone3","stone4"] 
 
-
+onready var final_boss_trigger = $final_boss/CollisionShape2D
+onready var gate = $classoria_Gates/CollisionShape2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	enemy_appearance()
 	set_overall_initial_position()
 	set_player_position()
 	checking_stage3()
@@ -39,6 +58,21 @@ func set_player_position():
 		var new_dialog = Dialogic.start('starter1')
 		add_child(new_dialog)
 		new_dialog.connect("timeline_end", self, "end_intructions")
+	elif int(Dialogic.get_variable("gandalf")) == 11:
+		player_controller.hide()
+		player_controller_joystick.disable_joystick()
+		final_boss_trigger.disabled = false
+		gate.disabled = true
+		var new_dialog = Dialogic.start('starter2')
+		add_child(new_dialog)
+		new_dialog.connect("timeline_end", self, "end_intructions")
+		var target_node_path = Global.from_level + "_pos"
+		if has_node(target_node_path):
+			var target_node = get_node(target_node_path)
+			player.global_position = target_node.position
+			#print("Player position set from ", target_node_path)
+		else:
+			pass
 	elif Global.from_level != null && Global.load_game_position == true:
 		player.global_position = Global.get_player_current_position()
 		Global.load_game_position = false
@@ -74,15 +108,31 @@ func _on_pause_game_pressed():
 	topui.visible = false
 	player_controller.visible = false
 	pause_ui.show()
-
+######### escape mission #################
+func enemy_appearance():
+	if int(Dialogic.get_variable("gandalf")) != 11:
+		stone1.queue_free()
+		stone2.queue_free()
+		stone3.queue_free()
+		stone4.queue_free()
+		stone5.queue_free()
+		stone6.queue_free()
+		stone7.queue_free()
+		stone8.queue_free()
+		stone9.queue_free()
+		stone10.queue_free()
+	else:
+		print(Dialogic.get_variable("gandalf"))
+		print("escaped enemies was alive")
+######### escape mission #################
 ######### Accessing stage 3 #################
 func checking_stage3():
 	if Global2.is_badge_complete("badge23"):
 		slime4_quiz_collision.disabled = false
 		path_to_researchcenter.disabled = false
+		arrow_path_research.show()
 	elif Global2.is_badge_complete("badge22"):
 		slime3_quiz_collision.disabled = false
-	
 	else:
 		slime3.queue_free()
 		slime4.queue_free()
@@ -274,7 +324,6 @@ func _on_quiz_body_shape_entered_slime3(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(13, "Incorrect. continue skips the current iteration but doesn't exit the loop.")
 	Global2.set_feedback(14, "Correct! The break statement exits the loop immediately.")
 	Global2.set_feedback(15, "Incorrect. skip is not a valid C# keyword for exiting a loop.")
-	Global2.set_picture_path(3, "res://intro/picture/question/chapter2/level2/analyzing/Question - 4.png")
 	
 	Global2.set_question(4, "What keyword skips the rest of the loop iteration and moves to the next one?")
 	Global2.set_answers(16, "break")
@@ -285,7 +334,7 @@ func _on_quiz_body_shape_entered_slime3(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(17, "Correct! The continue statement skips the current iteration and proceeds with the next one.")
 	Global2.set_feedback(18, "Incorrect. exit is used for terminating an application, not skipping loop iterations.")
 	Global2.set_feedback(19, "Incorrect. stop is not a valid C# keyword for loop control.")
-	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/level2/analyzing/Question - 5.png")
+
 	
 	Global.load_game_position = true
 	Global2.load_enemy_data("res://Battlescenes/tres/slime(classoria).tres")
@@ -310,7 +359,7 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(1, "Incorrect. This will only print numbers from 1 to 4.")
 	Global2.set_feedback(2, "Incorrect. The loop condition will not run.")
 	Global2.set_feedback(3, "Incorrect. The loop will not iterate as needed.")
-	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/level2/analyzing/Question - 1.png")
+	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/level2/completing/Question - 1.png")
 	
 	Global2.set_question(1, "Fix this while loop to stop when x is 5.")
 	Global2.set_answers(4, "x > 5")
@@ -321,7 +370,7 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(5, "Correct! The loop runs while x is less than 5.")
 	Global2.set_feedback(6, "Incorrect. This will make the loop never run.")
 	Global2.set_feedback(7, "Partially correct, but this will print up to 5, not 4.")
-	Global2.set_picture_path(1,"res://intro/picture/question/chapter2/level2/analyzing/Question - 2.png")
+	Global2.set_picture_path(1,"res://intro/picture/question/chapter2/level2/completing/Question - 2.png")
 	
 	Global2.set_question(2, "Complete the do-while loop to keep asking for input until the user enters 'n'.")
 	Global2.set_answers(8, "input == 'n'")
@@ -332,7 +381,7 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(9, "Correct! The loop will continue until the user enters 'n'.")
 	Global2.set_feedback(10, "Incorrect. This is an assignment, not a comparison.")
 	Global2.set_feedback(11, "Incorrect. Strings are compared differently in C#.")
-	Global2.set_picture_path(2,"res://intro/picture/question/chapter2/level2/analyzing/Question - 3.png")
+	Global2.set_picture_path(2,"res://intro/picture/question/chapter2/level2/completing/Question - 3.png")
 	
 	Global2.set_question(3, "Fix the for loop to count down from 5 to 1.")
 	Global2.set_answers(12, "i > 1")
@@ -343,7 +392,7 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(13, "Incorrect. This condition is backwards for counting down.")
 	Global2.set_feedback(14, "Correct! This will print from 5 down to 1.")
 	Global2.set_feedback(15, "Incorrect. This will skip 1.")
-	Global2.set_picture_path(3, "res://intro/picture/question/chapter2/level2/analyzing/Question - 4.png")
+	Global2.set_picture_path(3,"res://intro/picture/question/chapter2/level2/completing/Question - 4.png" )
 	
 	Global2.set_question(4, "Finish the loop to sum numbers from 1 to 3.")
 	Global2.set_answers(16, "i <= 3")
@@ -354,7 +403,7 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(17, "Incorrect. The loop will never run.")
 	Global2.set_feedback(18, "Incorrect. This will only add 3.")
 	Global2.set_feedback(19, "Incorrect. This will only sum 1 + 2.")
-	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/level2/analyzing/Question - 5.png")
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/level2/completing/Question - 5.png")
 	
 	Global.load_game_position = true
 	Global2.load_enemy_data("res://Battlescenes/tres/slime(classoria).tres")
@@ -367,3 +416,41 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	print("quiz on bug 2 is activated")
 	
 	SceneTransition.change_scene("res://intro/question_panel_withbugs.tscn")
+
+
+func _on_final_boss_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	player_controller.hide()
+	player_controller_joystick.disable_joystick()
+	
+	Global2.set_question(0, "Begin your attack into the enemy. Start on ZERO value")
+	Global2.set_answers(0, "int i = 0")
+	Global2.set_feedback(0, "The answer should be 'int i = 0'")
+	#Global2.set_picture_path()
+	
+	Global2.set_question(1, "Attack him 3 times, make sure that i is < three")
+	Global2.set_answers(1, "i < 3")
+	Global2.set_feedback(1, "The answer should be 'i < 3'")
+	#Global2.set_picture_path()
+	
+	Global2.set_question(2, "Increment the i value by 1")
+	Global2.set_answers(2, "i++")
+	Global2.set_feedback(2, "The answer should be 'i++'")
+	#Global2.set_picture_path()
+	
+	Global2.set_question(3, "Put braces into it indicating its inside process")
+	Global2.set_answers(3, "{}")
+	Global2.set_feedback(3, "The answer should be '{}'")
+	#Global2.set_picture_path()
+	
+	Global2.set_question(4, "Put the value of i in console.writeline to dispay the output and attack the enemy")
+	Global2.set_answers(4, "i")
+	Global2.set_feedback(4, "The answer should be 'i'")
+	#Global2.set_picture_path()
+	
+	Global2.dialogue_name = "bug9"
+	var new_dialog = Dialogic.start('commanderbug')
+	add_child(new_dialog)
+	new_dialog.connect("timeline_end", self, "fight_boss")
+
+func fight_boss(timelineend):
+	pass

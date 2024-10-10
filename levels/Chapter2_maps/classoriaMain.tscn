@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://World/world objects/forest1.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/KinematicBody2D.tscn" type="PackedScene" id=2]
@@ -32,6 +32,8 @@
 [ext_resource path="res://Enemies/flying_bug.tscn" type="PackedScene" id=30]
 [ext_resource path="res://World/magical chest.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Enemies/Slime.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Enemies/infinite_stone.tscn" type="PackedScene" id=33]
+[ext_resource path="res://intro/tres/path_arrow.tres" type="Texture" id=34]
 
 [sub_resource type="TileSet" id=1]
 0/name = "16oga.png 0"
@@ -90,8 +92,42 @@ radius = 45.0
 size = 5
 font_data = ExtResource( 25 )
 
+[sub_resource type="TileSet" id=6]
+0/name = "path_arrow.tres 0"
+0/texture = ExtResource( 34 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 7, 7 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="TileSet" id=7]
+0/name = "path_arrow.tres 0"
+0/texture = ExtResource( 34 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 7, 7 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 18.5, 10 )
+
 [node name="classoriaMain" type="Node2D"]
-position = Vector2( -3, -1 )
 script = ExtResource( 27 )
 
 [node name="floor1" type="TileMap" parent="."]
@@ -314,6 +350,38 @@ position = Vector2( -2, -8 )
 shape = SubResource( 5 )
 disabled = true
 
+[node name="escape" type="YSort" parent="YSort/enemies"]
+
+[node name="infinite_stone" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
+position = Vector2( 257, -341 )
+
+[node name="infinite_stone2" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
+position = Vector2( 107, -213 )
+
+[node name="infinite_stone3" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
+position = Vector2( 209, -240 )
+
+[node name="infinite_stone4" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
+position = Vector2( 262, -238 )
+
+[node name="infinite_stone5" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
+position = Vector2( 356, -246 )
+
+[node name="infinite_stone6" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
+position = Vector2( 346, -308 )
+
+[node name="infinite_stone7" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
+position = Vector2( 276, -399 )
+
+[node name="infinite_stone8" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
+position = Vector2( 335, -378 )
+
+[node name="infinite_stone9" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
+position = Vector2( 140, -302 )
+
+[node name="infinite_stone10" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
+position = Vector2( 197, -410 )
+
 [node name="loots" type="YSort" parent="YSort"]
 
 [node name="magical_chest" parent="YSort/loots" instance=ExtResource( 31 )]
@@ -373,16 +441,34 @@ rotation = 3.14159
 disabled = true
 
 [node name="arrow_path_gate" type="TileMap" parent="."]
+tile_set = SubResource( 6 )
+cell_size = Vector2( 1, 1 )
 format = 1
+tile_data = PoolIntArray( 27721926, 0, 0 )
 
 [node name="arrow_path_research" type="TileMap" parent="."]
+visible = false
+tile_set = SubResource( 7 )
+cell_size = Vector2( 1, 1 )
 format = 1
+tile_data = PoolIntArray( 2097156, 0, 0 )
+
+[node name="final_boss" type="Area2D" parent="."]
+position = Vector2( 250, 416 )
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="final_boss"]
+position = Vector2( -46.5, 12 )
+shape = SubResource( 8 )
+disabled = true
 
 [connection signal="body_shape_entered" from="YSort/enemies/flying_bug/Area2D" to="." method="_on_Area2D_body_shape_enteredbug1"]
 [connection signal="body_shape_entered" from="YSort/enemies/flying_bug2/Area2D" to="." method="_on_Area2D_body_shape_enteredbug2"]
 [connection signal="body_shape_entered" from="YSort/enemies/Slime4/quiz" to="." method="_on_quiz_body_shape_entered_slime4"]
 [connection signal="body_shape_entered" from="YSort/enemies/Slime3/quiz" to="." method="_on_quiz_body_shape_entered_slime3"]
 [connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
+[connection signal="body_shape_entered" from="final_boss" to="." method="_on_final_boss_body_shape_entered"]
 
 [editable path="Camera2D"]
 [editable path="classoria_instituteOutside"]
