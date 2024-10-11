@@ -1,11 +1,28 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://World/world objects/forest1.tres" type="TileSet" id=1]
 [ext_resource path="res://World/world objects/castle_pillarBig.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World/world objects/tree4.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/KinematicBody2D.tscn" type="PackedScene" id=4]
+[ext_resource path="res://World/room/chapter2_entrance.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Camera2D.tscn" type="PackedScene" id=6]
+[ext_resource path="res://NPC/deathknight.tscn" type="PackedScene" id=7]
+[ext_resource path="res://levels/Script/classoria_instituteOutside.gd" type="Script" id=8]
+[ext_resource path="res://Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=10]
+[ext_resource path="res://intro/pause_menu.tscn" type="PackedScene" id=11]
+[ext_resource path="res://intro/picture/pause.png" type="Texture" id=12]
+[ext_resource path="res://NPC/research_defender.tscn" type="PackedScene" id=13]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="CircleShape2D" id=2]
+radius = 46.0109
+
+[sub_resource type="DynamicFont" id=1]
+size = 5
+font_data = ExtResource( 9 )
+
+[node name="classoria_instituteOutside" type="Node2D"]
+script = ExtResource( 8 )
 
 [node name="floor1" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -32,32 +49,109 @@ tile_data = PoolIntArray( 720912, 12, 65538, 1179656, 7, 1, 1179665, 12, 65538, 
 
 [node name="YSort" type="YSort" parent="."]
 
-[node name="institute" parent="YSort" instance=ExtResource( 2 )]
+[node name="player" parent="YSort" instance=ExtResource( 4 )]
+position = Vector2( 504, 304 )
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/player"]
+remote_path = NodePath("../../../Camera2D")
+
+[node name="objects" type="YSort" parent="YSort"]
+
+[node name="institute" parent="YSort/objects" instance=ExtResource( 2 )]
 position = Vector2( 147, 81 )
 
-[node name="Node2D" parent="YSort" instance=ExtResource( 3 )]
+[node name="Node2D" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 439, 185 )
 
-[node name="Node2D2" parent="YSort" instance=ExtResource( 3 )]
+[node name="Node2D2" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 347, 205 )
 
-[node name="Node2D3" parent="YSort" instance=ExtResource( 3 )]
+[node name="Node2D3" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 235, 257 )
 
-[node name="Node2D4" parent="YSort" instance=ExtResource( 3 )]
+[node name="Node2D4" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 276, 219 )
 
-[node name="Node2D5" parent="YSort" instance=ExtResource( 3 )]
+[node name="Node2D5" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 487, 245 )
 
-[node name="Node2D6" parent="YSort" instance=ExtResource( 3 )]
+[node name="Node2D6" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 379, 253 )
 
-[node name="Node2D7" parent="YSort" instance=ExtResource( 3 )]
+[node name="Node2D7" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 83, 220 )
 
-[node name="Node2D8" parent="YSort" instance=ExtResource( 3 )]
+[node name="Node2D8" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 35, 268 )
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
-position = Vector2( 187, 196 )
+[node name="knightst" type="YSort" parent="YSort"]
+
+[node name="deathknight" parent="YSort/knightst" instance=ExtResource( 7 )]
+position = Vector2( 427, 249 )
+
+[node name="deathknight2" parent="YSort/knightst" instance=ExtResource( 7 )]
+position = Vector2( 277, 296 )
+
+[node name="deathknight3" parent="YSort/knightst" instance=ExtResource( 7 )]
+position = Vector2( 446, 311 )
+
+[node name="deathknight4" parent="YSort/knightst" instance=ExtResource( 7 )]
+position = Vector2( 313, 225 )
+
+[node name="research_defender" parent="YSort/knightst" instance=ExtResource( 13 )]
+position = Vector2( 138, 306 )
+
+[node name="CollisionShape2D" parent="YSort/knightst/research_defender/Area2D" index="0"]
+position = Vector2( 0, -16 )
+shape = SubResource( 2 )
+
+[node name="classoriaMain_pos" type="Position2D" parent="."]
+position = Vector2( 506, 306 )
+
+[node name="classoriaMain" parent="." instance=ExtResource( 5 )]
+position = Vector2( 530, 305 )
+rotation = 3.14159
+
+[node name="Camera2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 504, 304 )
+
+[node name="TopLeft" parent="Camera2D/Limits" index="0"]
+position = Vector2( -2, 0 )
+
+[node name="BottomRight" parent="Camera2D/Limits" index="1"]
+position = Vector2( 528, 320 )
+
+[node name="TopUi" type="CanvasLayer" parent="."]
+
+[node name="pause_game" type="TextureButton" parent="TopUi"]
+margin_left = 292.0
+margin_top = 3.0
+margin_right = 312.0
+margin_bottom = 23.0
+texture_normal = ExtResource( 12 )
+
+[node name="HealthUI" parent="TopUi" instance=ExtResource( 10 )]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 63.0
+margin_bottom = 14.0
+
+[node name="quest" type="TextureButton" parent="TopUi"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="pause_menu" parent="TopUi" instance=ExtResource( 11 )]
+
+[node name="Label2" type="Label" parent="TopUi"]
+margin_left = 132.0
+margin_top = 8.0
+margin_right = 205.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+align = 1
+valign = 1
+
+[connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
+
+[editable path="YSort/knightst/research_defender"]
+[editable path="Camera2D"]

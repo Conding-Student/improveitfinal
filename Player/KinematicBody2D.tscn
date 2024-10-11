@@ -883,7 +883,7 @@ visible = false
 position = Vector2( 1, -5 )
 scale = Vector2( 0.234158, 0.177493 )
 texture = ExtResource( 12 )
-texture_scale = 1.5
+texture_scale = 2.5
 energy = 0.8
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]

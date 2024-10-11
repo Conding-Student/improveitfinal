@@ -241,34 +241,6 @@ slime_id = "stone1"
 position = Vector2( 111, 157 )
 slime_id = "stone2"
 
-[node name="monster_stone3" parent="YSort/enemies" instance=ExtResource( 17 )]
-position = Vector2( 349, 81 )
-slime_id = "stone3"
-
-[node name="small_demon6" parent="YSort/enemies" instance=ExtResource( 16 )]
-position = Vector2( 186, 75 )
-slime_id = "demon6"
-
-[node name="small_demon7" parent="YSort/enemies" instance=ExtResource( 16 )]
-position = Vector2( 120, 78 )
-slime_id = "demon7"
-
-[node name="small_demon8" parent="YSort/enemies" instance=ExtResource( 16 )]
-position = Vector2( 176, 197 )
-slime_id = "demon8"
-
-[node name="small_demon9" parent="YSort/enemies" instance=ExtResource( 16 )]
-position = Vector2( 146, 190 )
-slime_id = "demon9"
-
-[node name="small_demon10" parent="YSort/enemies" instance=ExtResource( 16 )]
-position = Vector2( 168, 131 )
-slime_id = "demon10"
-
-[node name="monster_stone4" parent="YSort/enemies" instance=ExtResource( 17 )]
-position = Vector2( 350, 207 )
-slime_id = "stone4"
-
 [node name="loot" type="YSort" parent="YSort"]
 
 [node name="magical_chest" parent="YSort/loot" instance=ExtResource( 19 )]

@@ -20,13 +20,16 @@ func chest_open():
 		var val_money = int(Dialogic.get_variable("val_money")) 
 		val_money += 1
 		Dialogic.set_variable("val_money", val_money)
+		#queue_free()
 		print(val_money)
 	else:
 		animation.play("sparkle_heart")
 		if PlayerStats.health > 5:
 			PlayerStats.health+=1
+			#queue_free()
 		else:
 			PlayerStats.health = 5
+			#queue_free()
 	
 	interaction_button.hide()  # Immediately hide the button when the chest is opened
 	

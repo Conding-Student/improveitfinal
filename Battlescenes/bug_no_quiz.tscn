@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://NPC/script/bug_no_quiz.gd" type="Script" id=1]
 [ext_resource path="res://Overlap/Hurtbox.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Overlap/Hitbox.tscn" type="PackedScene" id=9]
 [ext_resource path="res://WhiteColor.shader" type="Shader" id=10]
 [ext_resource path="res://Music and Sounds/monster/monster_bugs_roar.wav" type="AudioStream" id=11]
+[ext_resource path="res://World/Enemy_quiz_sign.tscn" type="PackedScene" id=12]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 4.0
@@ -156,7 +157,6 @@ position = Vector2( -2, -13 )
 shape = SubResource( 2 )
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 4 )]
-visible = false
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
 shape = SubResource( 3 )
@@ -203,6 +203,10 @@ anims/idle = SubResource( 13 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
 volume_db = -10.0
+
+[node name="Enemy_quiz_sign" parent="." instance=ExtResource( 12 )]
+visible = false
+position = Vector2( 0, -36 )
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="invincibility_ended" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_ended"]

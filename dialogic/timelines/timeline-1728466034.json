@@ -1,0 +1,23 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The deeper I explore, the enemies getting much more stronger."
+		},
+		{
+			"emit_signal": "badge23",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1728466034.json",
+		"name": "bug7"
+	}
+}

@@ -36,7 +36,8 @@
 				"timetravel": {
 					"files": [
 						"character-1728009045.json",
-						"character-1728031425.json"
+						"character-1728031425.json",
+						"character-1728522794.json"
 					],
 					"folders": {
 						"bugs": {
@@ -54,7 +55,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				},
 				"towncenter": {
@@ -230,7 +231,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": true
+				"folded": false
 			}
 		},
 		"Timelines": {
@@ -441,14 +442,18 @@
 								"timeline-1728090797.json",
 								"timeline-1728263190.json",
 								"timeline-1728265622.json",
-								"timeline-1728350014.json"
+								"timeline-1728350014.json",
+								"timeline-1728393193.json",
+								"timeline-1728466034.json",
+								"timeline-1728470446.json",
+								"timeline-1728560366.json"
 							],
 							"folders": {
 
 							},
 							"metadata": {
 								"color": null,
-								"folded": true
+								"folded": false
 							}
 						},
 						"instructions": {
@@ -522,7 +527,20 @@
 							"folders": {
 								"stage1": {
 									"files": [
-										"timeline-1728301816.json"
+										"timeline-1728301816.json",
+										"timeline-1728521974.json"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": true
+									}
+								},
+								"stage5": {
+									"files": [
+										"timeline-1728546590.json"
 									],
 									"folders": {
 
@@ -540,14 +558,15 @@
 						},
 						"starter": {
 							"files": [
-								"timeline-1728348437.json"
+								"timeline-1728348437.json",
+								"timeline-1728544648.json"
 							],
 							"folders": {
 
 							},
 							"metadata": {
 								"color": null,
-								"folded": true
+								"folded": false
 							}
 						}
 					},

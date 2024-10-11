@@ -222,7 +222,7 @@ shape = SubResource( 2 )
 [node name="path" type="YSort" parent="YSort"]
 
 [node name="path_arrow" parent="YSort/path" instance=ExtResource( 17 )]
-tile_data = PoolIntArray( 10616830, 0, 0 )
+tile_data = PoolIntArray( 10616833, 0, 0 )
 
 [node name="TopUi" type="CanvasLayer" parent="."]
 
