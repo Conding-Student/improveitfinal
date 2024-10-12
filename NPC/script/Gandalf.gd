@@ -10,6 +10,7 @@ signal end_dialogue
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	#print(Dialogic.get_variable("gandalf"))
 	interaction_button.connect("pressed",self, "interaction_start")
 
 func interaction_start():
@@ -35,11 +36,26 @@ func interaction_start():
 		var new_dialog = Dialogic.start('c2stage3p2')
 		add_child(new_dialog)
 		new_dialog.connect("timeline_end", self, "end_interaction")
+	elif int(Dialogic.get_variable("gandalf")) == 5:
+		emit_signal("start_dialogue")
+		var new_dialog = Dialogic.start('c2stage3p2')
+		add_child(new_dialog)
+		new_dialog.connect("timeline_end", self, "end_interaction")
+	elif int(Dialogic.get_variable("gandalf")) == 12:
+		emit_signal("start_dialogue")
+		var new_dialog = Dialogic.start('c3stage1p2')
+		add_child(new_dialog)
+		new_dialog.connect("timeline_end", self, "end_interaction_anal")
+
+func end_interaction_anal(timelineend):
+	emit_signal("end_dialogue")
+	SceneTransition.change_scene("res://levels/Chapter2_maps/gandalfHouse_ground.tscn")
 
 func end_interaction(timelineend):
 	emit_signal("end_dialogue")
 
 func earn_badge16(timelineend):
+	#print("badge16 is trigger")
 	Global2.complete_badge("badge16")
 	#badges.update_badges()
 	emit_signal("end_dialogue")

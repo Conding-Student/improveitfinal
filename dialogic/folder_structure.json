@@ -42,14 +42,15 @@
 					"folders": {
 						"bugs": {
 							"files": [
-								"character-1728010649.json"
+								"character-1728010649.json",
+								"character-1728717524.json"
 							],
 							"folders": {
 
 							},
 							"metadata": {
 								"color": null,
-								"folded": true
+								"folded": false
 							}
 						}
 					},
@@ -231,7 +232,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Timelines": {
@@ -436,6 +437,30 @@
 								"folded": true
 							}
 						},
+						"chapter3": {
+							"files": [
+
+							],
+							"folders": {
+								"stage1": {
+									"files": [
+										"timeline-1728714035.json",
+										"timeline-1728728549.json"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": false
+									}
+								}
+							},
+							"metadata": {
+								"color": null,
+								"folded": false
+							}
+						},
 						"ender": {
 							"files": [
 								"timeline-1728047149.json",
@@ -453,7 +478,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						},
 						"instructions": {
@@ -511,7 +536,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": true
+										"folded": false
 									}
 								}
 							},
@@ -535,12 +560,13 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": true
+										"folded": false
 									}
 								},
 								"stage5": {
 									"files": [
-										"timeline-1728546590.json"
+										"timeline-1728546590.json",
+										"timeline-1728715366.json"
 									],
 									"folders": {
 
@@ -566,7 +592,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						}
 					},

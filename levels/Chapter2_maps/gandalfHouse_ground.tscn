@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://World/pictures/interior/TopDownHouse_FloorsAndWalls.png" type="Texture" id=1]
 [ext_resource path="res://World/pictures/interior/tiles (floor and walls).png" type="Texture" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://World/path_arrow.tscn" type="PackedScene" id=21]
 [ext_resource path="res://NPC/picture/interact-removebg-preview.png" type="Texture" id=22]
 [ext_resource path="res://NPC/Gandalf.tscn" type="PackedScene" id=23]
+[ext_resource path="res://NPC/analexius.tscn" type="PackedScene" id=24]
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -1390,7 +1391,7 @@ position = Vector2( 80, 208 )
 remote_path = NodePath("../../Camera2D")
 
 [node name="Gandalf" parent="YSort" instance=ExtResource( 23 )]
-position = Vector2( 24, 194 )
+position = Vector2( 129, 172 )
 
 [node name="path" type="YSort" parent="YSort"]
 
@@ -1413,6 +1414,9 @@ position = Vector2( -27, -20 )
 scale = Vector2( 0.165625, 0.0888889 )
 z_index = 2
 normal = ExtResource( 22 )
+
+[node name="analexius" parent="YSort" instance=ExtResource( 24 )]
+position = Vector2( 157, 172 )
 
 [node name="TopUi" type="CanvasLayer" parent="."]
 

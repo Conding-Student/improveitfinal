@@ -260,7 +260,9 @@ func end(timelineend):
 	pass
 
 func value_activating(param):
+	print("value activing")
 	if param == "bug2":
+		print("badge receive 17")
 		Global.set_bat_state("bug2", false) 
 		var bat_ids_to_check = ["bug1", "bug2"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
@@ -273,6 +275,7 @@ func value_activating(param):
 			
 			SceneTransition.change_scene("res://intro/evaluation.tscn")
 	elif param == "bug1":
+		print("badge receive 17")
 		Global.set_bat_state("bug1", false) 
 		var bat_ids_to_check = ["bug1", "bug2"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
@@ -287,6 +290,7 @@ func value_activating(param):
 		print("value in dialogic gas not yet been triggered")
 	
 	if param == "slime2":
+		print("badge receive 20")
 		Global.set_bat_state("slime2", false) 
 		var bat_ids_to_check = ["slime1", "slime2"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
@@ -299,6 +303,7 @@ func value_activating(param):
 			SceneTransition.change_scene("res://intro/evaluation.tscn")
 	
 	if param == "slime1":
+		print("badge receive 20")
 		Global.set_bat_state("slime1", false) 
 		var bat_ids_to_check = ["slime1", "slime2"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
@@ -312,6 +317,7 @@ func value_activating(param):
 			SceneTransition.change_scene("res://intro/evaluation.tscn")
 	
 	if param == "bug6":
+		print("badge receive 22")
 		Global.set_bat_state("bug4", false) 
 		var bat_ids_to_check = ["bug3", "bug4"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
@@ -322,6 +328,7 @@ func value_activating(param):
 			#print("this one activitingslime 2 di bukas")
 			SceneTransition.change_scene("res://intro/evaluation.tscn")
 	if param == "badge22":
+		print("badge receive 22")
 		Global.set_bat_state("bug3", false) 
 		var bat_ids_to_check = ["bug3", "bug4"] #check if they are both existed
 		if Global.are_bat_states_false(bat_ids_to_check):
@@ -332,10 +339,12 @@ func value_activating(param):
 			#print("this one activitingslime 2 di bukas")
 			SceneTransition.change_scene("res://intro/evaluation.tscn")
 	if param == "badge23":
+		print("badge receive 23")
 		Global.set_bat_state("slime3", false) 
 		Global2.complete_badge("badge23")
 		SceneTransition.change_scene("res://intro/stages_complete.tscn")
 	if param == "badge24":
+		print("badge receive 24")
 		Global.set_bat_state("slime4", false) 
 		Global2.complete_badge("badge24")
 		SceneTransition.change_scene("res://intro/stages_complete.tscn")

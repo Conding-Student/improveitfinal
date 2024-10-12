@@ -1,6 +1,10 @@
 {
 	"events": [
 		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1728115011.cfg"
+		},
+		{
 			"character": "character-1728522794.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -10,43 +14,43 @@
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "What happened? Where is the tome?"
+			"text": "Who are you? What are you doing here?"
 		},
 		{
 			"character": "character-1728522794.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The IDE tome… it’s gone. The bugs… they’ve taken it to Objecthia."
-		},
-		{
-			"character": "character-1721952703.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Where is Objecthia? How far?"
+			"text": "I am a Guardian of the IDE Tome. I am a “Construct”, created by the wizards from the research institute to protect it. But after the disaster caused by the failed experiment, as people evacuated in panic."
 		},
 		{
 			"character": "character-1728522794.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(gasping for breath) It doesn’t matter… We failed… They’ve encircled us… there’s no escape."
+			"text": "someone from the institute took the IDE Tome to the small kingdom of Objecthia to secure the important artifact from bugs and destruction. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Constructs are, human-like creation, often magical beings, crafted through Advanced ClassCraft Magic and OOP Magic. They can be imbued with life, intelligence, and purpose."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Valen's mind raced with questions, his heart sinking further at the realization that the tome was no longer within his grasp. Valen clenched his fists, his resolve hardening despite the setback."
 		},
 		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You’ve done your duty. Just tell me where."
+			"text": "Then I must retrieve it. I have to get back to my world."
 		},
 		{
 			"character": "character-1728522794.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "To Objecthia… I don’t know how much time you have… Go… while you still can."
-		},
-		{
-			"character": "character-1721952703.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Objecthia… I’ll get it back."
+			"text": "Be careful. Objecthia is not what it used to be. The Bug King resides there now, and the road ahead will be perilous."
 		},
 		{
 			"definition": "1728021648-250",

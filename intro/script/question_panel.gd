@@ -211,7 +211,7 @@ func change_scene(change_scene_on, dialogue_name):
 	if Global2.get(change_scene_on) == true:
 		var new_dialog = Dialogic.start(dialogue_name)
 		add_child(new_dialog)
-		
+		new_dialog.connect("dialogic_signal", self, "value_activating")
 		new_dialog.connect("timeline_end", self, "end")
 	else:
 		q_and_a_show()

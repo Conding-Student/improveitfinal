@@ -36,8 +36,12 @@ func badge18_complete():
 	Global2.complete_badge("badge18")
 
 func _on_Area2D_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
-	talk_box.hide()
-	interaction_button.show()
+	if int(Dialogic.get_variable("gandalf")) == 12:
+		talk_box.hide()
+		interaction_button.hide()
+	else:
+		talk_box.hide()
+		interaction_button.show()
 
 
 func _on_Area2D_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):

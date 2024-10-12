@@ -10,7 +10,8 @@ onready var place_name = $TopUi/Label2
 onready var gandalf = $YSort/Gandalf
 onready var eating_interaction_button = $YSort/eat/Area2D/TextureButton
 onready var badge = $TopUi/pause_menu/pause_menu/badges
-var current_map = "res://levels/Chapter2_maps/forest1Chap2.tscn"
+onready var analexius = $YSort/analexius
+var current_map = "res://levels/Chapter2_maps/gandalfHouse_ground.tscn"
 var starting_player_position = Vector2   (80, 208)
 
 
@@ -27,6 +28,7 @@ func _ready():
 	Global.set_map(current_map)
 	Musicmanager.set_music_path("res://Music and Sounds/bg music/guildInside.wav")
 	gandalf_appearance()
+	anal_appearance()
 func set_player_position():
 	if Global.get_player_initial_position() == Vector2(0, 0):
 		Global.set_player_current_position(starting_player_position)
@@ -34,6 +36,9 @@ func set_player_position():
 	elif int(Dialogic.get_variable("gandalf")) == 1:
 		player.global_position = starting_player_position
 		first_interaction()
+	elif int(Dialogic.get_variable("gandalf")) == 12:
+		player.global_position = starting_player_position
+		valen_coming_back()
 	elif Global.from_level != null && Global.load_game_position == true:
 		player.global_position = Global.get_player_current_position()
 		Global.load_game_position = false
@@ -83,6 +88,13 @@ func first_interaction():
 	add_child(new_dialog)
 	new_dialog.connect("timeline_end", self, "end_intructions")
 
+func valen_coming_back():
+	Hide_controller()
+	var new_dialog = Dialogic.start('analexuis_continuation')
+	add_child(new_dialog)
+	new_dialog.connect("timeline_end", self, "end_intructions")
+
+
 func end_intructions(timelineend):
 	show_controller()
 ################### eating ##############################
@@ -106,7 +118,11 @@ func gandalf_appearance():
 	else:
 		print("gandalf is alive")
 
-
+func anal_appearance():
+	if int(Dialogic.get_variable("gandalf")) != 12:
+		analexius.queue_free()
+	else:
+		print("analexius is alive")
 ########################################################
 ################### eating ##############################
 func _on_Area2D_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):

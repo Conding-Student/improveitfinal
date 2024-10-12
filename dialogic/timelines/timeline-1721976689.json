@@ -139,6 +139,12 @@
 			"value": ""
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Badge Received!!"
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		},

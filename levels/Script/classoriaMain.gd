@@ -359,7 +359,7 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(1, "Incorrect. This will only print numbers from 1 to 4.")
 	Global2.set_feedback(2, "Incorrect. The loop condition will not run.")
 	Global2.set_feedback(3, "Incorrect. The loop will not iterate as needed.")
-	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/level2/completing/Question - 1.png")
+	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/level2/fill/New question - 1.png")
 	
 	Global2.set_question(1, "Fix this while loop to stop when x is 5.")
 	Global2.set_answers(4, "x > 5")
@@ -370,7 +370,7 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(5, "Correct! The loop runs while x is less than 5.")
 	Global2.set_feedback(6, "Incorrect. This will make the loop never run.")
 	Global2.set_feedback(7, "Partially correct, but this will print up to 5, not 4.")
-	Global2.set_picture_path(1,"res://intro/picture/question/chapter2/level2/completing/Question - 2.png")
+	Global2.set_picture_path(1,"res://intro/picture/question/chapter2/level2/fill/New question - 2.png")
 	
 	Global2.set_question(2, "Complete the do-while loop to keep asking for input until the user enters 'n'.")
 	Global2.set_answers(8, "input == 'n'")
@@ -381,7 +381,7 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(9, "Correct! The loop will continue until the user enters 'n'.")
 	Global2.set_feedback(10, "Incorrect. This is an assignment, not a comparison.")
 	Global2.set_feedback(11, "Incorrect. Strings are compared differently in C#.")
-	Global2.set_picture_path(2,"res://intro/picture/question/chapter2/level2/completing/Question - 3.png")
+	Global2.set_picture_path(2,"res://intro/picture/question/chapter2/level2/fill/New question - 3.png")
 	
 	Global2.set_question(3, "Fix the for loop to count down from 5 to 1.")
 	Global2.set_answers(12, "i > 1")
@@ -392,7 +392,7 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(13, "Incorrect. This condition is backwards for counting down.")
 	Global2.set_feedback(14, "Correct! This will print from 5 down to 1.")
 	Global2.set_feedback(15, "Incorrect. This will skip 1.")
-	Global2.set_picture_path(3,"res://intro/picture/question/chapter2/level2/completing/Question - 4.png" )
+	Global2.set_picture_path(3, "res://intro/picture/question/chapter2/level2/fill/New question - 4.png")
 	
 	Global2.set_question(4, "Finish the loop to sum numbers from 1 to 3.")
 	Global2.set_answers(16, "i <= 3")
@@ -403,13 +403,13 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(17, "Incorrect. The loop will never run.")
 	Global2.set_feedback(18, "Incorrect. This will only add 3.")
 	Global2.set_feedback(19, "Incorrect. This will only sum 1 + 2.")
-	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/level2/completing/Question - 5.png")
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/level2/fill/New question - 5.png")
 	
 	Global.load_game_position = true
 	Global2.load_enemy_data("res://Battlescenes/tres/slime(classoria).tres")
 	Global2.correct_answer_ch1_1 = true
 	Global2.correct_answer_ch2_2 = true
-	Global2.correct_answer_ch3_3 = true
+	Global2.correct_answer_ch3_2 = true
 	Global2.correct_answer_ch4_3 = true
 	Global2.correct_answer_ch5_1 = true
 	Global2.dialogue_name = "bug8"

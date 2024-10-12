@@ -1,0 +1,93 @@
+{
+	"events": [
+		{
+			"background": "res://Scenes/pictures/chapter2/analexus_Dragged.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1727627785.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Analexius had accidentally peed on a bug. Shocked to the bone, he passed out. The bug checked on him but, seeing he was unconscious, decided to drag him away by his feet."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The bug, noticing the absence of its allies in the Classoria, wondered what had happened. It left Analexius at the gate  near the roadside before heading off to report to the Bug King."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Time passed. Analexius was found by a citizen, still passed out. The citizen saw that Classoria was already debugged "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "and thought Analexius was responsible for the death of all the bugs and glitches."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As Analexius woke up, he found himself surrounded by a crowd of citizens, praising him for his \"bravery.\""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's him! The hero who debugged Classoria!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Analexius, dazed and confused, decided to go with the flow."
+		},
+		{
+			"character": "character-1728031425.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Uh, yes, that's me. The, uh, great debugger."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The citizens, believing him to be their savior, tossed him in delight. Analexius, realizing the situation, accepted the praise."
+		},
+		{
+			"character": "character-1728031425.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thank you, everyone. But I really just want to go home now."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Please, let us take you home. It's the least we can do for our hero.\""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The citizens offered Analexius a horse for his \"bravery.\" As he mounted the horse, he glanced back at the dark entrance of Classoria still grasping what the heck really happened."
+		},
+		{
+			"change_timeline": "timeline-1728714035.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1728715366.json",
+		"name": "analexuis_continuation"
+	}
+}

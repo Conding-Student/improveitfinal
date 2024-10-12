@@ -1,3 +1,4 @@
+
 extends TextureRect
 #panels
 onready var panel1 = $PanelContainer/question1
@@ -253,6 +254,7 @@ func _on_Question5_pressed():
 	panel5.visible = true
 
 func _on_next_stage_pressed():
+	print(Global.get_map())
 	SceneTransition.change_scene(Global.get_map())
 	Global2.reset_scene_change_flags()
 	Global2.reset_trigger_answers()

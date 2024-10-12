@@ -13,6 +13,7 @@ func _ready():
 	new_dialog.connect("timeline_end", self, "interaction_endpoint")
 
 func interaction_endpoint(timelineend):
+	#Global2.complete_badge("badge2")
 	SceneTransition.change_scene("res://levels/stage_3_night/manor_out_night.tscn")
 
 func _on_VideoPlayer_finished():
