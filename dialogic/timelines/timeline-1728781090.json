@@ -1,0 +1,249 @@
+{
+	"events": [
+		{
+			"background": "res://Scenes/pictures/chapter2/gandalf_house_inside.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1728115011.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Val looks perplexed, holding a book of C# magic, struggling to understand the intricacies of Classes and Methods."
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Val, you seem troubled by the concepts in that book. Allow me to help."
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes, Gandalf. The words are confusing. What are these 'Classes' and 'Objects' the book talks about? I knew I need this knowledge to get the Tome at Objecthia"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Think of a Class as a blueprint or a design for something you want to create."
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A blueprint? Can you give me an example?"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/pot.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sure. Imagine you want to create a tea pot. A Class is like the detailed plan for this pot"
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So, a Class tells us what the pot is and what it looks like?"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Exactly. Class consist of member variable, fucntions, properties etc. In other words you can describe it as big, small, sturdy or not. The important is you describe what is that class."
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Methods on the other hands, is a block of code inside a class which define actions or functions within a class. They’re what our objects can do."
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So, methods are like the instructions for actions? You create them inside the class to tell the objects what they can do?"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/pot.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Precisely. In my example earlier methods are the things that this tea pot can do"
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh I see, but how can I create a class?"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good question. To create a class, you begin with the class keyword, followed by the name of the class. For example, let’s start simple creating a class called Warrior. Here’s how it’s done."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gandalf uses his staff to draw the following example in the air, which glows faintly"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/warrior.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"background": "",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This is a basic class called Warrior. Notice it has two variables, name and strength, and a method called Attack(). The variables are like attributes, and the method defines what action the warrior can take."
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alright, I think I understand. But how do I actually use this class?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gandalf waves his staff again, adding to the glowing script"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/object.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "To use a class, we need to create an object an instance of that class. You do this using the new keyword, like so."
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Here, we’ve created an object named valen from the Warrior class. We assigned values to its attributes name and strength and then called the Attack() method"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s as simple as that. Now you can create as many warriors as you need, each with their own unique attributes."
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(surprised) I see… so by creating the class once, I can reuse it to create different objects, all with their own data. What if I need the method to return something instead of just performing an action?"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(smirking) Ah, you’re catching on. Methods can return values. Let me show you."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "He waves his staff again, modifying the method"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/return.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This method, GetStrength(), returns the warrior’s strength as an integer. When you call it, you’ll get the value rather than just executing an action. Like this:"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/object2.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(nods, intrigued) So methods can return data too, not just perform actions. What about access? Can anyone change these values?"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(serious now) Not always. We use access modifiers to control who can interact with the class’s attributes and methods. Look here."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gandalf waves his staff, introducing access specifiers:"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/private.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "By making name private, only the class itself can access it. But using the SetName() and GetName() methods, we can control how the name is changed or retrieved. This protects the class from unwanted changes"
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(surprised) So… by using private and public, I can control how the data is exposed. That could be useful."
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Exactly. C# magic is not just about what you create, but how you protect and use it. It’s structured to ensure both flexibility and security. Now, imagine combining this knowledge with all you’ve learned your magic will become far more powerful"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/gandalf_house_inside.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can see that now. Thanks, Gandalf. I’ve got a lot to think about."
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Indeed. The class is your foundation, the methods your actions, and the modifiers your safeguard. Together, they are the essence of what we do."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1728781090.json",
+		"name": "c3stage1p3"
+	}
+}

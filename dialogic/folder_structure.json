@@ -445,7 +445,8 @@
 								"stage1": {
 									"files": [
 										"timeline-1728714035.json",
-										"timeline-1728728549.json"
+										"timeline-1728728549.json",
+										"timeline-1728781090.json"
 									],
 									"folders": {
 
@@ -510,7 +511,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": true
+										"folded": false
 									}
 								},
 								"stage3": {
@@ -560,7 +561,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": false
+										"folded": true
 									}
 								},
 								"stage5": {
@@ -573,13 +574,13 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": false
+										"folded": true
 									}
 								}
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						},
 						"starter": {

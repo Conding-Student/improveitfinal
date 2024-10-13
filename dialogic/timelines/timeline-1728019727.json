@@ -95,6 +95,10 @@
 			"text": "We are at war for more than a decade. They plague the world of Syntaxia due to the misuse of C# magic. Which is why, in this era, it was strictly prohibited to use C# magic."
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/valGandalfwalk (1).png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",

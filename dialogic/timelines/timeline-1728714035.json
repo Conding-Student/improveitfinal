@@ -41,10 +41,6 @@
 			"text": "Val, did you find it?"
 		},
 		{
-			"background": "",
-			"event_id": "dialogic_021"
-		},
-		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",

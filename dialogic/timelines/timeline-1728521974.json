@@ -5,6 +5,10 @@
 			"set_theme": "theme-1728115011.cfg"
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/institute2.png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "character-1728522794.json",
 			"event_id": "dialogic_001",
 			"portrait": "",

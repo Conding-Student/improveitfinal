@@ -5,30 +5,18 @@
 			"set_theme": "theme-1728115011.cfg"
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/institute_valRun.png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Valen rushes through the ruins of Classoria, hoping to escape after learning the fate of the IDE tome. Just as he nears the outskirts, \na Fatal error suddenly appear on his path, towering over him with an intimidating presence."
 		},
 		{
-			"animation": "[Default]",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1728717524.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": true,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 0,
-			"z_index": 0
+			"background": "res://Scenes/pictures/chapter2/institute_bug3.png",
+			"event_id": "dialogic_021"
 		},
 		{
 			"character": "character-1728717524.json",

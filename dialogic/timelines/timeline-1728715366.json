@@ -15,6 +15,10 @@
 			"text": "Analexius had accidentally peed on a bug. Shocked to the bone, he passed out. The bug checked on him but, seeing he was unconscious, decided to drag him away by his feet."
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/analexusHero1.png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -31,6 +35,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "and thought Analexius was responsible for the death of all the bugs and glitches."
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/analexusHero2.png",
+			"event_id": "dialogic_021"
 		},
 		{
 			"character": "",
@@ -69,10 +77,18 @@
 			"text": "Thank you, everyone. But I really just want to go home now."
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/analexusHero3.png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "\"Please, let us take you home. It's the least we can do for our hero.\""
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/analexusHero4.png",
+			"event_id": "dialogic_021"
 		},
 		{
 			"character": "",
