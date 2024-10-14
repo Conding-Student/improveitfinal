@@ -313,7 +313,7 @@ position = Vector2( 0, -5 )
 shape = SubResource( 3 )
 
 [node name="flying_bug2" parent="YSort/enemies" instance=ExtResource( 30 )]
-position = Vector2( 150, -149 )
+position = Vector2( 190, -164 )
 slime_id = "bug4"
 
 [node name="Area2D" type="Area2D" parent="YSort/enemies/flying_bug2"]
@@ -356,7 +356,7 @@ disabled = true
 position = Vector2( 257, -341 )
 
 [node name="infinite_stone2" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
-position = Vector2( 107, -213 )
+position = Vector2( 107, -226 )
 
 [node name="infinite_stone3" parent="YSort/enemies/escape" instance=ExtResource( 33 )]
 position = Vector2( 209, -240 )

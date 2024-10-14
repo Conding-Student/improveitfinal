@@ -50,7 +50,7 @@
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "No, Gandalf. The IDE Tome wasn't there. I met a guardian within the now-ruined Classoria Magic Research Institute building, a wounded one."
+			"text": "No, Gandalf. The IDE Tome wasn't there. I met a guardian within the now-ruined Classoria Magic Research Institute building, a wounded construct."
 		},
 		{
 			"character": "character-1721952703.json",
@@ -117,6 +117,14 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Thank you,  let me leave you for a moment."
+		},
+		{
+			"definition": "1728021648-250",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "13"
 		},
 		{
 			"event_id": "dialogic_022",

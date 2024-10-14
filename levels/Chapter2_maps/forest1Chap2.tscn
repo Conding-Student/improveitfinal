@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://World/world objects/forest1.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/KinematicBody2D.tscn" type="PackedScene" id=2]
@@ -18,9 +18,13 @@
 [ext_resource path="res://World/room/chapter2_entrance.tscn" type="PackedScene" id=16]
 [ext_resource path="res://World/path_arrow.tscn" type="PackedScene" id=17]
 [ext_resource path="res://NPC/analexius.tscn" type="PackedScene" id=18]
+[ext_resource path="res://UI/heart_spawn.tscn" type="PackedScene" id=19]
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 45.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 50.01
 
 [sub_resource type="DynamicFont" id=1]
 size = 5
@@ -68,13 +72,13 @@ position = Vector2( 328, 166 )
 position = Vector2( 208, 139 )
 
 [node name="Camera2D" parent="YSort" instance=ExtResource( 8 )]
-position = Vector2( 149, 192 )
+position = Vector2( 89, 185 )
 
 [node name="BottomRight" parent="YSort/Camera2D/Limits" index="1"]
 position = Vector2( 560, 240 )
 
 [node name="player" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 149, 192 )
+position = Vector2( 89, 185 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/player"]
 remote_path = NodePath("../../Camera2D")
@@ -193,6 +197,18 @@ position = Vector2( 383, 146 )
 [node name="tree35" parent="YSort/trees" instance=ExtResource( 3 )]
 position = Vector2( 385, 23 )
 
+[node name="heart_spawn" parent="YSort/trees" instance=ExtResource( 19 )]
+position = Vector2( 48, 29 )
+heart_id = "puso1"
+
+[node name="heart_spawn2" parent="YSort/trees" instance=ExtResource( 19 )]
+position = Vector2( 31, 220 )
+heart_id = "puso2"
+
+[node name="heart_spawn3" parent="YSort/trees" instance=ExtResource( 19 )]
+position = Vector2( 381, 210 )
+heart_id = "puso3"
+
 [node name="bugs" type="YSort" parent="YSort"]
 
 [node name="bug1" parent="YSort/bugs" instance=ExtResource( 14 )]
@@ -218,6 +234,30 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/bugs/bug2/quiz"]
 position = Vector2( -2, -8 )
 shape = SubResource( 2 )
+
+[node name="bug5" parent="YSort/bugs" instance=ExtResource( 14 )]
+position = Vector2( 204, 186 )
+bug_id = "kalaban1"
+
+[node name="quiz" type="Area2D" parent="YSort/bugs/bug5"]
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/bugs/bug5/quiz"]
+position = Vector2( 0, -11 )
+shape = SubResource( 3 )
+
+[node name="bug6" parent="YSort/bugs" instance=ExtResource( 14 )]
+position = Vector2( 207, 76 )
+bug_id = "kalaban2"
+
+[node name="quiz" type="Area2D" parent="YSort/bugs/bug6"]
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/bugs/bug6/quiz"]
+position = Vector2( 0, -11 )
+shape = SubResource( 3 )
 
 [node name="path" type="YSort" parent="YSort"]
 
@@ -256,6 +296,8 @@ valign = 1
 
 [connection signal="body_shape_entered" from="YSort/bugs/bug1/quiz" to="." method="_on_quiz_body_shape_entered"]
 [connection signal="body_shape_entered" from="YSort/bugs/bug2/quiz" to="." method="_on_quizbug2_body_shape_entered"]
+[connection signal="body_shape_entered" from="YSort/bugs/bug5/quiz" to="." method="_on_quiz_body_shape_entered_chapter3bug5"]
+[connection signal="body_shape_entered" from="YSort/bugs/bug6/quiz" to="." method="_on_quiz_body_shape_entered_chapter3bug6"]
 [connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
 
 [editable path="YSort/Camera2D"]

@@ -74,7 +74,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Definitions": {
@@ -232,7 +232,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": true
+				"folded": false
 			}
 		},
 		"Timelines": {
@@ -427,7 +427,8 @@
 					"folders": {
 						"Gandalf": {
 							"files": [
-								"timeline-1728039775.json"
+								"timeline-1728039775.json",
+								"timeline-1728855331.json"
 							],
 							"folders": {
 
@@ -446,7 +447,8 @@
 									"files": [
 										"timeline-1728714035.json",
 										"timeline-1728728549.json",
-										"timeline-1728781090.json"
+										"timeline-1728781090.json",
+										"timeline-1728796533.json"
 									],
 									"folders": {
 
@@ -472,7 +474,9 @@
 								"timeline-1728393193.json",
 								"timeline-1728466034.json",
 								"timeline-1728470446.json",
-								"timeline-1728560366.json"
+								"timeline-1728560366.json",
+								"timeline-1728808204.json",
+								"timeline-1728814734.json"
 							],
 							"folders": {
 
@@ -511,7 +515,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": false
+										"folded": true
 									}
 								},
 								"stage3": {
@@ -537,7 +541,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": false
+										"folded": true
 									}
 								}
 							},
@@ -561,7 +565,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": true
+										"folded": false
 									}
 								},
 								"stage5": {
@@ -574,7 +578,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": true
+										"folded": false
 									}
 								}
 							},

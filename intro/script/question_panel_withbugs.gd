@@ -348,7 +348,32 @@ func value_activating(param):
 		Global.set_bat_state("slime4", false) 
 		Global2.complete_badge("badge24")
 		SceneTransition.change_scene("res://intro/stages_complete.tscn")
-	
+	############# chapter 3 ###################
+	if param == "bug5":
+		print("chapter 3 badge 1")
+		Global.set_bat_state("kalaban1", false) 
+		var bat_ids_to_check = ["kalaban1", "kalaban2"] #check if they are both existed
+		if Global.are_bat_states_false(bat_ids_to_check):
+			#print("All specified slime states are false.")
+			Dialogic.set_variable("gandalf", 17)
+			Global2.complete_badge("badge26") #### on
+			SceneTransition.change_scene("res://intro/stages_complete.tscn")
+		else:
+			Global2.complete_badge("badge26")
+			SceneTransition.change_scene("res://intro/evaluation.tscn")
+	if param == "bug6.1":
+		print("chapter 3 badge 1")
+		Global.set_bat_state("kalaban2", false) 
+		var bat_ids_to_check = ["kalaban1", "kalaban2"] #check if they are both existed
+		if Global.are_bat_states_false(bat_ids_to_check):
+			#print("All specified slime states are false.")
+			Dialogic.set_variable("gandalf", 17)
+			Global2.complete_badge("badge26") #### on
+			SceneTransition.change_scene("res://intro/stages_complete.tscn")
+		else:
+			Global2.complete_badge("badge26")
+			SceneTransition.change_scene("res://intro/evaluation.tscn")
+	############################################
 # Reset all relevant Global2 properties to false (used to avoid dialogue errors)
 
 	#Global2.reset_trigger_answers()

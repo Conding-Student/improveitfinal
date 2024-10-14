@@ -82,20 +82,24 @@ func _on_pause_game_pressed():
 	pause_ui.show()
 ####################################
 func morning_setup():
-	if int(Dialogic.get_variable("gandalf")) == 4:
+	if int(Dialogic.get_variable("gandalf")) == 4 or int(Dialogic.get_variable("gandalf")) == 5 or int(Dialogic.get_variable("gandalf")) == 6:
 		GlobalCanvasModulate.apply_trigger("morning")
-	elif int(Dialogic.get_variable("gandalf")) == 7 or int(Dialogic.get_variable("gandalf")) == 8:
+	elif int(Dialogic.get_variable("gandalf")) == 7 or int(Dialogic.get_variable("gandalf")) == 8 or Global2.is_badge_complete("badge20"):
 		GlobalCanvasModulate.apply_trigger("night")
 	else:
 		print("dialogic gandalf")
 ######################################
 func path_to_classoria():
-	if int(Dialogic.get_variable("gandalf")) != 8:
+	if Global2.is_badge_complete("badge20"):
+		path_classoria.disabled = false
+		arrow_classoria.show()
+		path_gandalgoutside.disabled = true
+		arrow_gandalfoutside.hide()
+	else:
 		path_classoria.disabled = true
 		arrow_classoria.hide()
-	else:
-		path_classoria.disabled = false
-		path_gandalgoutside.disabled = true
+		#path_gandalgoutside.disabled = true
+		#arrow_gandalfoutside.hide()
 		
 
 func enemy_appearance():

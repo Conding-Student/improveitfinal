@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"background": "res://Scenes/pictures/chapter2/gandalf_house_inside.png",
+			"background": "res://Scenes/pictures/chapter2/Analexus_return1.png",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -12,27 +12,17 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "As Analexius arrived at Gandalf's house on horseback, he couldn't contain his excitement. He had arrived just a little later after Valen. \nBursting through the door, he headed straight for the library where Gandalf was studying."
+			"text": "As Analexius arrived at Gandalf's house on horseback, he couldn't contain his excitement. He had arrived just a little later after Valen. "
 		},
 		{
-			"animation": "1-fade_in.gd",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1728031425.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": true,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 0,
-			"z_index": 0
+			"background": "res://Scenes/pictures/chapter2/Analexus_return2.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\nBursting through the door, he headed straight for the library where Gandalf was studying."
 		},
 		{
 			"character": "character-1728031425.json",
@@ -41,10 +31,18 @@
 			"text": "Gandalf! You won’t believe it! I’m a hero!"
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/Analexus_return3.png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Gandalf looked up from his ancient tome, a mixture of curiosity and amusement in his eyes."
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/chairOnly.png",
+			"event_id": "dialogic_021"
 		},
 		{
 			"animation": "1-fade_in.gd",
@@ -168,7 +166,7 @@
 			"operation": "=",
 			"random_upper_limit": 100,
 			"set_random": false,
-			"set_value": "13"
+			"set_value": "14"
 		},
 		{
 			"custom_slot": "slot1",

@@ -34,6 +34,7 @@ func end_interaction(timelineend):
 
 func badge18_complete():
 	Global2.complete_badge("badge18")
+	SceneTransition.change_scene("res://intro/stages_complete.tscn")
 
 func _on_Area2D_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	if int(Dialogic.get_variable("gandalf")) == 12:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://World/houses/houseGandalf.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/world objects/forest1.tres" type="TileSet" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://levels/Script/gandalfHouse_Outside.gd" type="Script" id=13]
 [ext_resource path="res://NPC/Gandalf.tscn" type="PackedScene" id=14]
 [ext_resource path="res://NPC/analexius.tscn" type="PackedScene" id=15]
+[ext_resource path="res://World/magical chest.tscn" type="PackedScene" id=16]
 
 [sub_resource type="DynamicFont" id=1]
 size = 5
@@ -135,6 +136,9 @@ position = Vector2( 259, -1 )
 
 [node name="Node2D2" parent="YSort/obj" instance=ExtResource( 4 )]
 position = Vector2( 33, 161 )
+
+[node name="magical_chest" parent="YSort/obj" instance=ExtResource( 16 )]
+position = Vector2( 288, 176 )
 
 [node name="Camera2D" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 0, 0 )

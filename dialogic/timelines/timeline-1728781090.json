@@ -6,7 +6,7 @@
 		},
 		{
 			"event_id": "dialogic_024",
-			"set_theme": "theme-1728115011.cfg"
+			"set_theme": "theme-1727627785.cfg"
 		},
 		{
 			"character": "",
@@ -83,16 +83,34 @@
 			"text": "Precisely. In my example earlier methods are the things that this tea pot can do"
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/gandalf_house_inside.png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Oh I see, but how can I create a class?"
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/warrior1.png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Good question. To create a class, you begin with the class keyword, followed by the name of the class. For example, let’s start simple creating a class called Warrior. Here’s how it’s done."
+			"text": "Good question. To create a class, you begin with the class keyword. "
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/warrior2.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "followed by the name of the class. For example, let’s start simple creating a class called Warrior. Here’s how it’s done."
 		},
 		{
 			"character": "",
@@ -105,14 +123,10 @@
 			"event_id": "dialogic_021"
 		},
 		{
-			"background": "",
-			"event_id": "dialogic_021"
-		},
-		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "This is a basic class called Warrior. Notice it has two variables, name and strength, and a method called Attack(). The variables are like attributes, and the method defines what action the warrior can take."
+			"text": "This is a basic class called Warrior. Notice it has two variables, name and strength, and a method called Attack(). \nThe variables are like attributes, and the method defines what action the warrior can take."
 		},
 		{
 			"character": "character-1721952703.json",
@@ -127,20 +141,35 @@
 			"text": "Gandalf waves his staff again, adding to the glowing script"
 		},
 		{
-			"background": "res://Scenes/pictures/chapter2/object.png",
-			"event_id": "dialogic_021"
-		},
-		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "To use a class, we need to create an object an instance of that class. You do this using the new keyword, like so."
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/object1.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 1
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Here, we’ve created an object named valen from the Warrior class. We assigned values to its attributes name and strength and then called the Attack() method"
+			"text": "Here, we’ve created an object named valen from the Warrior class. "
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/object1.1.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We assigned values to its attributes name and strength and then called the Attack() method"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/object.png",
+			"event_id": "dialogic_021"
 		},
 		{
 			"character": "character-1728009045.json",
@@ -149,10 +178,14 @@
 			"text": "It’s as simple as that. Now you can create as many warriors as you need, each with their own unique attributes."
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/gandalf_house_inside.png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(surprised) I see… so by creating the class once, I can reuse it to create different objects, all with their own data. What if I need the method to return something instead of just performing an action?"
+			"text": "(surprised) I see… so by creating the class once, I can reuse it to create different objects, all with their own data.\n What if I need the method to return something instead of just performing an action?"
 		},
 		{
 			"character": "character-1728009045.json",
@@ -187,6 +220,10 @@
 			"text": "(nods, intrigued) So methods can return data too, not just perform actions. What about access? Can anyone change these values?"
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/gandalf_house_inside.png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -199,6 +236,16 @@
 			"text": "Gandalf waves his staff, introducing access specifiers:"
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/private1.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "By making name private, only the class itself can access it. "
+		},
+		{
 			"background": "res://Scenes/pictures/chapter2/private.png",
 			"event_id": "dialogic_021"
 		},
@@ -206,7 +253,11 @@
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "By making name private, only the class itself can access it. But using the SetName() and GetName() methods, we can control how the name is changed or retrieved. This protects the class from unwanted changes"
+			"text": "But using the SetName() and GetName() methods, we can control how the name is changed or retrieved. This protects the class from unwanted changes. Those values are called FIELDS"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/private2.png",
+			"event_id": "dialogic_021"
 		},
 		{
 			"character": "character-1721952703.json",
@@ -218,11 +269,53 @@
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Exactly. C# magic is not just about what you create, but how you protect and use it. It’s structured to ensure both flexibility and security. Now, imagine combining this knowledge with all you’ve learned your magic will become far more powerful"
+			"text": "Exactly. C# magic is not just about what you create, but how you protect and use it. It’s structured to ensure both flexibility and security. \nNow, imagine combining this knowledge with all you’ve learned your magic will become far more powerful"
 		},
 		{
 			"background": "res://Scenes/pictures/chapter2/gandalf_house_inside.png",
 			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alright, that makes sense. But what about this Main() method I’ve seen? Why does every C# spell start with it?"
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/main1.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah, the Main() method is crucial. It’s the entry point for every C# spell—or program, as we call it. "
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/main2.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "When the magic begins, the Main() method is where it starts. There can only be one Main() method per program, and it must be declared with the static keyword."
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/main3.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "In this example, when the spell is invoked, the Main() method is called. It’s where the magic starts, objects are created, and methods are called. \nWithout it, the spell wouldn’t know where to begin."
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So the Main() method is like the foundation of the spell, where everything gets triggered"
 		},
 		{
 			"character": "character-1721952703.json",
@@ -235,6 +328,14 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Indeed. The class is your foundation, the methods your actions, and the modifiers your safeguard. Together, they are the essence of what we do."
+		},
+		{
+			"definition": "1728021648-250",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "15"
 		},
 		{
 			"event_id": "dialogic_022",

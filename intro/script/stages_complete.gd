@@ -16,11 +16,12 @@ var badge_order = [
 	"badge6", "badge7", "badge8", "badge9", "badge10", 
 	"badge11", "badge12", "badge13", "badge14", "badge15", "badge16",
 	"badge17","badge18","badge19","badge20","badge21","badge22","badge23",
-	"badge24","badge25"
+	"badge24","badge25","badge26","badge27","badge28","badge29","badge30"
 	# Add as many badges as needed
 ]
 
 func _ready():
+	GlobalCanvasModulate.reset_to_default()
 	# Initialize badge visibility
 	for badge in badge_display:
 		badge.visible = false

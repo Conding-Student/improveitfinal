@@ -27,11 +27,16 @@ onready var badges = [
 	$Panel4/Panel2/Badges/HBoxContainer/Units/s3, #18
 	$Panel4/Panel2/Badges/HBoxContainer/Units/s4, #19
 	$Panel4/Panel2/Badges/HBoxContainer/Units/s5, #20
-	$Panel4/Panel2/Badges/HBoxContainer2/Units/s1,#21
-	$Panel4/Panel2/Badges/HBoxContainer2/Units/s2,#22
-	$Panel4/Panel2/Badges/HBoxContainer2/Units/s3,#23
-	$Panel4/Panel2/Badges/HBoxContainer2/Units/s4,#24
-	$Panel4/Panel2/Badges/HBoxContainer2/Units/s5 #25
+	$Panel4/Panel2/Badges/HBoxContainer2/Units/s1, #21
+	$Panel4/Panel2/Badges/HBoxContainer2/Units/s2, #22
+	$Panel4/Panel2/Badges/HBoxContainer2/Units/s3, #23
+	$Panel4/Panel2/Badges/HBoxContainer2/Units/s4, #24
+	$Panel4/Panel2/Badges/HBoxContainer2/Units/s5, #25
+	$Panel4/Panel3/Badges/HBoxContainer/Units/s1,  #26
+	$Panel4/Panel3/Badges/HBoxContainer/Units/s2,  #27
+	$Panel4/Panel3/Badges/HBoxContainer/Units/s3,  #28 
+	$Panel4/Panel3/Badges/HBoxContainer/Units/s4,  #29
+	$Panel4/Panel3/Badges/HBoxContainer/Units/s5   #30
 ]
 
 # Array of badge images (default and completed)
@@ -135,8 +140,27 @@ var badge_images = {
 	"badge25": {
 		"default": preload("res://intro/picture/semi-mastery badges.png"),
 		"earned": preload("res://intro/picture/semi-mastery.png"),
+	},
+	"badge26": {
+		"default": preload("res://intro/picture/normal-badge-gray.png"),
+		"earned": preload("res://intro/picture/normal badge.png"),
+	},
+	"badge27": {
+		"default": preload("res://intro/picture/normal-badge-gray.png"),
+		"earned": preload("res://intro/picture/normal badge.png"),
+	},
+	"badge28": {
+		"default": preload("res://intro/picture/normal-badge-gray.png"),
+		"earned": preload("res://intro/picture/normal badge.png"),
+	},
+	"badge29": {
+		"default": preload("res://intro/picture/normal-badge-gray.png"),
+		"earned": preload("res://intro/picture/normal badge.png"),
+	},
+	"badge30": {
+		"default": preload("res://intro/picture/semi-mastery badges.png"),
+		"earned": preload("res://intro/picture/semi-mastery.png"),
 	}
-	
 }
 
 # This is the label node reference for updating text
@@ -168,7 +192,12 @@ var badge_text_map = {
 	"badge22": "Chapter2 U2 3 / 5",
 	"badge23": "Chapter2 U2 4 / 5",
 	"badge24": "Chapter2 U2 5 / 5",
-	"badge25": "Chapter2 U3 1 / 5"
+	"badge25": "Chapter2 U3 1 / 5",
+	"badge26": "Chapter2 U3 2 / 5",
+	"badge27": "Chapter2 U3 3 / 5",
+	"badge28": "Chapter2 U3 4 / 5",
+	"badge29": "Chapter2 U3 5 / 5",
+	"badge30": "Chapter2 U3 5 / 5",
 }
 
 func _ready():

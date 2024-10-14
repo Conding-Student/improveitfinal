@@ -27,8 +27,9 @@ func _ready():
 	gandalf.connect("end_dialogue", self, "show_controller")
 	Global.set_map(current_map)
 	Musicmanager.set_music_path("res://Music and Sounds/bg music/guildInside.wav")
-	gandalf_appearance()
+	#gandalf_appearance()
 	anal_appearance()
+	morning_setup()
 func set_player_position():
 	if Global.get_player_initial_position() == Vector2(0, 0):
 		Global.set_player_current_position(starting_player_position)
@@ -36,9 +37,10 @@ func set_player_position():
 	elif int(Dialogic.get_variable("gandalf")) == 1:
 		player.global_position = starting_player_position
 		first_interaction()
-	elif int(Dialogic.get_variable("gandalf")) == 12:
+	elif int(Dialogic.get_variable("gandalf")) == 12 or int(Dialogic.get_variable("gandalf")) == 13:
 		player.global_position = starting_player_position
 		valen_coming_back()
+		#print("triger")
 	elif Global.from_level != null && Global.load_game_position == true:
 		player.global_position = Global.get_player_current_position()
 		Global.load_game_position = false
@@ -90,9 +92,14 @@ func first_interaction():
 
 func valen_coming_back():
 	Hide_controller()
-	var new_dialog = Dialogic.start('analexuis_continuation')
-	add_child(new_dialog)
-	new_dialog.connect("timeline_end", self, "end_intructions")
+	if int(Dialogic.get_variable("gandalf")) == 12:
+		var new_dialog = Dialogic.start('analexuis_continuation')
+		add_child(new_dialog)
+		new_dialog.connect("timeline_end", self, "end_intructions")
+	elif int(Dialogic.get_variable("gandalf")) == 13:
+		var new_dialog = Dialogic.start('c3stage1p2')
+		add_child(new_dialog)
+		new_dialog.connect("timeline_end", self, "end_intructions")
 
 
 func end_intructions(timelineend):
@@ -113,7 +120,7 @@ func value_activating(param):
 		print("error in emitting signal instruction")
 ######################## gandalf appearance ############
 func gandalf_appearance():
-	if int(Dialogic.get_variable("gandalf")) == 4:
+	if int(Dialogic.get_variable("gandalf")) == 4 or int(Dialogic.get_variable("gandalf")) == 5: # free not until valen talk with analexius
 		gandalf.queue_free()
 	else:
 		print("gandalf is alive")
@@ -124,6 +131,13 @@ func anal_appearance():
 	else:
 		print("analexius is alive")
 ########################################################
+func morning_setup():
+	if int(Dialogic.get_variable("gandalf")) == 4 or int(Dialogic.get_variable("gandalf")) == 5 or int(Dialogic.get_variable("gandalf")) == 6:
+		GlobalCanvasModulate.apply_trigger("morning")
+	elif int(Dialogic.get_variable("gandalf")) == 7 or int(Dialogic.get_variable("gandalf")) == 8:
+		GlobalCanvasModulate.apply_trigger("night")
+	else:
+		print("dialogic gandalf")
 ################### eating ##############################
 func _on_Area2D_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	eating_interaction_button.show()

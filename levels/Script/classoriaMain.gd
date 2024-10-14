@@ -361,7 +361,7 @@ func _on_quiz_body_shape_entered_slime4(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(3, "Incorrect. The loop will not iterate as needed.")
 	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/level2/fill/New question - 1.png")
 	
-	Global2.set_question(1, "Fix this while loop to stop when x is 5.")
+	Global2.set_question(1, "Fix this while loop to stop when x is less than 5.")
 	Global2.set_answers(4, "x > 5")
 	Global2.set_answers(5, "x < 5")
 	Global2.set_answers(6, "x == 5")

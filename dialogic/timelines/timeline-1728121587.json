@@ -7,10 +7,6 @@
 			"value": "5"
 		},
 		{
-			"background": "res://Scenes/pictures/chapter2/gandalf_house_inside.png",
-			"event_id": "dialogic_021"
-		},
-		{
 			"animation": "[Default]",
 			"animation_length": 0,
 			"change_mirror_portrait": false,

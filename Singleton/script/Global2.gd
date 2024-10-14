@@ -38,6 +38,11 @@ var badges_complete = {
 	"badge23": false,
 	"badge24": false,
 	"badge25": false,
+	"badge26": false,
+	"badge27": false,
+	"badge28": false,
+	"badge29": false,
+	"badge30": false,
 }
 
 # Previous state of badges (initially, it's the same as badges_complete)

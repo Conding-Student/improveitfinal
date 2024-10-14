@@ -730,12 +730,15 @@ position = Vector2( 311, 16 )
 
 [node name="heart_spawn" parent="YSort/trees" instance=ExtResource( 19 )]
 position = Vector2( 222, 184 )
+heart_id = "puso4"
 
 [node name="heart_spawn2" parent="YSort/trees" instance=ExtResource( 19 )]
 position = Vector2( 52, 32 )
+heart_id = "puso5"
 
 [node name="heart_spawn3" parent="YSort/trees" instance=ExtResource( 19 )]
-position = Vector2( 13, 30 )
+position = Vector2( 276, 110 )
+heart_id = "puso6"
 
 [node name="bats" type="YSort" parent="YSort"]
 
@@ -780,7 +783,7 @@ position = Vector2( 464, 240 )
 [node name="path_arrow" parent="." instance=ExtResource( 12 )]
 position = Vector2( 314, 93 )
 z_index = 1
-tile_data = PoolIntArray( -6160542, 0, 0 )
+tile_data = PoolIntArray( -5963934, 0, 0 )
 
 [node name="TopUi" type="CanvasLayer" parent="."]
 

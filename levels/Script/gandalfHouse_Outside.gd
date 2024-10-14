@@ -11,7 +11,7 @@ onready var gandalf =$YSort/Gandalf
 onready var analexius = $YSort/analexius
 onready var otw = $forest2Chap2/CollisionShape2D
 onready var path_arrow_traning = $YSort/path/path_arrow
-var current_map = "res://levels/Chapter2_maps/forest1Chap2.tscn"
+var current_map = "res://levels/Chapter2_maps/gandalfHouse_Outside.tscn"
 var starting_player_position = Vector2  (36, 52)
 
 
@@ -31,6 +31,7 @@ func _ready():
 	gandalf_appearance()
 	analexius_appearance()
 	path_locked_otw()
+	morning_setup()
 func set_player_position():
 	if Global.get_player_initial_position() == Vector2(0, 0):
 		Global.set_player_current_position(starting_player_position)
@@ -69,7 +70,7 @@ func _on_pause_game_pressed():
 	pause_ui.show()
 
 func gandalf_appearance():
-	if int(Dialogic.get_variable("gandalf")) != 4:
+	if int(Dialogic.get_variable("gandalf")) != 4 or int(Dialogic.get_variable("gandalf")) != 5:
 		gandalf.queue_free()
 	else:
 		print("gandalf is alive")
@@ -81,12 +82,21 @@ func analexius_appearance():
 		print("analexius is alive")
 
 func path_locked_otw():
-	if int(Dialogic.get_variable("gandalf")) == 4:
+	if int(Dialogic.get_variable("gandalf")) == 4 or int(Dialogic.get_variable("gandalf")) == 7 or int(Dialogic.get_variable("gandalf")) == 8:
 		otw.disabled = false
 		path_arrow_traning.visible =true
 	else:
 		otw.disabled = true
 		path_arrow_traning.visible =false
+
+
+func morning_setup():
+	if int(Dialogic.get_variable("gandalf")) == 4 or int(Dialogic.get_variable("gandalf")) == 5 or int(Dialogic.get_variable("gandalf")) == 6:
+		GlobalCanvasModulate.apply_trigger("morning")
+	elif int(Dialogic.get_variable("gandalf")) == 7 or int(Dialogic.get_variable("gandalf")) == 8:
+		GlobalCanvasModulate.apply_trigger("night")
+	else:
+		print("dialogic gandalf")
 ############## interactions ################
 
 func Hide_controller():

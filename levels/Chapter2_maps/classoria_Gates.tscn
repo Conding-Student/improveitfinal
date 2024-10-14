@@ -248,12 +248,22 @@ position = Vector2( 104, 77 )
 
 [node name="heart_spawn" parent="YSort/loot" instance=ExtResource( 18 )]
 position = Vector2( 104, 226 )
+heart_id = "puso8"
 
 [node name="heart_spawn2" parent="YSort/loot" instance=ExtResource( 18 )]
 position = Vector2( 133, 227 )
+heart_id = "puso7"
 
 [node name="magical_chest2" parent="YSort/loot" instance=ExtResource( 19 )]
 position = Vector2( 156, 78 )
+
+[node name="heart_spawn3" parent="YSort/loot" instance=ExtResource( 18 )]
+position = Vector2( 428, 186 )
+heart_id = "puso9"
+
+[node name="heart_spawn4" parent="YSort/loot" instance=ExtResource( 18 )]
+position = Vector2( 422, 39 )
+heart_id = "puso10"
 
 [node name="dialogue" type="Area2D" parent="YSort"]
 collision_layer = 128

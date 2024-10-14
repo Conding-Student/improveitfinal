@@ -84,11 +84,12 @@ func door_state_classoria_main():
 		path_to_classoria_main_dialogue.disabled = true
 
 func door_state_otw():
-	if int(Dialogic.get_variable("gandalf")) == 9 or int(Dialogic.get_variable("gandalf")) == 10:
+	if int(Dialogic.get_variable("gandalf")) == 9:
 		path_arrow_otw.hide()
 		path_to_otw.disabled = true
 	else:
 		pass
+		#print(int(Dialogic.get_variable("gandalf")))
 		#print("gandalf value is not equal to 9 to lock the path")
 ############## interactions ################
 
@@ -107,6 +108,7 @@ func door_unlocked(param):
 		path_to_classoria_main_dialogue.disabled = true
 		path_to_classoria_main.disabled = false
 		Global2.complete_badge("badge21")
+		SceneTransition.change_scene("res://intro/stages_complete.tscn")
 	else:
 		print("error in dialogic siganl")
 

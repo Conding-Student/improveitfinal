@@ -41,11 +41,28 @@ func interaction_start():
 		var new_dialog = Dialogic.start('c2stage3p2')
 		add_child(new_dialog)
 		new_dialog.connect("timeline_end", self, "end_interaction")
-	elif int(Dialogic.get_variable("gandalf")) == 12:
+	elif int(Dialogic.get_variable("gandalf")) == 13:
 		emit_signal("start_dialogue")
 		var new_dialog = Dialogic.start('c3stage1p2')
 		add_child(new_dialog)
 		new_dialog.connect("timeline_end", self, "end_interaction_anal")
+	elif int(Dialogic.get_variable("gandalf")) == 14:
+		emit_signal("start_dialogue")
+		var new_dialog = Dialogic.start('c3stage1p3')
+		add_child(new_dialog)
+		new_dialog.connect("timeline_end", self, "end_interaction")
+	elif int(Dialogic.get_variable("gandalf")) == 15 or int(Dialogic.get_variable("gandalf")) == 16:
+		emit_signal("start_dialogue")
+		var new_dialog = Dialogic.start('c3stage1p4')
+		add_child(new_dialog)
+		new_dialog.connect("timeline_end", self, "end_interaction")
+	else:
+		emit_signal("start_dialogue")
+		print("default gandalf trigger")
+		print(int(Dialogic.get_variable("gandalf")))
+		var new_dialog = Dialogic.start('gandalfcatch')
+		add_child(new_dialog)
+		new_dialog.connect("timeline_end", self, "end_interaction")
 
 func end_interaction_anal(timelineend):
 	emit_signal("end_dialogue")
@@ -57,6 +74,7 @@ func end_interaction(timelineend):
 func earn_badge16(timelineend):
 	#print("badge16 is trigger")
 	Global2.complete_badge("badge16")
+	SceneTransition.change_scene("res://intro/stages_complete.tscn")
 	#badges.update_badges()
 	emit_signal("end_dialogue")
 

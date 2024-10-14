@@ -154,7 +154,7 @@
 			"text": "Gandalf conjures a glowing display of code using C# runes."
 		},
 		{
-			"background": "res://Dialogue/Picture/cvhapter2/Tutorial (1).png",
+			"background": "res://Dialogue/Picture/cvhapter2/training.jpg",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -188,7 +188,7 @@
 			"text": "Or hide in a tree..."
 		},
 		{
-			"background": "res://Dialogue/Picture/cvhapter2/Tutorial with red.png",
+			"background": "res://Dialogue/Picture/cvhapter2/training_defaulthighlight.jpg",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -228,6 +228,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Val steps forward, focusing on the magical console. He mutters the code, his fingers mimicking casting spells as the words light up."
+		},
+		{
+			"background": "res://Dialogue/Picture/cvhapter2/training_val.jpg",
+			"event_id": "dialogic_021"
 		},
 		{
 			"character": "character-1721952703.json",

@@ -1,0 +1,28 @@
+{
+	"events": [
+		{
+			"condition": "",
+			"definition": "1728021648-250",
+			"event_id": "dialogic_012",
+			"value": "6"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You must go into the classoria right? Go and fetch the IDE tome to fulfill what you need. Talk with Analexius about it."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1728855331.json",
+		"name": "gandalfcatch"
+	}
+}

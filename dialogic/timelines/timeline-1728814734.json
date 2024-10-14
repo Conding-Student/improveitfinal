@@ -1,0 +1,23 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1726986938.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That mus be the last one, I think I should take a rest and tell Gandalf that I already defeated them"
+		},
+		{
+			"emit_signal": "bug6.1",
+			"event_id": "dialogic_040"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1728814734.json",
+		"name": "bug11"
+	}
+}

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://World/world objects/forest1.tres" type="TileSet" id=1]
 [ext_resource path="res://World/world objects/castle_pillarBig.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://intro/pause_menu.tscn" type="PackedScene" id=11]
 [ext_resource path="res://intro/picture/pause.png" type="Texture" id=12]
 [ext_resource path="res://NPC/research_defender.tscn" type="PackedScene" id=13]
+[ext_resource path="res://intro/tres/path_arrow.tres" type="Texture" id=14]
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 46.0109
@@ -20,6 +21,22 @@ radius = 46.0109
 [sub_resource type="DynamicFont" id=1]
 size = 5
 font_data = ExtResource( 9 )
+
+[sub_resource type="TileSet" id=3]
+0/name = "path_arrow.tres 0"
+0/texture = ExtResource( 14 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 7, 7 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
 
 [node name="classoria_instituteOutside" type="Node2D"]
 script = ExtResource( 8 )
@@ -150,6 +167,12 @@ margin_bottom = 22.0
 custom_fonts/font = SubResource( 1 )
 align = 1
 valign = 1
+
+[node name="arrow_path" type="TileMap" parent="."]
+tile_set = SubResource( 3 )
+cell_size = Vector2( 1, 1 )
+format = 1
+tile_data = PoolIntArray( 19661323, 0, 0 )
 
 [connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
 
