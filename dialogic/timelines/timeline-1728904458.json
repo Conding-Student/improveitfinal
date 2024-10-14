@@ -1,0 +1,19 @@
+{
+	"events": [
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That was a difficult enemy to fight. "
+		},
+		{
+			"emit_signal": "badge27",
+			"event_id": "dialogic_040"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1728904458.json",
+		"name": "bug12"
+	}
+}

@@ -14,8 +14,11 @@ onready var path_arrow_traning = $YSort/path/path_arrow
 var current_map = "res://levels/Chapter2_maps/gandalfHouse_Outside.tscn"
 var starting_player_position = Vector2  (36, 52)
 
-
-
+#########
+onready var objecthia_dialogue_lock = $YSort/objecthia_path/CollisionShape2D
+onready var classoria_dialouge_lock = $YSort/classoria_path/CollisionShape2D
+onready var objecthia_path = $objectiaRoad/CollisionShape2D
+#########
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_overall_initial_position()
@@ -32,6 +35,7 @@ func _ready():
 	analexius_appearance()
 	path_locked_otw()
 	morning_setup()
+	objecthia_path_trigger()
 func set_player_position():
 	if Global.get_player_initial_position() == Vector2(0, 0):
 		Global.set_player_current_position(starting_player_position)
@@ -85,6 +89,7 @@ func path_locked_otw():
 	if int(Dialogic.get_variable("gandalf")) == 4 or int(Dialogic.get_variable("gandalf")) == 7 or int(Dialogic.get_variable("gandalf")) == 8:
 		otw.disabled = false
 		path_arrow_traning.visible =true
+		classoria_dialouge_lock.disabled = true
 	else:
 		otw.disabled = true
 		path_arrow_traning.visible =false
@@ -97,6 +102,15 @@ func morning_setup():
 		GlobalCanvasModulate.apply_trigger("night")
 	else:
 		print("dialogic gandalf")
+
+func objecthia_path_trigger():
+	
+	if Global2.is_badge_complete("badge26"): #if badge 26 has been receive dialogue lock will be disabled and can be pass
+		objecthia_path.disabled = false
+		objecthia_dialogue_lock.disabled = true
+	else:
+		objecthia_dialogue_lock.disabled = false
+		objecthia_path.disabled = true
 ############## interactions ################
 
 func Hide_controller():
@@ -108,3 +122,19 @@ func show_controller():
 	topui.show()
 	player_controller.show()
 	player_controller_joystick.enable_joystick()
+
+func end_intructions(timelineend):
+	show_controller()
+############## interactions ################
+func objecthia_lock_path_dialogue(body_rid, body, body_shape_index, local_shape_index):
+	Hide_controller()
+	var new_dialog = Dialogic.start('pathdialogue')
+	add_child(new_dialog)
+	new_dialog.connect("timeline_end", self, "end_intructions")
+
+
+func classoria_path_lock_dialogue(body_rid, body, body_shape_index, local_shape_index):
+	Hide_controller()
+	var new_dialog = Dialogic.start('pathdialogue')
+	add_child(new_dialog)
+	new_dialog.connect("timeline_end", self, "end_intructions")

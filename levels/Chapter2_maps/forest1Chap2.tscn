@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://World/world objects/forest1.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/KinematicBody2D.tscn" type="PackedScene" id=2]
@@ -25,6 +25,9 @@ radius = 45.0
 
 [sub_resource type="CircleShape2D" id=3]
 radius = 50.01
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 5.5, 16.5 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 5
@@ -264,6 +267,14 @@ shape = SubResource( 3 )
 [node name="path_arrow" parent="YSort/path" instance=ExtResource( 17 )]
 tile_data = PoolIntArray( 10616833, 0, 0 )
 
+[node name="Area2D" type="Area2D" parent="YSort"]
+position = Vector2( 3, 168 )
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Area2D"]
+shape = SubResource( 4 )
+
 [node name="TopUi" type="CanvasLayer" parent="."]
 
 [node name="pause_game" type="TextureButton" parent="TopUi"]
@@ -298,6 +309,7 @@ valign = 1
 [connection signal="body_shape_entered" from="YSort/bugs/bug2/quiz" to="." method="_on_quizbug2_body_shape_entered"]
 [connection signal="body_shape_entered" from="YSort/bugs/bug5/quiz" to="." method="_on_quiz_body_shape_entered_chapter3bug5"]
 [connection signal="body_shape_entered" from="YSort/bugs/bug6/quiz" to="." method="_on_quiz_body_shape_entered_chapter3bug6"]
+[connection signal="body_shape_entered" from="YSort/Area2D" to="." method="lock_path_dialogue"]
 [connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
 
 [editable path="YSort/Camera2D"]

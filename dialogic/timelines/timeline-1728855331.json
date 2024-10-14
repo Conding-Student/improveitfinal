@@ -18,6 +18,105 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1728021648-250",
+			"event_id": "dialogic_012",
+			"value": "17"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1728115011.cfg"
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good. Let's take the rest of the day to solidify your understanding. Tomorrow, we'll begin your quest on the way through the Objecthia. \nI and Analexius are willing to lend you our help. Both of you must go there first I will try to follow soon."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Valen spent the rest of the day deepening his knowledge of OOP Magic, determined to be fully prepared for the challenges that lay ahead."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Valen and Analexius set off toward Objecthia, the Citadel of Object-Oriented Prestidigitation. Valen was determined, but Analexius was less enthusiastic."
+		},
+		{
+			"character": "character-1728031425.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Objecthia? Are you out of your mind? The Bug King lurks there, and it's swarming with bugs and glitches!"
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We have no choice. The IDE Tome is there, and we need it! I need it!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Analexius sighed, his reluctance evident. But as they passed through a nearby town, the people recognized Analexius from Classoria."
+		},
+		{
+			"character": "character-1728895265.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"It's the hero who debugged Classoria!\""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Analexius, sensing the admiration, straightened up and puffed out his chest."
+		},
+		{
+			"character": "character-1728031425.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes, that's me! And now, we will bravely head to Objecthia to confront the Bug King and reclaim the legendary IDE Tome!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Valen shook his head but couldn't help a small smile at Analexius's sudden bravado. They set off on their journey, with Analexius's boasts ringing in their ears."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As they made their way through dense forests and rocky paths, they encountered numerous bugs and glitches."
+		},
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Stay close, Analexius. We’re getting closer to Objecthia, and the number of bugs is increasing."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Analexius nodded, clearly nervous but determined to live up to his newfound reputation."
+		},
+		{
+			"change_scene": "res://levels/Chapter2_maps/objectiaRoad.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {

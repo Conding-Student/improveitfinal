@@ -1,0 +1,23 @@
+{
+	"events": [
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "They are such a new type of bug. "
+		},
+		{
+			"emit_signal": "badge28",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1728905790.json",
+		"name": "bug13"
+	}
+}

@@ -373,6 +373,35 @@ func value_activating(param):
 		else:
 			Global2.complete_badge("badge26")
 			SceneTransition.change_scene("res://intro/evaluation.tscn")
+	
+	if param == "badge28":
+		print("badge receive 28")
+		Global.set_bat_state("plantbug2", false) 
+		var bat_ids_to_check = ["plantbug1", "plantbug2"] #check if they are both existed
+		if Global.are_bat_states_false(bat_ids_to_check):
+			#print("All specified slime states are false.")
+			Dialogic.set_variable("gandalf", 18)
+			Global2.complete_badge("badge28")
+			SceneTransition.change_scene("res://intro/stages_complete.tscn")
+		else:
+			Global2.complete_badge("badge27")
+			Dialogic.set_variable("gandalf", 18)
+			SceneTransition.change_scene("res://intro/evaluation.tscn")
+	
+	if param == "badge27":
+		print("badge receive 27")
+		Global.set_bat_state("plantbug1", false) 
+		var bat_ids_to_check = ["plantbug1", "plantbug2"] #check if they are both existed
+		if Global.are_bat_states_false(bat_ids_to_check):
+			#print("All specified slime states are false.")
+			Global2.complete_badge("badge28")
+			Dialogic.set_variable("gandalf", 18)
+			SceneTransition.change_scene("res://intro/stages_complete.tscn")
+		else:
+			Global2.complete_badge("badge27")
+			Dialogic.set_variable("gandalf", 18)
+			#print("this one activitingslime 2 di bukas")
+			SceneTransition.change_scene("res://intro/evaluation.tscn")
 	############################################
 # Reset all relevant Global2 properties to false (used to avoid dialogue errors)
 

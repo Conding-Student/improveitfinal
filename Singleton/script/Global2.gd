@@ -1,5 +1,6 @@
 extends Node
 
+onready var saving = $saving_file
 
 
 #stage 4 singleton state. Ito gamitin mo after sa videoa animation stage 4
@@ -66,6 +67,8 @@ func check_for_new_badges():
 func complete_badge(badge_name: String):
 	if badges_complete.has(badge_name):
 		badges_complete[badge_name] = true
+		#autsosave
+		saving.auto_save_file()
 		print("%s badge earned!" % badge_name)
 
 # Checks if a badge is complete

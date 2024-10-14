@@ -37,7 +37,8 @@
 					"files": [
 						"character-1728009045.json",
 						"character-1728031425.json",
-						"character-1728522794.json"
+						"character-1728522794.json",
+						"character-1728895265.json"
 					],
 					"folders": {
 						"bugs": {
@@ -50,7 +51,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						}
 					},
@@ -74,7 +75,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": true
+				"folded": false
 			}
 		},
 		"Definitions": {
@@ -185,7 +186,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						}
 					},
@@ -232,7 +233,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Timelines": {
@@ -422,7 +423,7 @@
 				},
 				"timetravel": {
 					"files": [
-
+						"timeline-1728889628.json"
 					],
 					"folders": {
 						"Gandalf": {
@@ -461,7 +462,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						},
 						"ender": {
@@ -476,14 +477,16 @@
 								"timeline-1728470446.json",
 								"timeline-1728560366.json",
 								"timeline-1728808204.json",
-								"timeline-1728814734.json"
+								"timeline-1728814734.json",
+								"timeline-1728904458.json",
+								"timeline-1728905790.json"
 							],
 							"folders": {
 
 							},
 							"metadata": {
 								"color": null,
-								"folded": true
+								"folded": false
 							}
 						},
 						"instructions": {
@@ -590,7 +593,8 @@
 						"starter": {
 							"files": [
 								"timeline-1728348437.json",
-								"timeline-1728544648.json"
+								"timeline-1728544648.json",
+								"timeline-1728903102.json"
 							],
 							"folders": {
 

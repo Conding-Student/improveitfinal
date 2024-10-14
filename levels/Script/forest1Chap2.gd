@@ -34,6 +34,7 @@ onready var bug6_sprite = $YSort/bugs/bug6
 onready var anal = $YSort/analexius
 
 #path to the next map
+onready var lock_path = $YSort/Area2D/CollisionShape2D
 onready var to_gandalf_home = $gandalfHouse_Outside/CollisionShape2D
 onready var path_arrow = $YSort/path/path_arrow
 # Called when the node enters the scene tree for the first time.
@@ -137,13 +138,14 @@ func checking_gandalf_appearance():
 		gandalf_collision.disabled = false
 		to_gandalf_home.disabled = true
 		path_arrow.hide()
-	else:
+	else: #trigger when gandalf is done meeting
 		#pass
+		lock_path.disabled = true
 		to_gandalf_home.disabled = false
 		path_arrow.show()
 		gandalf.queue_free()
-		print("this one is tiggered")
-		
+		#print("this one is tiggered")
+
 func checking_analexius_appearance():
 	if int(Dialogic.get_variable("gandalf")) != 5: #if the first interaction with gandalf is not done this will happen
 		anal.queue_free()
@@ -196,6 +198,7 @@ func _on_quizbug2_body_shape_entered(body_rid, body, body_shape_index, local_sha
 	Global2.set_feedback(3, "Incorrect. -- decreases a value by 1, not adds to it.")
 	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/level question/Stage 2 - 1.png")
 	Global2.load_enemy_data("res://Battlescenes/tres/big_bug.tres")
+	
 	Global2.set_question(1, "What operator should use to increment your mana to fight this enemy longer?")
 	Global2.set_answers(4, "<")
 	Global2.set_answers(5, "> ")
@@ -206,6 +209,7 @@ func _on_quizbug2_body_shape_entered(body_rid, body, body_shape_index, local_sha
 	Global2.set_feedback(6, "Correct! ++ increments your mana by 1.")
 	Global2.set_feedback(7, "Incorrect. -- decreases a value by 1, not adds to it.")
 	Global2.set_picture_path(1,"res://intro/picture/question/chapter2/level question/Stage 2 - 2.png")
+	
 	Global2.set_question(2, "What operator should use to check if health is less than 30.")
 	Global2.set_answers(8, "<")
 	Global2.set_answers(9, "> ")
@@ -217,10 +221,33 @@ func _on_quizbug2_body_shape_entered(body_rid, body, body_shape_index, local_sha
 	Global2.set_feedback(11, "Incorrect. == checks for equality, not whether a value is less than another.")
 	Global2.set_picture_path(2,"res://intro/picture/question/chapter2/level question/Stage 2 - 3.png")
 	Global2.load_enemy_data("res://Battlescenes/tres/big_bug.tres")
+	
+	Global2.set_question(3, "What happens if none of the conditions in an if-else statement are true and there's no else?")
+	Global2.set_answers(12, "Crash")
+	Global2.set_answers(13, "Skip")
+	Global2.set_answers(14, "Run if")
+	Global2.set_answers(15, "Error")
+	Global2.set_feedback(12, "Incorrect. The program doesn’t crash without an else.")
+	Global2.set_feedback(13, "Correct. If no condition is true and there’s no else, the block is skipped.")
+	Global2.set_feedback(14, "Incorrect. The if block only runs if its condition is true.")
+	Global2.set_feedback(15, "Incorrect! There’s no error if the else is missing.")
+	
+	Global2.set_question(4, "What is the default case in a switch for?")
+	Global2.set_answers(16, "Handle error")
+	Global2.set_answers(17, "Final case")
+	Global2.set_answers(18, "Break")
+	Global2.set_answers(19, "Restart")
+	Global2.set_feedback(16, "Incorrect. The default isn’t for handling errors—it’s for unmatched cases.")
+	Global2.set_feedback(17, "Correct! The default runs when no other case matches, kind of like an else.")
+	Global2.set_feedback(18, "Incorrect. break is used to exit cases, not default.")
+	Global2.set_feedback(19, "Incorrect.  The default doesn’t restart the switch.")
+	
 	Global.load_game_position = true
 	Global2.correct_answer_ch1_3 = true
 	Global2.correct_answer_ch2_3 = true
 	Global2.correct_answer_ch3_1 = true
+	Global2.correct_answer_ch4_2 = true
+	Global2.correct_answer_ch5_2 = true
 	Global2.dialogue_name = "bug2"
 	print("quiz on bug 2 is activated")
 	SceneTransition.change_scene("res://intro/question_panel_withbugs.tscn")
@@ -259,10 +286,33 @@ func _on_quiz_body_shape_entered(body_rid, body, body_shape_index, local_shape_i
 	Global2.set_feedback(11, "Correct. ++ it increament the counter value by 1")
 	Global2.set_picture_path(2,"res://intro/picture/question/chapter2/level question/Stage 2 - 6.png")
 	Global2.load_enemy_data("res://Battlescenes/tres/big_bug.tres")
+	
+	Global2.set_question(3, "What happens if there’s no break in a switch case?")
+	Global2.set_answers(12, "Skip")
+	Global2.set_answers(13, "Crash")
+	Global2.set_answers(14, "Fall through")
+	Global2.set_answers(15, "Exit")
+	Global2.set_feedback(12, "Incorrect. Without a break, it doesn’t skip the case, it runs the next one.")
+	Global2.set_feedback(13, "Incorrect. The program doesn’t crash, it continues running.")
+	Global2.set_feedback(14, "Correct. Without break, it falls through and executes the next case.")
+	Global2.set_feedback(15, "Incorrect! It doesn’t exit automatically; it needs break to stop running cases.")
+	
+	Global2.set_question(4, "When would you use if-else instead of switch?")
+	Global2.set_answers(16, "Simple variable")
+	Global2.set_answers(17, "Complex logic")
+	Global2.set_answers(18, "Many cases")
+	Global2.set_answers(19, "String values")
+	Global2.set_feedback(16, "Incorrect. switch works best for checking a single variable with set values.")
+	Global2.set_feedback(17, "Correct! if-else is more flexible for multiple conditions and complex logic.")
+	Global2.set_feedback(18, "Incorrect. switch is better when you have many cases to check.")
+	Global2.set_feedback(19, "Incorrect.  Both if-else and switch can handle strings, but complexity matters here.")
+	
 	Global.load_game_position = true
 	Global2.correct_answer_ch1_3 = true
 	Global2.correct_answer_ch2_4 = true
 	Global2.correct_answer_ch3_4 = true
+	Global2.correct_answer_ch4_3 = true
+	Global2.correct_answer_ch5_2 = true
 	Global2.dialogue_name = "bug1"
 	print("quiz on bug 2 is activated")
 	SceneTransition.change_scene("res://intro/question_panel_withbugs.tscn")
@@ -394,3 +444,10 @@ func _on_quiz_body_shape_entered_chapter3bug6(body_rid, body, body_shape_index, 
 	Global2.dialogue_name = "bug11"
 	print("quiz on bug 2 is activated")
 	SceneTransition.change_scene("res://intro/question_panel_withbugs.tscn")
+
+
+func lock_path_dialogue(body_rid, body, body_shape_index, local_shape_index):
+	hide_controller()
+	var new_dialog = Dialogic.start('pathdialogue')
+	add_child(new_dialog)
+	new_dialog.connect("timeline_end", self, "end_intructions")

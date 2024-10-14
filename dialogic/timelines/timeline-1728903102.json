@@ -1,0 +1,29 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1728115011.cfg"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Go and find the way to the objecthia. Make sure you and Analexius will get there. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "In reality, Analexius was too scared and doesn't have that power to fight bugs, errors, and glitches.HE Defeated them by pure luck. Debug the enemies while protecting Analexius."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1728903102.json",
+		"name": "starter3"
+	}
+}

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://World/houses/houseGandalf.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/world objects/forest1.tres" type="TileSet" id=2]
@@ -16,6 +16,9 @@
 [ext_resource path="res://NPC/Gandalf.tscn" type="PackedScene" id=14]
 [ext_resource path="res://NPC/analexius.tscn" type="PackedScene" id=15]
 [ext_resource path="res://World/magical chest.tscn" type="PackedScene" id=16]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 5.5, 16.5 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 5
@@ -149,6 +152,23 @@ position = Vector2( 1, -10 )
 [node name="BottomRight" parent="YSort/Camera2D/Limits" index="1"]
 position = Vector2( 353, 215 )
 
+[node name="objecthia_path" type="Area2D" parent="YSort"]
+position = Vector2( -308, 2 )
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/objecthia_path"]
+shape = SubResource( 2 )
+
+[node name="classoria_path" type="Area2D" parent="YSort"]
+position = Vector2( -145, 116 )
+rotation = 1.57079
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/classoria_path"]
+shape = SubResource( 2 )
+
 [node name="forest2Chap2_pos" type="Position2D" parent="."]
 position = Vector2( 169, 188 )
 
@@ -186,6 +206,14 @@ custom_fonts/font = SubResource( 1 )
 align = 1
 valign = 1
 
+[node name="objectiaRoad_pos" type="Position2D" parent="."]
+position = Vector2( 25, 95 )
+
+[node name="objectiaRoad" parent="." instance=ExtResource( 5 )]
+position = Vector2( 6, 95 )
+
+[connection signal="body_shape_entered" from="YSort/objecthia_path" to="." method="objecthia_lock_path_dialogue"]
+[connection signal="body_shape_entered" from="YSort/classoria_path" to="." method="classoria_path_lock_dialogue"]
 [connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
 
 [editable path="YSort/Camera2D"]

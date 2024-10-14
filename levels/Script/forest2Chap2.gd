@@ -146,9 +146,58 @@ func _on_quiz_body_shape_entered_slime2(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(2, "Incorrect. The switch statement must match a case or run the default.")
 	Global2.set_feedback(3, "Incorrect. Case glitch would run if the condition matched 'glitch,' not 'bug.")
 	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/switch/Switch.png")
+	
+	Global2.set_question(1, "What would be the output?")
+	Global2.set_answers(4, "Hot")
+	Global2.set_answers(5, "Warm")
+	Global2.set_answers(6, "Cold")
+	Global2.set_answers(7, "None of the above")
+	Global2.set_feedback(4, "Incorrect. temp >= 90 is false.")
+	Global2.set_feedback(5, "Correct. temp >= 70 is true.")
+	Global2.set_feedback(6, "Incorrect! else is not reached.")
+	Global2.set_feedback(7, "Incorrect. there is an answer to that question it was more then or eqaul to 70")
+	Global2.set_picture_path(1, "res://intro/picture/question/chapter2/if else/If Else Question - 1.png")
+	
+	Global2.set_question(2, "Choose right answer to put damage into the enemy bug. What would be the ouput?")
+	Global2.set_answers(8, "Adult")
+	Global2.set_answers(9, "Teen")
+	Global2.set_answers(10, "Child")
+	Global2.set_answers(11, "None of the above")
+	Global2.set_feedback(8, "Incorrect. age >= 18 is false.")
+	Global2.set_feedback(9, "Correct.  age >= 13 is true.")
+	Global2.set_feedback(10, "Incorrect! Wrong, else is not reached.")
+	Global2.set_feedback(11, "Incorrect. there is an answer to that question.")
+	Global2.set_picture_path(2, "res://intro/picture/question/chapter2/if else/If Else Question - 2.png")
+	
+	Global2.set_question(3, "What will this code print?")
+	Global2.set_answers(12, "Winner")
+	Global2.set_answers(13, "Almost")
+	Global2.set_answers(14, "Try Again")
+	Global2.set_answers(15, "None of the above")
+	Global2.set_feedback(12, "Incorrect. points >= 100 is false.")
+	Global2.set_feedback(13, "Correct. points >= 50 is true")
+	Global2.set_feedback(14, "Incorrect. else is not reached.")
+	Global2.set_feedback(15, "Incorrect. there is an answer to that question.")
+	Global2.set_picture_path(3, "res://intro/picture/question/chapter2/if else/If Else Question - 3.png")
+	
+	Global2.set_question(4, "What will this code print?")
+	Global2.set_answers(16, "Too Fast")
+	Global2.set_answers(17, "Safe")
+	Global2.set_answers(18, "Fast")
+	Global2.set_answers(19, "None of the above")
+	Global2.set_feedback(16, "Incorrect. speed >= 130 is false.")
+	Global2.set_feedback(17, "Incorrect! else is not reached.")
+	Global2.set_feedback(18, "Correct. speed >= 100 is true.")
+	Global2.set_feedback(19, "Incorrect. there is an answer to that question.")
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/if else/If Else Question - 4.png")
+	
 	Global.load_game_position = true
 	Global2.load_enemy_data("res://Battlescenes/tres/slime.tres")
 	Global2.correct_answer_ch1_1 = true
+	Global2.correct_answer_ch2_2 = true
+	Global2.correct_answer_ch3_2 = true
+	Global2.correct_answer_ch4_2 = true
+	Global2.correct_answer_ch5_3 = true
 	Global2.dialogue_name = "bug3"
 	print("quiz on bug 2 is activated")
 	
@@ -165,9 +214,58 @@ func _on_quiz_body_shape_entered_slime1(body_rid, body, body_shape_index, local_
 	Global2.set_feedback(2, "Incorrect. The switch statement must match a case or run the default.")
 	Global2.set_feedback(3, "Incorrect. Case glitch would run if the condition matched 'glitch,' not 'bug.")
 	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/switch/Switch.png")
+	
+	Global2.set_question(1, "What will this code print?")
+	Global2.set_answers(4, "Too Fast")
+	Global2.set_answers(5, "Fast")
+	Global2.set_answers(6, "Safe")
+	Global2.set_answers(7, "None of the above")
+	Global2.set_feedback(4, "Incorrect. speed >= 130 is false.")
+	Global2.set_feedback(5, "Correct. Correct! speed >= 100 is true.")
+	Global2.set_feedback(6, "Incorrect! else is not reached.")
+	Global2.set_feedback(7, "Incorrect. there is an answer to that question it was more then or eqaul to 70")
+	Global2.set_picture_path(1, "res://intro/picture/question/chapter2/if else/If Else Question - 5.png")
+	
+	Global2.set_question(2, "Choose right answer to put damage into the enemy bug. What would be the ouput?")
+	Global2.set_answers(8, "Exact")
+	Global2.set_answers(9, "Not Exact")
+	Global2.set_answers(10, "Child")
+	Global2.set_answers(11, "None of the above")
+	Global2.set_feedback(8, "Correct. apples == 10 is true.")
+	Global2.set_feedback(9, "incorrect.  age >= 13 is true.")
+	Global2.set_feedback(10, "Incorrect! It was out of the question already")
+	Global2.set_feedback(11, "Incorrect. there is an answer to that question.")
+	Global2.set_picture_path(2, "res://intro/picture/question/chapter2/if else/If Else Question - 6.png")
+	
+	Global2.set_question(3, "What will this code print?")
+	Global2.set_answers(12, "Equal")
+	Global2.set_answers(13, "Not Equal")
+	Global2.set_answers(14, "Child")
+	Global2.set_answers(15, "None of the above")
+	Global2.set_feedback(12, "Incorrect. oranges is not equal to 10.")
+	Global2.set_feedback(13, "Correct. oranges != 10 is true.")
+	Global2.set_feedback(14, "Incorrect. else is not reached.")
+	Global2.set_feedback(15, "Incorrect. there is an answer to that question.")
+	Global2.set_picture_path(3, "res://intro/picture/question/chapter2/if else/If Else Question - 7.png")
+	
+	Global2.set_question(4, "What will this code print?")
+	Global2.set_answers(16, "A")
+	Global2.set_answers(17, "Not A")
+	Global2.set_answers(18, "Child")
+	Global2.set_answers(19, "None of the above")
+	Global2.set_feedback(16, "Incorrect. score >= 90 is false.")
+	Global2.set_feedback(17, "Correct! score is less than 90.")
+	Global2.set_feedback(18, "Inorrect. Correct! speed >= 100 is true.")
+	Global2.set_feedback(19, "Incorrect. there is an answer to that question.")
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/if else/If Else Question - 4.png")
+	
 	Global.load_game_position = true
 	Global2.load_enemy_data("res://Battlescenes/tres/slime.tres")
 	Global2.correct_answer_ch1_2 = true
+	Global2.correct_answer_ch2_2 = true
+	Global2.correct_answer_ch3_1 = true
+	Global2.correct_answer_ch4_2 = true
+	Global2.correct_answer_ch5_2 = true
 	Global2.dialogue_name = "bug4"
 	print("quiz on bug 2 is activated")
 	

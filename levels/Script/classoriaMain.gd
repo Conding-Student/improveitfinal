@@ -153,7 +153,7 @@ func _on_Area2D_body_shape_enteredbug1(body_rid, body, body_shape_index, local_s
 	Global2.set_feedback(1, "Correct! A do-while loop runs the code block at least once.")
 	Global2.set_feedback(2, "Incorrect. A for loop also checks the condition before executing the code.")
 	Global2.set_feedback(3, "Incorrect. The do-while loop guarantees at least one execution.")
-	
+	Global2.set_picture_path(0, "res://intro/picture/question/chapter2/level2/stage5/Final Output1.png")
 	
 	Global2.set_question(1, "Which loop is best suited for iterating a specific number of times?")
 	Global2.set_answers(4, "While loop")
@@ -164,7 +164,7 @@ func _on_Area2D_body_shape_enteredbug1(body_rid, body, body_shape_index, local_s
 	Global2.set_feedback(5, "Incorrect. A do-while loop still depends on a condition and may not limit iterations.")
 	Global2.set_feedback(6, "Correct! The for loop is ideal for scenarios with a predefined number of iterations.")
 	Global2.set_feedback(7, "Incorrect. An infinite loop doesn't stop and isn't used for specific counts. Think about loops with clear starting and ending points.")
-	
+	Global2.set_picture_path(1, "res://intro/picture/question/chapter2/level2/stage5/Final Output2.png")
 	
 	Global2.set_question(2, "In which loop is the condition checked after the execution of the code block?")
 	Global2.set_answers(8, "While loop")
@@ -175,7 +175,7 @@ func _on_Area2D_body_shape_enteredbug1(body_rid, body, body_shape_index, local_s
 	Global2.set_feedback(9, "Incorrect. A for loop checks the condition before each iteration, not after.")
 	Global2.set_feedback(10, "Correct! This loop checks the condition after executing the code block.")
 	Global2.set_feedback(11, "Incorrect. The do-while loop is specifically designed for this purpose.")
-	
+	Global2.set_picture_path(2,"res://intro/picture/question/chapter2/level2/stage5/Final Output3.png" )
 	
 	Global2.set_question(3, "Which loop can run continuously if the condition is not properly defined?")
 	Global2.set_answers(12, "For loop")
@@ -186,7 +186,7 @@ func _on_Area2D_body_shape_enteredbug1(body_rid, body, body_shape_index, local_s
 	Global2.set_feedback(13, "Incorrect. A do-while loop can also run indefinitely based on its condition.")
 	Global2.set_feedback(14, "Incorrect. A while loop can run indefinitely if the condition is never false.")
 	Global2.set_feedback(15, "Correct! Any of these loops can run indefinitely with a mismanaged condition.")
-	
+	Global2.set_picture_path(3, "res://intro/picture/question/chapter2/level2/stage5/Final Output4.png")
 	
 	Global2.set_question(4, "What will happen if the condition of a while loop is never false?")
 	Global2.set_answers(16, "run once")
@@ -197,7 +197,7 @@ func _on_Area2D_body_shape_enteredbug1(body_rid, body, body_shape_index, local_s
 	Global2.set_feedback(17, "Correct! If the condition remains true, the loop will never stop.")
 	Global2.set_feedback(18, "Incorrect. It runs if the condition is true.")
 	Global2.set_feedback(19, "Incorrect. The correct answer is that it will run indefinitely.")
-	
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/level2/stage5/Final Output5.png")
 	
 	Global.load_game_position = true
 	Global2.load_enemy_data("res://Battlescenes/tres/bat2.tres")
