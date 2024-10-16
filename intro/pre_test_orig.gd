@@ -3,44 +3,44 @@ extends Control
 # Question data (with 30 questions, answers, correct answers, and optional images)
 var question_answers = {
 	"questions": [
-		"Question 1", "Question 2", "Question 3", "Question 4", "Question 5",
-		"Question 6", "Question 7", "Question 8", "Question 9", "Question 10",
-		"Question 11", "Question 12", "Question 13", "Question 14", "Question 15",
-		"Question 16", "Question 17", "Question 18", "Question 19", "Question 20",
-		"Question 21", "Question 22", "Question 23", "Question 24", "Question 25",
-		"Question 26", "Question 27", "Question 28", "Question 29", "Question 30"
+		"In a flowchart, what does a diamond shape usually represent?", "Complete the pseudocode by inputting a and b. The result must be 'a is larger'", "Pseudocode is written using _______ language rather than exact programming syntax.", "Which shape is typically used to represent the start and end of a flowchart?", "A tool that can be used to write a preliminary plan for the development of a computer program.",
+		"What would be the ouput?", "What will this code print?", "What will this code print?", "What will this code print?", "What would be the output?",
+		"What happens if there’s no break in a switch case?", "What operator should use to subtract 10 from the inventory?", "When would you use if-else instead of switch?", "What is the default case in a switch for?", "What happens if none of the conditions in an if-else statement are true and there's no else?",
+		"Which loop guarantees that the code inside will run at least once, even if the condition is false initially?", "What can be used to exit a loop early?", "Complete the for loop to print numbers from 1 to 5.", "What keyword skips the rest of the loop iteration and moves to the next one?", "Fix this while loop to stop when x is less than 5.",
+		"In which loop is the condition checked after the execution of the code block?", "Complete the right way to declare a variable.", "Complete the right way to declare a variable.", "How do you declare a class?", "What does the Main() do?",
+		"Which access modifier prohibits to gain access from outside the class?", "Which access modifier allows access from outside the class?", "How does a class perceive in C#?", "How do you call a method in a class?", "What does the get and set method control?"
 	],
 	"answers": [
-		["Answer 1a", "Answer 1b", "Answer 1c", "Answer 1d"],
-		["Answer 2a", "Answer 2b", "Answer 2c", "Answer 2d"],
-		["Answer 3a", "Answer 3b", "Answer 3c", "Answer 3d"],
-		["Answer 4a", "Answer 4b", "Answer 4c", "Answer 4d"],
-		["Answer 5a", "Answer 5b", "Answer 5c", "Answer 5d"],
-		["Answer 6a", "Answer 6b", "Answer 6c", "Answer 6d"],
-		["Answer 7a", "Answer 7b", "Answer 7c", "Answer 7d"],
-		["Answer 8a", "Answer 8b", "Answer 8c", "Answer 8d"],
-		["Answer 9a", "Answer 9b", "Answer 9c", "Answer 9d"],
-		["Answer 10a", "Answer 10b", "Answer 10c", "Answer 10d"],
-		["Answer 11a", "Answer 11b", "Answer 11c", "Answer 11d"],
-		["Answer 12a", "Answer 12b", "Answer 12c", "Answer 12d"],
-		["Answer 13a", "Answer 13b", "Answer 13c", "Answer 13d"],
-		["Answer 14a", "Answer 14b", "Answer 14c", "Answer 14d"],
-		["Answer 15a", "Answer 15b", "Answer 15c", "Answer 15d"],
-		["Answer 16a", "Answer 16b", "Answer 16c", "Answer 16d"],
-		["Answer 17a", "Answer 17b", "Answer 17c", "Answer 17d"],
-		["Answer 18a", "Answer 18b", "Answer 18c", "Answer 18d"],
-		["Answer 19a", "Answer 19b", "Answer 19c", "Answer 19d"],
-		["Answer 20a", "Answer 20b", "Answer 20c", "Answer 20d"],
-		["Answer 21a", "Answer 21b", "Answer 21c", "Answer 21d"],
-		["Answer 22a", "Answer 22b", "Answer 22c", "Answer 22d"],
-		["Answer 23a", "Answer 23b", "Answer 23c", "Answer 23d"],
-		["Answer 24a", "Answer 24b", "Answer 24c", "Answer 24d"],
-		["Answer 25a", "Answer 25b", "Answer 25c", "Answer 25d"],
-		["Answer 26a", "Answer 26b", "Answer 26c", "Answer 26d"],
-		["Answer 27a", "Answer 27b", "Answer 27c", "Answer 27d"],
-		["Answer 28a", "Answer 28b", "Answer 28c", "Answer 28d"],
-		["Answer 29a", "Answer 29b", "Answer 29c", "Answer 29d"],
-		["Answer 30a", "Answer 30b", "Answer 30c", "Answer 30d"]
+		["Decision", "Process", "Input / Output", "Connectors"],
+		["a < b", "a > b", "d > c", "d < c"],
+		["Spanish", "Tagalog", "English", "Japanese"],
+		["Rectangle", "Square", "Diamond", "Oval"],
+		["Pseudocode", "IDE", "Magnifier", "Machine"],
+		["Adult", "Teen", "Child", "None of the above"],
+		["Almost", "Winner", "Try Again", "None of the above"],
+		["Fast", "Too Fast", "Safe", "None of the above"],
+		["Not Equal", "Equal", "Child", "None of the above"],
+		["Hot", "Warm", "Cold", "None of the above"],
+		["Skip", "Crash", "Fall through", "Exit"],
+		["<", ">", "++", "--"],
+		["Simple variable", "Complex logic", "Many cases", "String values"],
+		["Handle error", "Final case", "Break", "Restart"],
+		["Crash", "Skip", "Run if", "Error"],
+		["While loop", "Do-while loop", "For loop", "None of the above"],
+		["return", "continue", "break", "skip"],
+		["i <= 5", "i < 5", "i >= 5", "i == 5"],
+		["break", "continue", "exit", "stop"],
+		["x > 5", "x < 5", "x == 5", "x <= 5"],
+		["None of the above", "While loop", "Do-while loop", "For loop"],
+		["String", "Float", "Int", "Double"],
+		["Int", "Double", "Char", "Float"],
+		["ClassName class {}", "obj.fields", "obj.methods", "class ClassName {}"],
+		["Execution start", "Instance", "Inheritance", "Method call"],
+		["Public", "Private", "Protected", "Static"],
+		["Private", "Protected", "Public", "Static"],
+		["Loop", "Method", "Variable", "Blueprint"],
+		["object.method()", "class()", "class..method", "Return"],
+		["Loops", "Fields", "Methods", "Classes"]
 	],
 	"correct_answer": [
 		[true, false, false, false],  # Correct answer for Q1
@@ -49,23 +49,23 @@ var question_answers = {
 		[false, false, false, true],  # Correct answer for Q4
 		[true, false, false, false],  # Correct answer for Q5
 		[false, true, false, false],  # Correct answer for Q6
-		[false, false, true, false],  # Correct answer for Q7
-		[false, false, false, true],  # Correct answer for Q8
+		[true, false, false, false],  # Correct answer for Q7
+		[true, false, false, false],  # Correct answer for Q8
 		[true, false, false, false],  # Correct answer for Q9
 		[false, true, false, false],  # Correct answer for Q10
 		[false, false, true, false],  # Correct answer for Q11
 		[false, false, false, true],  # Correct answer for Q12
-		[true, false, false, false],  # Correct answer for Q13
+		[false, true, false, false],  # Correct answer for Q13
 		[false, true, false, false],  # Correct answer for Q14
-		[false, false, true, false],  # Correct answer for Q15
-		[false, false, false, true],  # Correct answer for Q16
-		[true, false, false, false],  # Correct answer for Q17
-		[false, true, false, false],  # Correct answer for Q18
-		[false, false, true, false],  # Correct answer for Q19
-		[false, false, false, true],  # Correct answer for Q20
-		[true, false, false, false],  # Correct answer for Q21
+		[false, true, false, false],  # Correct answer for Q15
+		[false, true, false, false],  # Correct answer for Q16
+		[false, false, true, false],  # Correct answer for Q17
+		[true, false, false, false],  # Correct answer for Q18
+		[false, true, false, false],  # Correct answer for Q19
+		[false, true, false, false],  # Correct answer for Q20
+		[false, false, false, true],  # Correct answer for Q21
 		[false, true, false, false],  # Correct answer for Q22
-		[false, false, true, false],  # Correct answer for Q23
+		[false, false, false, true],  # Correct answer for Q23
 		[false, false, false, true],  # Correct answer for Q24
 		[true, false, false, false],  # Correct answer for Q25
 		[false, true, false, false],  # Correct answer for Q26
@@ -75,29 +75,29 @@ var question_answers = {
 		[false, true, false, false]   # Correct answer for Q30
 	],
 	"images": [
-		"res://intro/picture/question/question1.png",  # Image for Q1
-		null,  # No image for Q2
+		null,  # Image for Q1
+		"res://intro/picture/question/stage4_q1.png",  # No image for Q2
 		null,  # No image for Q3
-		null,  # No image for Q4
-		"res://Scenes/pictures/stage1/flowchart6.jpg",  # Image for Q5
-		null,  # No image for Q6
-		null,  # No image for Q7
-		null,  # No image for Q8
-		null,  # No image for Q9
-		null,  # No image for Q10
+		"res://intro/picture/question/Flowchart_shape_unit1.png",  # No image for Q4
+		null,  # Image for Q5
+		"res://intro/picture/question/chapter2/if else/If Else Question - 2.png",  # No image for Q6
+		"res://intro/picture/question/chapter2/if else/If Else Question - 3.png",  # No image for Q7
+		"res://intro/picture/question/chapter2/if else/If Else Question - 4.png",  # No image for Q8
+		"res://intro/picture/question/chapter2/if else/If Else Question - 7.png",  # No image for Q9
+		"res://intro/picture/question/chapter2/if else/If Else Question - 1.png",  # No image for Q10
 		null,  # No image for Q11
-		null,  # No image for Q12
+		"res://intro/picture/question/chapter2/level question/Stage 2 - 5.png",  # No image for Q12
 		null,  # No image for Q13
 		null,  # No image for Q14
 		null,  # No image for Q15
 		null,  # No image for Q16
 		null,  # No image for Q17
-		null,  # No image for Q18
+		"res://intro/picture/question/chapter2/level2/fill/New question - 1.png",  # No image for Q18
 		null,  # No image for Q19
 		null,  # No image for Q20
 		null,  # No image for Q21
-		null,  # No image for Q22
-		null,  # No image for Q23
+		"res://intro/picture/question/level3/stage4/Lvl 3 Stage 4 - 1.png",  # No image for Q22
+		"res://intro/picture/question/level3/stage4/Lvl 3 Stage 4 - 2.png",  # No image for Q23
 		null,  # No image for Q24
 		null,  # No image for Q25
 		null,  # No image for Q26

@@ -79,13 +79,13 @@ margin_bottom = 22.0
 alignment = 1
 
 [node name="Label" type="Label" parent="Panel4/Panel3/HBoxContainer"]
-margin_left = 117.0
+margin_left = 71.0
 margin_top = 5.0
-margin_right = 202.0
+margin_right = 248.0
 margin_bottom = 17.0
 custom_colors/font_color = Color( 0.956863, 0.901961, 0.0196078, 1 )
 custom_fonts/font = SubResource( 5 )
-text = "Chapter 3: OOP"
+text = "Chapter 3: classes & methods"
 align = 1
 
 [node name="Badges" type="VBoxContainer" parent="Panel4/Panel3"]
@@ -180,13 +180,13 @@ margin_bottom = 22.0
 alignment = 1
 
 [node name="Label" type="Label" parent="Panel4/Panel2/HBoxContainer"]
-margin_left = 103.0
+margin_left = 64.0
 margin_top = 5.0
-margin_right = 216.0
+margin_right = 255.0
 margin_bottom = 17.0
 custom_colors/font_color = Color( 0.956863, 0.901961, 0.0196078, 1 )
 custom_fonts/font = SubResource( 3 )
-text = "Chapter 2: Classes"
+text = "Chapter 2: Conditional & looping"
 align = 1
 
 [node name="Badges" type="VBoxContainer" parent="Panel4/Panel2"]
@@ -333,13 +333,13 @@ margin_bottom = 22.0
 alignment = 1
 
 [node name="Label" type="Label" parent="Panel4/Panel/HBoxContainer"]
-margin_left = 118.0
+margin_left = 87.0
 margin_top = 5.0
-margin_right = 202.0
+margin_right = 233.0
 margin_bottom = 17.0
 custom_colors/font_color = Color( 0.956863, 0.901961, 0.0196078, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Chapter 1: List"
+text = "Chapter 1: Fundamentals"
 align = 1
 
 [node name="Badges" type="VBoxContainer" parent="Panel4/Panel"]

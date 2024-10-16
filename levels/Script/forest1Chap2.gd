@@ -265,6 +265,7 @@ func _on_quiz_body_shape_entered(body_rid, body, body_shape_index, local_shape_i
 	Global2.set_feedback(3, "Incorrect. This is not a valid control statement in C#.")
 	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/level question/Stage 2 - 4.png")
 	Global2.load_enemy_data("res://Battlescenes/tres/big_bug.tres")
+	
 	Global2.set_question(1, "What operator should use to subtract 10 from the inventory?")
 	Global2.set_answers(4, "<")
 	Global2.set_answers(5, "> ")
@@ -275,6 +276,7 @@ func _on_quiz_body_shape_entered(body_rid, body, body_shape_index, local_shape_i
 	Global2.set_feedback(6, "Incorrect. ++ increments a value by 1, not subtracts.")
 	Global2.set_feedback(7, "Correct! -- subtracts 1, but if you want to subtract 10, use inventory -= 10;.")
 	Global2.set_picture_path(1,"res://intro/picture/question/chapter2/level question/Stage 2 - 5.png")
+	
 	Global2.set_question(2, "What operator should use to increment the counter")
 	Global2.set_answers(8, "<")
 	Global2.set_answers(9, "> ")
@@ -319,7 +321,7 @@ func _on_quiz_body_shape_entered(body_rid, body, body_shape_index, local_shape_i
 
 
 func _on_quiz_body_shape_entered_chapter3bug5(body_rid, body, body_shape_index, local_shape_index):
-	Global2.set_question(0, "What is a class in C#?")
+	Global2.set_question(0, "How does a class perceive in C#?")
 	Global2.set_answers(0, "Method")
 	Global2.set_answers(1, "Variable ")
 	Global2.set_answers(2, "Blueprint")
