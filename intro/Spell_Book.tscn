@@ -581,7 +581,7 @@ margin_bottom = 90.0
 position = Vector2( 135, 47 )
 frames = SubResource( 94 )
 animation = "New Anim"
-frame = 12
+frame = 14
 playing = true
 
 [node name="description-IG" type="Label" parent="Panel/in_game/list"]
@@ -590,19 +590,20 @@ margin_top = 103.0
 margin_right = 288.0
 margin_bottom = 150.0
 custom_fonts/font = SubResource( 4 )
-text = "ListKey: C sharp magic use for locking and encrypting physical objects or secrets. It has an auto-adjusting attribute for storing various password combinations. Skilled wizards use Listhold to unlock and manage multiple items and secrets."
+text = "A flowchart is a graphical representation of a program. It shows the logical sequence of instruction which a computer has to follow. Pseudocode is a tool that can be used to write a preliminary plan for the development of a 
+computer program"
 align = 1
 valign = 1
 autowrap = true
 clip_text = true
 
 [node name="name" type="Label" parent="Panel/in_game/list"]
-margin_left = 118.0
-margin_top = 96.0
-margin_right = 168.0
-margin_bottom = 105.0
+margin_left = 70.0
+margin_top = 95.0
+margin_right = 210.0
+margin_bottom = 104.0
 custom_fonts/font = SubResource( 21 )
-text = "ListKey"
+text = "Pseudocode & Flowcharting"
 
 [node name="Label" type="Label" parent="Panel/in_game/list"]
 margin_left = 106.0
@@ -650,7 +651,7 @@ texture_pressed = ExtResource( 4 )
 position = Vector2( 135, 52 )
 frames = SubResource( 93 )
 animation = "Class"
-frame = 24
+frame = 6
 playing = true
 
 [node name="TextureButton" type="TextureButton" parent="Panel/in_game/Class"]
@@ -718,7 +719,7 @@ size_flags_horizontal = 3
 position = Vector2( 135, 52 )
 frames = SubResource( 93 )
 animation = "New Anim"
-frame = 30
+frame = 2
 playing = true
 
 [node name="description-IG" type="Label" parent="Panel/in_game/OOP"]

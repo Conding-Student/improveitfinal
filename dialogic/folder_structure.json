@@ -44,14 +44,15 @@
 						"bugs": {
 							"files": [
 								"character-1728010649.json",
-								"character-1728717524.json"
+								"character-1728717524.json",
+								"character-1729272690.json"
 							],
 							"folders": {
 
 							},
 							"metadata": {
 								"color": null,
-								"folded": true
+								"folded": false
 							}
 						}
 					},
@@ -316,7 +317,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				},
 				"Valen": {
@@ -436,7 +437,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						},
 						"chapter3": {
@@ -450,6 +451,19 @@
 										"timeline-1728728549.json",
 										"timeline-1728781090.json",
 										"timeline-1728796533.json"
+									],
+									"folders": {
+
+									},
+									"metadata": {
+										"color": null,
+										"folded": true
+									}
+								},
+								"stage4_5": {
+									"files": [
+										"timeline-1729268030.json",
+										"timeline-1729272262.json"
 									],
 									"folders": {
 
@@ -479,7 +493,9 @@
 								"timeline-1728808204.json",
 								"timeline-1728814734.json",
 								"timeline-1728904458.json",
-								"timeline-1728905790.json"
+								"timeline-1728905790.json",
+								"timeline-1729265999.json",
+								"timeline-1729266555.json"
 							],
 							"folders": {
 
@@ -587,21 +603,22 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						},
 						"starter": {
 							"files": [
 								"timeline-1728348437.json",
 								"timeline-1728544648.json",
-								"timeline-1728903102.json"
+								"timeline-1728903102.json",
+								"timeline-1729268821.json"
 							],
 							"folders": {
 
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						}
 					},

@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://World/world objects/forest1.tres" type="TileSet" id=1]
 [ext_resource path="res://World/pictures/exterior/desert-ruins.png" type="Texture" id=2]
@@ -8,6 +8,14 @@
 [ext_resource path="res://Player/KinematicBody2D.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/houses/stall5.tscn" type="PackedScene" id=7]
 [ext_resource path="res://World/houses/stall1.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Enemies/Slime.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Camera2D.tscn" type="PackedScene" id=10]
+[ext_resource path="res://levels/Script/objectiaOutside.gd" type="Script" id=11]
+[ext_resource path="res://Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=12]
+[ext_resource path="res://intro/pause_menu.tscn" type="PackedScene" id=13]
+[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=14]
+[ext_resource path="res://intro/picture/pause.png" type="Texture" id=15]
+[ext_resource path="res://World/room/chapter2_entrance.tscn" type="PackedScene" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -275,8 +283,16 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 5/shapes = [  ]
 5/z_index = 0
 
+[sub_resource type="CapsuleShape2D" id=19]
+radius = 26.0002
+height = 108.0
+
+[sub_resource type="DynamicFont" id=18]
+size = 5
+font_data = ExtResource( 12 )
+
 [node name="objectiaOutside" type="Node2D"]
-position = Vector2( 219, 162 )
+script = ExtResource( 11 )
 
 [node name="floor1" type="TileMap" parent="."]
 position = Vector2( -220, -164 )
@@ -316,41 +332,131 @@ tile_data = PoolIntArray( -786450, 0, 0, -786449, 0, 1, -786448, 0, 2, -786447, 
 
 [node name="YSort" type="YSort" parent="."]
 
-[node name="KinematicBody2D" parent="YSort" instance=ExtResource( 6 )]
+[node name="player" parent="YSort" instance=ExtResource( 6 )]
+position = Vector2( -7, 128 )
 
-[node name="pillar1" parent="YSort" instance=ExtResource( 3 )]
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/player"]
+remote_path = NodePath("../../../Camera2D")
+
+[node name="objects" type="YSort" parent="YSort"]
+
+[node name="pillar1" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 61, 38 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="pillar3" parent="YSort" instance=ExtResource( 3 )]
+[node name="pillar3" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( -75, 38 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="pillar5" parent="YSort" instance=ExtResource( 3 )]
+[node name="pillar5" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( -99, 118 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="pillar6" parent="YSort" instance=ExtResource( 3 )]
+[node name="pillar6" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 85, 118 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="pillar4" parent="YSort" instance=ExtResource( 3 )]
+[node name="pillar4" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( -99, -42 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="pillar2" parent="YSort" instance=ExtResource( 3 )]
+[node name="pillar2" parent="YSort/objects" instance=ExtResource( 3 )]
 position = Vector2( 85, -42 )
 scale = Vector2( 0.7, 0.7 )
 
-[node name="house_long" parent="YSort" instance=ExtResource( 4 )]
+[node name="house_long" parent="YSort/objects" instance=ExtResource( 4 )]
 position = Vector2( -171, 54 )
 scale = Vector2( 0.9, 0.9 )
 
-[node name="Node2D" parent="YSort" instance=ExtResource( 5 )]
+[node name="Node2D" parent="YSort/objects" instance=ExtResource( 5 )]
 position = Vector2( -71, -214 )
 
-[node name="stall1" parent="YSort" instance=ExtResource( 8 )]
+[node name="stall1" parent="YSort/objects" instance=ExtResource( 8 )]
 position = Vector2( 179, -117 )
 
-[node name="stall5" parent="YSort" instance=ExtResource( 7 )]
+[node name="stall5" parent="YSort/objects" instance=ExtResource( 7 )]
 position = Vector2( 136, -39 )
+
+[node name="enemy" type="YSort" parent="YSort"]
+position = Vector2( 0, -2 )
+
+[node name="slime3" parent="YSort/enemy" instance=ExtResource( 9 )]
+position = Vector2( -56, -9 )
+slime_id = "slime3"
+
+[node name="Area2D" type="Area2D" parent="YSort/enemy/slime3"]
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/enemy/slime3/Area2D"]
+position = Vector2( 0, -10 )
+rotation = 1.57079
+shape = SubResource( 19 )
+
+[node name="Slime4" parent="YSort/enemy" instance=ExtResource( 9 )]
+position = Vector2( 47, -11 )
+slime_id = "slime4"
+
+[node name="Area2D" type="Area2D" parent="YSort/enemy/Slime4"]
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/enemy/Slime4/Area2D"]
+position = Vector2( 0, -10 )
+rotation = 1.57079
+shape = SubResource( 19 )
+
+[node name="Camera2D" parent="." instance=ExtResource( 10 )]
+position = Vector2( -7, 128 )
+
+[node name="TopLeft" parent="Camera2D/Limits" index="0"]
+position = Vector2( -222, -164 )
+
+[node name="BottomRight" parent="Camera2D/Limits" index="1"]
+position = Vector2( 205, 131 )
+
+[node name="TopUi" type="CanvasLayer" parent="."]
+
+[node name="pause_game" type="TextureButton" parent="TopUi"]
+margin_left = 292.0
+margin_top = 3.0
+margin_right = 312.0
+margin_bottom = 23.0
+texture_normal = ExtResource( 15 )
+
+[node name="HealthUI" parent="TopUi" instance=ExtResource( 14 )]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 63.0
+margin_bottom = 14.0
+
+[node name="quest" type="TextureButton" parent="TopUi"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="pause_menu" parent="TopUi" instance=ExtResource( 13 )]
+
+[node name="Label2" type="Label" parent="TopUi"]
+margin_left = 132.0
+margin_top = 8.0
+margin_right = 205.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 18 )
+align = 1
+valign = 1
+
+[node name="objectiaRoad_pos" type="Position2D" parent="."]
+position = Vector2( -3, 128 )
+
+[node name="objectiaHall_inside_pos" type="Position2D" parent="."]
+position = Vector2( -4, -35 )
+
+[node name="objectiaHall_inside" parent="." instance=ExtResource( 16 )]
+position = Vector2( -6, -64 )
+rotation = 1.58677
+
+[connection signal="body_shape_entered" from="YSort/enemy/slime3/Area2D" to="." method="slime3"]
+[connection signal="body_shape_entered" from="YSort/enemy/Slime4/Area2D" to="." method="slime4"]
+[connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
+
+[editable path="Camera2D"]

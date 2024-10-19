@@ -17,6 +17,9 @@ var from_level
 #came from sequence scene trigger
 var from_sequence = false
 
+#Hiding enemu bug container trigger
+var bug_hide = false
+
 # Settings
 var mute_trigger = false
 

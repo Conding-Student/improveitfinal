@@ -4,6 +4,7 @@ signal textbox_closed  # Signal emitted when the textbox is closed
 var stats = PlayerStats  # Reference to the player's stats
 export(Resource) var enemy = null
 
+onready var enemy_container = $enemy_container
 
 #accesing badges ,label value
 onready var badge = $badges
@@ -71,6 +72,11 @@ onready var enemy_hit = $hit
 onready var enemy_die = $enemy_die
 var current_enemy_health = 0
 
+func hiding_enemy_ui():
+	if Global.bug_hide == true:
+		enemy_container.hide()
+	else:
+		enemy_container.show()
 
 # Function to set the current health, max health, and texture
 func set_health(health, max_health, picture):
@@ -97,6 +103,7 @@ func deal_damage(damage_amount):
 # Called when the node is added to the scene
 func _ready():
 	GlobalCanvasModulate.reset_to_default()
+	hiding_enemy_ui()
 	badge_label.hide()
 	# Ensure that enemy data is loaded
 	if Global2.enemy_data != null:
@@ -257,7 +264,7 @@ func change_scene(change_scene_on, dialogue_name):
 		q_and_a_show()
 
 func end(timelineend):
-	pass
+	Global.bug_hide = false
 
 func value_activating(param):
 	print("value activing")
@@ -400,6 +407,32 @@ func value_activating(param):
 		else:
 			Global2.complete_badge("badge27")
 			Dialogic.set_variable("gandalf", 18)
+			#print("this one activitingslime 2 di bukas")
+			SceneTransition.change_scene("res://intro/evaluation.tscn")
+
+	if param == "slime4":
+		print("slime 4")
+		Global.set_bat_state("slime4", false) 
+		var bat_ids_to_check = ["slime4", "slime3"] #check if they are both existed
+		if Global.are_bat_states_false(bat_ids_to_check):
+			#print("All specified slime states are false.")
+			Global2.complete_badge("badge29")
+			#Dialogic.set_variable("gandalf", 18)
+			SceneTransition.change_scene("res://intro/stages_complete.tscn")
+		else:
+			#print("this one activitingslime 2 di bukas")
+			SceneTransition.change_scene("res://intro/evaluation.tscn")
+		
+	if param == "slime3":
+		print("slime 3")
+		Global.set_bat_state("slime3", false) 
+		var bat_ids_to_check = ["slime4", "slime3"] #check if they are both existed
+		if Global.are_bat_states_false(bat_ids_to_check):
+			#print("All specified slime states are false.")
+			Global2.complete_badge("badge29")
+			#Dialogic.set_variable("gandalf", 18)
+			SceneTransition.change_scene("res://intro/stages_complete.tscn")
+		else:
 			#print("this one activitingslime 2 di bukas")
 			SceneTransition.change_scene("res://intro/evaluation.tscn")
 	############################################

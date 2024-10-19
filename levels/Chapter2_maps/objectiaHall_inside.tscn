@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://World/world objects/mageGuild_Decor.tres" type="TileSet" id=1]
 [ext_resource path="res://World/pictures/interior/Wall_2_16x16.png" type="Texture" id=2]
@@ -6,6 +6,12 @@
 [ext_resource path="res://World/pictures/interior/floors.png" type="Texture" id=4]
 [ext_resource path="res://World/pictures/exterior/classical_temple_tiles.png" type="Texture" id=5]
 [ext_resource path="res://World/pictures/hybrid/Dungeon_WallsAndFloors.png" type="Texture" id=6]
+[ext_resource path="res://Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://intro/pause_menu.tscn" type="PackedScene" id=8]
+[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Player/KinematicBody2D.tscn" type="PackedScene" id=10]
+[ext_resource path="res://intro/picture/pause.png" type="Texture" id=11]
+[ext_resource path="res://levels/Script/objectiaHall_inside.gd" type="Script" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -582,7 +588,12 @@ points = PoolVector2Array( 11.0962, 0.410889, 16, 0, 16, 16, 11.2577, 16 )
 12/shapes = [  ]
 12/z_index = 0
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="DynamicFont" id=35]
+size = 5
+font_data = ExtResource( 7 )
+
+[node name="objectiaHall_inside" type="Node2D"]
+script = ExtResource( 12 )
 
 [node name="floor1" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -630,3 +641,42 @@ cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 show_collision = true
 format = 1
 tile_data = PoolIntArray( 131074, 49, 2, 131096, 49, 0, 131097, 49, 65537, 131098, 49, 65538, 196618, 11, 1, 196621, 11, 0, 196624, 11, 0, 196632, 49, 65536, 196633, 49, 65537, 196634, 49, 65538, 262154, 11, 65537, 262157, 11, 65537, 262160, 11, 65536, 262168, 49, 65536, 262169, 49, 65537, 262170, 49, 65538, 327691, 0, 131072, 327692, 0, 131073, 327693, 0, 131073, 327694, 0, 131073, 327695, 0, 131075, 327704, 49, 65536, 327705, 49, 65537, 327706, 49, 65538, 393227, 0, 196608, 393228, 0, 196609, 393229, 0, 196609, 393230, 0, 196609, 393231, 0, 196611, 393240, 49, 65536, 393241, 49, 65537, 393242, 49, 65538, 458776, 49, 131072, 458777, 49, 131073, 458778, 49, 131074, 720907, 48, 0, 720908, 48, 1, 720909, 48, 1, 720910, 48, 1, 720911, 48, 2, 786443, 48, 65536, 786444, 48, 65537, 786445, 48, 65537, 786446, 48, 65537, 786447, 48, 65538, 851979, 48, 65536, 851980, 48, 65537, 851981, 48, 65537, 851982, 48, 65537, 851983, 48, 65538, 917515, 48, 65536, 917516, 48, 65537, 917517, 48, 65537, 917518, 48, 65537, 917519, 48, 65538, 983051, 48, 65536, 983052, 48, 65537, 983053, 48, 65537, 983054, 48, 65537, 983055, 48, 65538, 1048587, 48, 65536, 1048588, 48, 65537, 1048589, 48, 65537, 1048590, 48, 65537, 1048591, 48, 65538, 1114123, 48, 131072, 1114124, 48, 131073, 1114125, 48, 131073, 1114126, 48, 131073, 1114127, 48, 131074 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="player" parent="YSort" instance=ExtResource( 10 )]
+
+[node name="TopUi" type="CanvasLayer" parent="."]
+
+[node name="pause_game" type="TextureButton" parent="TopUi"]
+margin_left = 292.0
+margin_top = 3.0
+margin_right = 312.0
+margin_bottom = 23.0
+texture_normal = ExtResource( 11 )
+
+[node name="HealthUI" parent="TopUi" instance=ExtResource( 9 )]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 63.0
+margin_bottom = 14.0
+
+[node name="quest" type="TextureButton" parent="TopUi"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="pause_menu" parent="TopUi" instance=ExtResource( 8 )]
+
+[node name="Label2" type="Label" parent="TopUi"]
+margin_left = 132.0
+margin_top = 8.0
+margin_right = 205.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 35 )
+align = 1
+valign = 1
+
+[node name="objectiaOutside" type="Position2D" parent="."]
+position = Vector2( 221, 279 )
+
+[connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
