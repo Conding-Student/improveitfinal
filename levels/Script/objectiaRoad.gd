@@ -105,56 +105,57 @@ func first_bug(body_rid, body, body_shape_index, local_shape_index):
 	Global2.set_feedback(3, "Incorrect. This would only work inside the class where GetStrength() is defined. Since you are calling it from outside the class, you need to use the object (warrior) to access the method.")
 	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/classess/one.png" )
 	
-	Global2.set_question(1, "Which loop is best suited for iterating a specific number of times?")
-	Global2.set_answers(4, "While loop")
-	Global2.set_answers(5, "Do-while loop")
-	Global2.set_answers(6, "For loop")
-	Global2.set_answers(7, "None of the above")
-	Global2.set_feedback(4, "Incorrect. A while loop is more flexible for unknown iterations. Consider the loop that is structured for a known count.")
-	Global2.set_feedback(5, "Incorrect. A do-while loop still depends on a condition and may not limit iterations.")
-	Global2.set_feedback(6, "Correct! The for loop is ideal for scenarios with a predefined number of iterations.")
-	Global2.set_feedback(7, "Incorrect. An infinite loop doesn't stop and isn't used for specific counts. Think about loops with clear starting and ending points.")
+	Global2.set_question(1, "What is the correct way to create an object of the Warrior class?")
+	Global2.set_answers(4, "A")
+	Global2.set_answers(5, "B")
+	Global2.set_answers(6, "C")
+	Global2.set_answers(7, "D")
+	Global2.set_feedback(4, "A is correct. To create an object of the class Warrior, you need to use the new keyword, which creates an instance of the class.")
+	Global2.set_feedback(5, "B only declares a reference but doesn't create the object.")
+	Global2.set_feedback(6, "C uses incorrect syntax for object creation.")
+	Global2.set_feedback(7, "D uses reversed syntax, which is incorrect.")
+	Global2.set_picture_path(1, "res://intro/picture/question/chapter2/classess/stage2-3/1.png")
 	
+	Global2.set_question(2, "How do you set the strength variable of the Warrior object to 50?")
+	Global2.set_answers(8, "A")
+	Global2.set_answers(9, "B")
+	Global2.set_answers(10, "C")
+	Global2.set_answers(11, "D")
+	Global2.set_feedback(8, "A lacks the object reference.")
+	Global2.set_feedback(9, "B is correct. You access a public variable using objectName.variableName.")
+	Global2.set_feedback(10, "C uses pointer syntax, which isn't valid in C#.")
+	Global2.set_feedback(11, "D incorrectly uses set, which isn’t required for direct variable access.")
+	Global2.set_picture_path(2, "res://intro/picture/question/chapter2/classess/stage2-3/Tanong - 2.png")
 	
-	Global2.set_question(2, "In which loop is the condition checked after the execution of the code block?")
-	Global2.set_answers(8, "While loop")
-	Global2.set_answers(9, "Do-while loop")
-	Global2.set_answers(10, "For loop")
-	Global2.set_answers(11, "None of the above")
-	Global2.set_feedback(8, "Incorrect. The condition is checked before running the code block. Think about which loop allows for post-condition checks.")
-	Global2.set_feedback(9, "Incorrect. A for loop checks the condition before each iteration, not after.")
-	Global2.set_feedback(10, "Correct! This loop checks the condition after executing the code block.")
-	Global2.set_feedback(11, "Incorrect. The do-while loop is specifically designed for this purpose.")
+	Global2.set_question(3, "Which of the following correctly defines a method that returns an integer?")
+	Global2.set_answers(12, "A")
+	Global2.set_answers(13, "B")
+	Global2.set_answers(14, "C")
+	Global2.set_answers(15, "D")
+	Global2.set_feedback(12, "A and D are incorrect because the return value type does not match the return type in the method signature.")
+	Global2.set_feedback(13, "B is correct. The method returns an integer, matching the return type int.")
+	Global2.set_feedback(14, "C is incorrect because void indicates the method returns nothing, but it’s trying to return an integer.")
+	Global2.set_feedback(15, "A and D are incorrect because the return value type does not match the return type in the method signature.")
+	Global2.set_picture_path(3, "res://intro/picture/question/chapter2/classess/stage2-3/Tanong - 3.png")
 	
-	
-	Global2.set_question(3, "Which loop can run continuously if the condition is not properly defined?")
-	Global2.set_answers(12, "For loop")
-	Global2.set_answers(13, "Do-while loop")
-	Global2.set_answers(14, "While loop")
-	Global2.set_answers(15, "All of the above")
-	Global2.set_feedback(12, "Incorrect. A for loop can run indefinitely if the condition is always true. Consider all loop types.")
-	Global2.set_feedback(13, "Incorrect. A do-while loop can also run indefinitely based on its condition.")
-	Global2.set_feedback(14, "Incorrect. A while loop can run indefinitely if the condition is never false.")
-	Global2.set_feedback(15, "Correct! Any of these loops can run indefinitely with a mismanaged condition.")
-	
-	
-	Global2.set_question(4, "What will happen if the condition of a while loop is never false?")
-	Global2.set_answers(16, "run once")
-	Global2.set_answers(17, "run contonuously")
-	Global2.set_answers(18, "not run")
-	Global2.set_answers(19, "None")
-	Global2.set_feedback(16, "Incorrect. It will keep running as long as the condition is true.")
-	Global2.set_feedback(17, "Correct! If the condition remains true, the loop will never stop.")
-	Global2.set_feedback(18, "Incorrect. It runs if the condition is true.")
-	Global2.set_feedback(19, "Incorrect. The correct answer is that it will run indefinitely.")
+	Global2.set_question(4, "Why does the following code give an error?")
+	Global2.set_answers(16, "A")
+	Global2.set_answers(17, "B")
+	Global2.set_answers(18, "C")
+	Global2.set_answers(19, "D")
+	Global2.set_feedback(16, "A is incorrect because strength is not static.")
+	Global2.set_feedback(17, "B is correct. The variable strength is private and cannot be accessed outside the class directly.")
+	Global2.set_feedback(18, "C is incorrect because the error is due to access restrictions, not initialization.")
+	Global2.set_feedback(19, "D is incorrect because strength is clearly defined as a variable.")
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/classess/stage2-3/Tanong - 4.png")
 	
 	Global.bug_hide = true
 	Global.load_game_position = true
 	Global2.load_enemy_data("res://Battlescenes/tres/bat2.tres")
 	Global2.correct_answer_ch1_1 = true
-	Global2.correct_answer_ch2_3 = true
-	Global2.correct_answer_ch3_3 = true
-	Global2.correct_answer_ch4_4 = true
+	Global2.correct_answer_ch2_1 = true
+	Global2.correct_answer_ch3_2 = true
+	Global2.correct_answer_ch4_2 = true
 	Global2.correct_answer_ch5_2 = true
 	Global2.dialogue_name = "bug12"
 	print("quiz on bug 2 is activated")
@@ -163,66 +164,66 @@ func first_bug(body_rid, body, body_shape_index, local_shape_index):
 
 
 func second_bug(body_rid, body, body_shape_index, local_shape_index):
-	Global2.set_question(0, "Which loop guarantees that the code inside will run at least once, even if the condition is false initially?")
-	Global2.set_answers(0, "While loop")
-	Global2.set_answers(1, "Do-while loop")
-	Global2.set_answers(2, "For loop")
-	Global2.set_answers(3, "None of the above")
-	Global2.set_feedback(0, "Incorrect. A while loop checks the condition before running the code.")
-	Global2.set_feedback(1, "Correct! A do-while loop runs the code block at least once.")
-	Global2.set_feedback(2, "Incorrect. A for loop also checks the condition before executing the code.")
-	Global2.set_feedback(3, "Incorrect. The do-while loop guarantees at least one execution.")
+	Global2.set_question(0, "Why can’t you call the Defend() method directly from outside the Warrior class?")
+	Global2.set_answers(0, "A")
+	Global2.set_answers(1, "B")
+	Global2.set_answers(2, "C")
+	Global2.set_answers(3, "D")
+	Global2.set_feedback(0, "A is incorrect because strength is not static.")
+	Global2.set_feedback(1, "B is correct. The variable strength is private and cannot be accessed outside the class directly.")
+	Global2.set_feedback(2, "C is incorrect because the error is due to access restrictions, not initialization.")
+	Global2.set_feedback(3, "D is incorrect because strength is clearly defined as a variable.")
+	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/classess/stage2-3/Tanong - 5.png")
+	
+	Global2.set_question(1, "How does a class perceive in C#?")
+	Global2.set_answers(4, "Method")
+	Global2.set_answers(5, "Variable ")
+	Global2.set_answers(6, "Blueprint")
+	Global2.set_answers(7, "Loop")
+	Global2.set_feedback(4, "Incorrect. A method defines the functionality of a class, not a class blueprint")
+	Global2.set_feedback(5, "Incorrect.  A variable holds data, but a class structures objects")
+	Global2.set_feedback(6, "Correct! class is a blueprint of an object.")
+	Global2.set_feedback(7, "Incorrect. A loop controls repetition, not object creation")
 	
 	
-	Global2.set_question(1, "Which loop is best suited for iterating a specific number of times?")
-	Global2.set_answers(4, "While loop")
-	Global2.set_answers(5, "Do-while loop")
-	Global2.set_answers(6, "For loop")
-	Global2.set_answers(7, "None of the above")
-	Global2.set_feedback(4, "Incorrect. A while loop is more flexible for unknown iterations. Consider the loop that is structured for a known count.")
-	Global2.set_feedback(5, "Incorrect. A do-while loop still depends on a condition and may not limit iterations.")
-	Global2.set_feedback(6, "Correct! The for loop is ideal for scenarios with a predefined number of iterations.")
-	Global2.set_feedback(7, "Incorrect. An infinite loop doesn't stop and isn't used for specific counts. Think about loops with clear starting and ending points.")
+	Global2.set_question(2, "Which access modifier prohibits to gain access from outside the class?")
+	Global2.set_answers(8, "Private")
+	Global2.set_answers(9, "Public")
+	Global2.set_answers(10, "Protected")
+	Global2.set_answers(11, "Static")
+	Global2.set_feedback(8, "Correct! It makes sure that the fields or variable can't be access directly outside of the class")
+	Global2.set_feedback(9, "Incorrect. It fact, this was the contrast of the right asnwer because it publicize the fields or variables to be accessible anytime.")
+	Global2.set_feedback(10, "Incorrect. It also prohibit but the fields or values can be access when there is a Child class")
+	Global2.set_feedback(11, "Incorrect. Static refers to class-level access, not public visibility.")
 	
 	
-	Global2.set_question(2, "In which loop is the condition checked after the execution of the code block?")
-	Global2.set_answers(8, "While loop")
-	Global2.set_answers(9, "Do-while loop")
-	Global2.set_answers(10, "For loop")
-	Global2.set_answers(11, "None of the above")
-	Global2.set_feedback(8, "Incorrect. The condition is checked before running the code block. Think about which loop allows for post-condition checks.")
-	Global2.set_feedback(9, "Incorrect. A for loop checks the condition before each iteration, not after.")
-	Global2.set_feedback(10, "Correct! This loop checks the condition after executing the code block.")
-	Global2.set_feedback(11, "Incorrect. The do-while loop is specifically designed for this purpose.")
+	Global2.set_question(3, "What does the Main() do?")
+	Global2.set_answers(12, "Instance")
+	Global2.set_answers(13, "Inheritance")
+	Global2.set_answers(14, "Method call")
+	Global2.set_answers(15, "Execution start")
+	Global2.set_feedback(12, "Incorrect! Instances aren’t created until after Main() starts.")
+	Global2.set_feedback(13, "Incorrect. Main() is not related to inheritance, but to program execution.")
+	Global2.set_feedback(14, "Incorrect. Main() is not called by other methods but is the entry point.")
+	Global2.set_feedback(15, "Correct. It’s where the program starts")
 	
 	
-	Global2.set_question(3, "Which loop can run continuously if the condition is not properly defined?")
-	Global2.set_answers(12, "For loop")
-	Global2.set_answers(13, "Do-while loop")
-	Global2.set_answers(14, "While loop")
-	Global2.set_answers(15, "All of the above")
-	Global2.set_feedback(12, "Incorrect. A for loop can run indefinitely if the condition is always true. Consider all loop types.")
-	Global2.set_feedback(13, "Incorrect. A do-while loop can also run indefinitely based on its condition.")
-	Global2.set_feedback(14, "Incorrect. A while loop can run indefinitely if the condition is never false.")
-	Global2.set_feedback(15, "Correct! Any of these loops can run indefinitely with a mismanaged condition.")
+	Global2.set_question(4, "Which access modifier allows access from outside the class?")
+	Global2.set_answers(16, "Private")
+	Global2.set_answers(17, "Public")
+	Global2.set_answers(18, "Protected")
+	Global2.set_answers(19, "Static")
+	Global2.set_feedback(16, "Incorrect! Private modifier are prohibits values to be accessible outside the class")
+	Global2.set_feedback(17, "Correct. Using public modifiers allows the values of the class to be accessible outside of it.")
+	Global2.set_feedback(18, "Incorrect. Protected restricts access to the class and its inheritors.")
+	Global2.set_feedback(19, "Incorrect. Static refers to class-level access, not public visibility")
 	
-	
-	Global2.set_question(4, "What will happen if the condition of a while loop is never false?")
-	Global2.set_answers(16, "run once")
-	Global2.set_answers(17, "run contonuously")
-	Global2.set_answers(18, "not run")
-	Global2.set_answers(19, "None")
-	Global2.set_feedback(16, "Incorrect. It will keep running as long as the condition is true.")
-	Global2.set_feedback(17, "Correct! If the condition remains true, the loop will never stop.")
-	Global2.set_feedback(18, "Incorrect. It runs if the condition is true.")
-	Global2.set_feedback(19, "Incorrect. The correct answer is that it will run indefinitely.")
-	
-	
+	Global.bug_hide = true
 	Global.load_game_position = true
 	Global2.load_enemy_data("res://Battlescenes/tres/bat2.tres")
 	Global2.correct_answer_ch1_2 = true
 	Global2.correct_answer_ch2_3 = true
-	Global2.correct_answer_ch3_3 = true
+	Global2.correct_answer_ch3_1 = true
 	Global2.correct_answer_ch4_4 = true
 	Global2.correct_answer_ch5_2 = true
 	Global2.dialogue_name = "bug13"

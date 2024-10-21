@@ -286,7 +286,7 @@ position = Vector2( -9.53674e-07, -155 )
 rotation = 1.58677
 
 [node name="path_arrow" parent="." instance=ExtResource( 21 )]
-tile_data = PoolIntArray( -10485763, 0, 0, 2752550, 0, 0 )
+tile_data = PoolIntArray( -10485763, 0, 0 )
 
 [connection signal="body_shape_entered" from="YSort/enemies/plant_bug/Area2D" to="." method="first_bug"]
 [connection signal="body_shape_entered" from="YSort/enemies/plant_bug2/Area2D" to="." method="second_bug"]

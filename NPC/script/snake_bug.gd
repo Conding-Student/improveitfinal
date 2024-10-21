@@ -6,7 +6,7 @@ export var ACCELERATION = 300
 export var MAX_SPEED = 50
 export var FRICTION = 200
 export var WANDER_TARGET_RANGE = 4
-
+export var slime_id: String = ""  # Unique ID for each bat
 onready var attack_Range = $attack_range
 onready var playerDetectionZone = $PlayerDetectionZone
 onready var sprite = $sprite
@@ -31,9 +31,11 @@ var knockback = Vector2.ZERO
 
 func _ready():
 	# Check the state from the Global singleton
-	if not Global.get_bat_state(bat_id):
+	if not Global.get_bat_state(slime_id):
+		#print("Bat is dead on load, removing from scene: ID =", bat_id)  # Debugging print
 		queue_free()  # If dead, remove from the scene
 	else:
+		#print("Bat is alive on load, initializing state: ID =", bat_id)  # Debugging print
 		state = pick_random_state([IDLE, WANDER])  # Initialize state if alive
 
 func _physics_process(delta):
@@ -132,7 +134,7 @@ func is_in_attack_range(player) -> bool:
 	return false
 
 func _on_Stats_no_health():
-	Global.set_bat_state(bat_id, false)
+	Global.set_bat_state(slime_id, false) 
 	queue_free()
 	var enemyDeathEffect = deatheffect.instance()
 	get_parent().add_child(enemyDeathEffect)

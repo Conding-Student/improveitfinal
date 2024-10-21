@@ -1,5 +1,6 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=39 format=2]
 
+[ext_resource path="res://UI/heart_spawn.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/script/orphanage_outside_night.gd" type="Script" id=2]
 [ext_resource path="res://intro/picture/pause.png" type="Texture" id=3]
 [ext_resource path="res://World/pictures/Solaria Demo Update 01.png" type="Texture" id=4]
@@ -13,6 +14,7 @@
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=12]
 [ext_resource path="res://World/room/night_room_entrance.tscn" type="PackedScene" id=13]
 [ext_resource path="res://World/room/night_level_entrance.tscn" type="PackedScene" id=14]
+[ext_resource path="res://World/magical chest.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=16]
 [ext_resource path="res://intro/path_arrow.tres" type="Texture" id=17]
 
@@ -706,6 +708,27 @@ tile_set = SubResource( 38 )
 cell_size = Vector2( 1, 1 )
 format = 1
 tile_data = PoolIntArray( 2949243, 1, 0, 7078199, 1, 0, 13041812, 0, 0, 13172886, 0, 0 )
+
+[node name="loot" type="YSort" parent="YSort"]
+
+[node name="magical_chest" parent="YSort/loot" instance=ExtResource( 15 )]
+position = Vector2( 194, 61 )
+
+[node name="puso35" parent="YSort/loot" instance=ExtResource( 1 )]
+position = Vector2( 61, 48 )
+heart_id = "puso29"
+
+[node name="puso36" parent="YSort/loot" instance=ExtResource( 1 )]
+position = Vector2( 73, 139 )
+heart_id = "puso30"
+
+[node name="puso37" parent="YSort/loot" instance=ExtResource( 1 )]
+position = Vector2( 173, 146 )
+heart_id = "puso30"
+
+[node name="puso38" parent="YSort/loot" instance=ExtResource( 1 )]
+position = Vector2( 282, 150 )
+heart_id = "puso30"
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0.160784, 0.145098, 0.145098, 1 )

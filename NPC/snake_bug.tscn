@@ -78,7 +78,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=17]
 resource_name = "attack"
-length = 1.1
+length = 0.8
 loop = true
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
@@ -87,7 +87,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.410999, 0.506387 ),
+"times": PoolRealArray( 0.2, 0.3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
 "args": [  ],
@@ -104,10 +104,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.1, 0.194857, 0.301321, 0.406387, 0.498847, 0.6, 0.7, 0.793832, 0.892679, 0.979685, 1.06239 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.979685, 1.06239 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 15, 15, 15, 15, 16, 17, 18, 18, 19, 19, 20, 20 ]
+"values": [ 15, 15, 16, 17, 18, 18, 19, 20, 20 ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -210,6 +210,7 @@ position = Vector2( 1, -7 )
 shape = SubResource( 12 )
 
 [node name="Hitbox" parent="." instance=ExtResource( 8 )]
+visible = false
 position = Vector2( 34.7594, -13.6676 )
 rotation = -2.21831
 collision_mask = 4
@@ -221,7 +222,7 @@ shape = SubResource( 13 )
 disabled = true
 
 [node name="Stats" parent="." instance=ExtResource( 10 )]
-max_health = 2
+max_health = 1
 
 [node name="attack_range" parent="." instance=ExtResource( 7 )]
 visible = false

@@ -10,12 +10,15 @@ onready var ui = $CanvasLayer
 onready var badges = $CanvasLayer/badges/Panel4
 onready var spell_book = $CanvasLayer/Spell_Book/Panel
 onready var save_files = $save_files/Panel
+onready var scores = $MarginContainer/HBoxContainer/VBoxContainer/Scores
 
+onready var score_panel = $scores
 onready var loaded_files = $save_files/saving_file
 
 func _ready():
 	quit.hide()
 	settings.hide()
+	score_show()
 	start_button.connect("pressed", self, "_on_start_pressed")
 	exit_button.connect("pressed", self, "_on_exit_pressed")
 	continue_button.connect("pressed", self, "_on_continue_pressed")
@@ -26,7 +29,13 @@ func _ready():
 		continue_button.disabled = true
 		
 		
-	
+func score_show():
+	if Global2.is_badge_complete("badge30"):
+		scores.show()
+		start_button.hide()
+		#continue_button.hide()
+	else:
+		scores.hide()
 
 func _on_continue_pressed() ->void:
 	save_files.show()
@@ -53,3 +62,7 @@ func _on_Badges_pressed():
 func _on_book_pressed():
 	ui.visible = true
 	spell_book.show()
+
+
+func _on_Scores_pressed():
+	score_panel.show()

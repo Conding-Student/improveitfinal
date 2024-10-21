@@ -425,27 +425,27 @@ func _on_final_boss_body_shape_entered(body_rid, body, body_shape_index, local_s
 	Global2.set_question(0, "Begin your attack into the enemy. Start on ZERO value")
 	Global2.set_answers(0, "int i = 0")
 	Global2.set_feedback(0, "The answer should be 'int i = 0'")
-	#Global2.set_picture_path()
+	Global2.set_picture_path(0, "res://intro/picture/question/chapter2/level2/stage5/Final Output1.png")
 	
 	Global2.set_question(1, "Attack him 3 times, make sure that i is < three")
 	Global2.set_answers(1, "i < 3")
 	Global2.set_feedback(1, "The answer should be 'i < 3'")
-	#Global2.set_picture_path()
+	Global2.set_picture_path(1,"res://intro/picture/question/chapter2/level2/stage5/Final Output2.png" )
 	
 	Global2.set_question(2, "Increment the i value by 1")
 	Global2.set_answers(2, "i++")
 	Global2.set_feedback(2, "The answer should be 'i++'")
-	#Global2.set_picture_path()
+	Global2.set_picture_path(2,"res://intro/picture/question/chapter2/level2/stage5/Final Output3.png" )
 	
 	Global2.set_question(3, "Put braces into it indicating its inside process")
 	Global2.set_answers(3, "{}")
 	Global2.set_feedback(3, "The answer should be '{}'")
-	#Global2.set_picture_path()
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/level2/stage5/Final Output4.png")
 	
 	Global2.set_question(4, "Put the value of i in console.writeline to dispay the output and attack the enemy")
 	Global2.set_answers(4, "i")
 	Global2.set_feedback(4, "The answer should be 'i'")
-	#Global2.set_picture_path()
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/level2/stage5/Final Output5.png")
 	
 	Global2.dialogue_name = "bug9"
 	var new_dialog = Dialogic.start('commanderbug')

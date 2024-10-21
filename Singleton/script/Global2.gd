@@ -82,12 +82,38 @@ func are_all_badges_complete() -> bool:
 ######################## stage compelte trigger #################
 
 ################## PRE-POST TEST ###################
-var pre_final_score = 0 # still not save in local file
-var post_final_score = 0 #still not save in local file
+# Singleton (Global Script)
+var pre_final_score = 0
+var post_final_score = 0
+var MPI = 0
+var NRI = 0
 
-var MPI = 30 - pre_final_score
-var NRI =  ((post_final_score - pre_final_score) / MPI) * 100 # Need to be display
+# Function to calculate and display NRI
+func calculate_and_display_nri():
+	# Recalculate MPI based on the current pre_final_score
+	MPI = 30 - pre_final_score
 
+	# Debugging output to verify variable values
+	print("pre_final_score: ", pre_final_score)
+	print("post_final_score: ", post_final_score)
+	print("MPI: ", MPI)
+
+	# Ensure MPI is not zero to avoid division by zero
+	if MPI != 0:
+		# Recalculate NRI with explicit float conversion
+		NRI = float(post_final_score - pre_final_score) / float(MPI) * 100
+		
+		return NRI
+		# Display the NRI value
+		print("NRI: ", NRI)
+	else:
+		return "perfect score in pre-test"
+		print("perfect score in pre-test")
+
+# This function is called when the node is added to the scene
+func _ready():
+	# Call the function after setting scores
+	calculate_and_display_nri()
 ################## PRE-POST TEST ###################
 
 ################### enemy tres path ################

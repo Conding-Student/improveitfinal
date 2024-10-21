@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=58 format=2]
 
 [ext_resource path="res://World/world objects/mageGuild_Decor.tres" type="TileSet" id=1]
 [ext_resource path="res://World/pictures/interior/Wall_2_16x16.png" type="Texture" id=2]
@@ -12,6 +12,15 @@
 [ext_resource path="res://Player/KinematicBody2D.tscn" type="PackedScene" id=10]
 [ext_resource path="res://intro/picture/pause.png" type="Texture" id=11]
 [ext_resource path="res://levels/Script/objectiaHall_inside.gd" type="Script" id=12]
+[ext_resource path="res://Camera2D.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Enemies/blue_monster.tscn" type="PackedScene" id=14]
+[ext_resource path="res://NPC/snake_bug.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Enemies/small_demon.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Enemies/picture/ratKing.png" type="Texture" id=17]
+[ext_resource path="res://Enemies/monster_stone.tscn" type="PackedScene" id=18]
+[ext_resource path="res://World/magical chest.tscn" type="PackedScene" id=19]
+[ext_resource path="res://UI/heart_spawn.tscn" type="PackedScene" id=20]
+[ext_resource path="res://NPC/bug_king.tscn" type="PackedScene" id=21]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -588,12 +597,18 @@ points = PoolVector2Array( 11.0962, 0.410889, 16, 0, 16, 16, 11.2577, 16 )
 12/shapes = [  ]
 12/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 34.6667, 20.5172 )
+
 [sub_resource type="DynamicFont" id=35]
 size = 5
 font_data = ExtResource( 7 )
 
 [node name="objectiaHall_inside" type="Node2D"]
 script = ExtResource( 12 )
+
+[node name="objectiaOutside_pos" type="Position2D" parent="."]
+position = Vector2( 221, 265 )
 
 [node name="floor1" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -645,6 +660,214 @@ tile_data = PoolIntArray( 131074, 49, 2, 131096, 49, 0, 131097, 49, 65537, 13109
 [node name="YSort" type="YSort" parent="."]
 
 [node name="player" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 218, 263 )
+z_index = 1
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/player"]
+remote_path = NodePath("../../../Camera2D")
+
+[node name="enemy" type="YSort" parent="YSort"]
+
+[node name="blue1" parent="YSort/enemy" instance=ExtResource( 14 )]
+position = Vector2( 22, 54 )
+z_index = 1
+slime_id = "blue1"
+
+[node name="blue2" parent="YSort/enemy" instance=ExtResource( 14 )]
+position = Vector2( 415, 32 )
+z_index = 1
+slime_id = "blue2"
+
+[node name="blue3" parent="YSort/enemy" instance=ExtResource( 14 )]
+position = Vector2( 339, 20 )
+z_index = 1
+slime_id = "blue3"
+
+[node name="blue4" parent="YSort/enemy" instance=ExtResource( 14 )]
+position = Vector2( 49, 21 )
+z_index = 1
+slime_id = "blue4"
+
+[node name="snake1" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 270, 242 )
+z_index = 1
+slime_id = "snake1"
+
+[node name="snake2" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 44, 260 )
+z_index = 1
+slime_id = "snake2"
+
+[node name="snake3" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 51, 201 )
+z_index = 1
+slime_id = "snake3"
+
+[node name="snake4" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 305, 194 )
+z_index = 1
+slime_id = "snake4"
+
+[node name="snake5" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 88, 224 )
+z_index = 1
+slime_id = "snake5"
+
+[node name="snake6" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 19, 219 )
+z_index = 1
+slime_id = "snake6"
+
+[node name="snake7" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 159, 247 )
+z_index = 1
+slime_id = "snake7"
+
+[node name="snake8" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 325, 160 )
+z_index = 1
+slime_id = "snake8"
+
+[node name="snake9" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 357, 266 )
+z_index = 1
+slime_id = "snake9"
+
+[node name="snake10" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 217, 201 )
+z_index = 1
+slime_id = "snake10"
+
+[node name="snake11" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 120, 192 )
+z_index = 1
+slime_id = "snake1"
+
+[node name="snake12" parent="YSort/enemy" instance=ExtResource( 15 )]
+position = Vector2( 352, 201 )
+z_index = 1
+slime_id = "snake12"
+
+[node name="stone8" parent="YSort/enemy" instance=ExtResource( 18 )]
+position = Vector2( 200, 155 )
+z_index = 1
+slime_id = "stone8"
+
+[node name="stone9" parent="YSort/enemy" instance=ExtResource( 18 )]
+position = Vector2( 232, 158 )
+z_index = 1
+slime_id = "stone9"
+
+[node name="demon13" parent="YSort/enemy" instance=ExtResource( 16 )]
+position = Vector2( 18, 102 )
+z_index = 1
+slime_id = "demon13"
+
+[node name="demon14" parent="YSort/enemy" instance=ExtResource( 16 )]
+position = Vector2( 418, 105 )
+z_index = 1
+slime_id = "demon14"
+
+[node name="rat_king" type="Sprite" parent="YSort/enemy"]
+position = Vector2( 216, 104 )
+scale = Vector2( 1.5, 1.45 )
+z_index = 1
+texture = ExtResource( 17 )
+hframes = 3
+vframes = 4
+
+[node name="Area2D" type="Area2D" parent="YSort/enemy/rat_king"]
+collision_layer = 128
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/enemy/rat_king/Area2D"]
+position = Vector2( -2, 3.62068 )
+shape = SubResource( 36 )
+
+[node name="rat_king2" type="Sprite" parent="YSort/enemy"]
+position = Vector2( 218, 175 )
+scale = Vector2( 1.5, 1.45 )
+z_index = 1
+texture = ExtResource( 17 )
+hframes = 3
+vframes = 4
+
+[node name="stone10" parent="YSort/enemy" instance=ExtResource( 18 )]
+position = Vector2( 152, 113 )
+z_index = 1
+slime_id = "stone10"
+
+[node name="stone11" parent="YSort/enemy" instance=ExtResource( 18 )]
+position = Vector2( 281, 113 )
+z_index = 1
+slime_id = "stone11"
+
+[node name="blue5" parent="YSort/enemy" instance=ExtResource( 14 )]
+position = Vector2( 171, 222 )
+z_index = 1
+slime_id = "blue5"
+
+[node name="blue6" parent="YSort/enemy" instance=ExtResource( 14 )]
+position = Vector2( 263, 221 )
+z_index = 1
+slime_id = "blue6"
+
+[node name="blue7" parent="YSort/enemy" instance=ExtResource( 14 )]
+position = Vector2( 85, 169 )
+z_index = 1
+slime_id = "blue7"
+
+[node name="blue8" parent="YSort/enemy" instance=ExtResource( 14 )]
+position = Vector2( 345, 175 )
+z_index = 1
+slime_id = "blue8"
+
+[node name="bug_king" parent="YSort/enemy" instance=ExtResource( 21 )]
+position = Vector2( 229, 43 )
+z_index = 1
+
+[node name="loot" type="YSort" parent="YSort"]
+
+[node name="magical_chest" parent="YSort/loot" instance=ExtResource( 19 )]
+position = Vector2( 216, 111 )
+
+[node name="magical_chest2" parent="YSort/loot" instance=ExtResource( 19 )]
+position = Vector2( 167, 111 )
+
+[node name="magical_chest3" parent="YSort/loot" instance=ExtResource( 19 )]
+position = Vector2( 264, 111 )
+
+[node name="puso21" parent="YSort/loot" instance=ExtResource( 20 )]
+position = Vector2( 349, 120 )
+heart_id = "puso21"
+
+[node name="puso22" parent="YSort/loot" instance=ExtResource( 20 )]
+position = Vector2( 85, 121 )
+heart_id = "puso22"
+
+[node name="puso23" parent="YSort/loot" instance=ExtResource( 20 )]
+position = Vector2( 415, 96 )
+heart_id = "puso23"
+
+[node name="puso24" parent="YSort/loot" instance=ExtResource( 20 )]
+position = Vector2( 21, 87 )
+heart_id = "puso24"
+
+[node name="puso25" parent="YSort/loot" instance=ExtResource( 20 )]
+position = Vector2( 87, 246 )
+heart_id = "puso25"
+
+[node name="puso26" parent="YSort/loot" instance=ExtResource( 20 )]
+position = Vector2( 353, 237 )
+heart_id = "puso26"
+
+[node name="puso27" parent="YSort/loot" instance=ExtResource( 20 )]
+position = Vector2( 108, 19 )
+heart_id = "puso27"
+
+[node name="puso28" parent="YSort/loot" instance=ExtResource( 20 )]
+position = Vector2( 369, 19 )
+heart_id = "puso28"
 
 [node name="TopUi" type="CanvasLayer" parent="."]
 
@@ -676,7 +899,16 @@ custom_fonts/font = SubResource( 35 )
 align = 1
 valign = 1
 
-[node name="objectiaOutside" type="Position2D" parent="."]
-position = Vector2( 221, 279 )
+[node name="Camera2D" parent="." instance=ExtResource( 13 )]
+position = Vector2( 218, 263 )
 
+[node name="TopLeft" parent="Camera2D/Limits" index="0"]
+position = Vector2( 0, -16 )
+
+[node name="BottomRight" parent="Camera2D/Limits" index="1"]
+position = Vector2( 433, 288 )
+
+[connection signal="body_shape_entered" from="YSort/enemy/rat_king/Area2D" to="." method="rat_king"]
 [connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
+
+[editable path="Camera2D"]

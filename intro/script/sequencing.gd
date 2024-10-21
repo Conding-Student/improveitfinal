@@ -116,6 +116,13 @@ func value_activating(param):
 		Global.from_sequence = true
 		Global.set_map("res://levels/Chapter2_maps/gandalfHouse_ground.tscn")
 		SceneTransition.change_scene("res://intro/stages_complete.tscn")
+	elif param == "badge30":
+		print("badge receive 30")
+		Global2.complete_badge("badge30")
+		get_tree().paused = false
+		Global.from_sequence = true
+		Global.set_map("res://intro/post_test.tscn")
+		SceneTransition.change_scene("res://intro/stages_complete.tscn")
 # Hide all textfields
 func hide_all_textfields():
 	textfield1.hide()

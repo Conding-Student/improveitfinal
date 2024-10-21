@@ -66,7 +66,9 @@ func save_data(filename: String) -> void:
 		"bat_states": Global.bat_states,
 		"door_states": Global.door_states,
 		"dialogue_states": Global.dialogue_states,
-		"manor_quest": Global2.state
+		"manor_quest": Global2.state,
+		"pre_assessment": Global2.pre_final_score,
+		"post_assessment": Global2.post_final_score
 	}
 	Dialogic.save("slot1")
 	# Collect badge data for saving
@@ -175,7 +177,8 @@ func apply_loaded_data(loaded_data: Dictionary) -> void:
 	Global.set_current_level(loaded_data.get("current_level", 1))
 	Global.door_states = loaded_data.get("door_states", {})
 	Global.dialogue_states = loaded_data.get("dialogue_states", {})
-
+	Global2.pre_final_score = loaded_data.get("pre_assessment")
+	Global2.post_final_score = loaded_data.get("post_assessment")
 	#quest
 	Global2.state = loaded_data.get("manor_quest")
 

@@ -68,6 +68,10 @@
 			"text": "We have no choice. The IDE Tome is there, and we need it! I need it!"
 		},
 		{
+			"background": "res://Scenes/pictures/chapter2/valObj3.png",
+			"event_id": "dialogic_021"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -96,6 +100,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Valen shook his head but couldn't help a small smile at Analexius's sudden bravado. They set off on their journey, with Analexius's boasts ringing in their ears."
+		},
+		{
+			"background": "res://Scenes/pictures/chapter2/valObj4.png",
+			"event_id": "dialogic_021"
 		},
 		{
 			"character": "",

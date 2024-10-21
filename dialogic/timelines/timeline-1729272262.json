@@ -2,13 +2,13 @@
 	"events": [
 		{
 			"event_id": "dialogic_024",
-			"set_theme": "theme-1728115011.cfg"
+			"set_theme": "theme-1727627785.cfg"
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "As they navigated the ruins, Valen continued to use his knowledge of OOP magic to fend off bugs and glitches."
+			"text": "As they navigated the ruins, Valen continued to use his knowledge of Classes and methods magic to fend off bugs and glitches."
 		},
 		{
 			"character": "",
@@ -35,6 +35,26 @@
 			"text": "Is the IDE Tome truly here in Objecthia?"
 		},
 		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1729272690.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
 			"character": "character-1729272690.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -51,6 +71,29 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Negotiate? With you? Foolish mortal, I decline your offer. The IDE Tome will never be yours without a fight."
+		},
+		{
+			"character": "character-1729272690.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Attack him!"
+		},
+		{
+			"definition": "1728021648-250",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "20"
+		},
+		{
+			"custom_slot": "slot1",
+			"event_id": "dialogic_026",
+			"use_default_slot": false
+		},
+		{
+			"change_scene": "res://levels/Chapter2_maps/objectiaHall_inside.tscn",
+			"event_id": "dialogic_041"
 		},
 		{
 			"event_id": "dialogic_022",

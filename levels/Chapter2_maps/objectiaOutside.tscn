@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://World/world objects/forest1.tres" type="TileSet" id=1]
 [ext_resource path="res://World/pictures/exterior/desert-ruins.png" type="Texture" id=2]
@@ -16,6 +16,10 @@
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=14]
 [ext_resource path="res://intro/picture/pause.png" type="Texture" id=15]
 [ext_resource path="res://World/room/chapter2_entrance.tscn" type="PackedScene" id=16]
+[ext_resource path="res://World/magical chest.tscn" type="PackedScene" id=17]
+[ext_resource path="res://UI/heart_spawn.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Enemies/small_demon.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Enemies/monster_stone.tscn" type="PackedScene" id=20]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -377,11 +381,37 @@ position = Vector2( 179, -117 )
 [node name="stall5" parent="YSort/objects" instance=ExtResource( 7 )]
 position = Vector2( 136, -39 )
 
+[node name="magical_chest" parent="YSort/objects" instance=ExtResource( 17 )]
+position = Vector2( -155, 133 )
+
+[node name="magical_chest2" parent="YSort/objects" instance=ExtResource( 17 )]
+position = Vector2( 144, 14 )
+
+[node name="puso16" parent="YSort/objects" instance=ExtResource( 18 )]
+position = Vector2( -176, -28 )
+heart_id = "puso16"
+
+[node name="puso17" parent="YSort/objects" instance=ExtResource( 18 )]
+position = Vector2( 180, -70 )
+heart_id = "puso17"
+
+[node name="puso18" parent="YSort/objects" instance=ExtResource( 18 )]
+position = Vector2( 117, -132 )
+heart_id = "puso18"
+
+[node name="puso19" parent="YSort/objects" instance=ExtResource( 18 )]
+position = Vector2( -120, -88 )
+heart_id = "puso19"
+
+[node name="puso20" parent="YSort/objects" instance=ExtResource( 18 )]
+position = Vector2( 162, 93 )
+heart_id = "puso20"
+
 [node name="enemy" type="YSort" parent="YSort"]
 position = Vector2( 0, -2 )
 
 [node name="slime3" parent="YSort/enemy" instance=ExtResource( 9 )]
-position = Vector2( -56, -9 )
+position = Vector2( -50, -36 )
 slime_id = "slime3"
 
 [node name="Area2D" type="Area2D" parent="YSort/enemy/slime3"]
@@ -394,7 +424,7 @@ rotation = 1.57079
 shape = SubResource( 19 )
 
 [node name="Slime4" parent="YSort/enemy" instance=ExtResource( 9 )]
-position = Vector2( 47, -11 )
+position = Vector2( 47, -34 )
 slime_id = "slime4"
 
 [node name="Area2D" type="Area2D" parent="YSort/enemy/Slime4"]
@@ -405,6 +435,27 @@ collision_mask = 2
 position = Vector2( 0, -10 )
 rotation = 1.57079
 shape = SubResource( 19 )
+
+[node name="demon10" parent="YSort/enemy" instance=ExtResource( 19 )]
+position = Vector2( 145, 30 )
+slime_id = "demon10"
+
+[node name="demon11" parent="YSort/enemy" instance=ExtResource( 19 )]
+position = Vector2( -159, -89 )
+slime_id = "demon11"
+
+[node name="demon12" parent="YSort/enemy" instance=ExtResource( 19 )]
+visible = false
+position = Vector2( 145, 30 )
+slime_id = "demon10"
+
+[node name="stone5" parent="YSort/enemy" instance=ExtResource( 20 )]
+position = Vector2( -55, 58 )
+slime_id = "stone5"
+
+[node name="stone6" parent="YSort/enemy" instance=ExtResource( 20 )]
+position = Vector2( 55, 50 )
+slime_id = "stone6"
 
 [node name="Camera2D" parent="." instance=ExtResource( 10 )]
 position = Vector2( -7, 128 )

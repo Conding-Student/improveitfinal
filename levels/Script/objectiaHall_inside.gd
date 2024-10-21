@@ -7,11 +7,15 @@ onready var resume = $TopUi/pause_menu/pause_menu/Panel/VBoxContainer/resume as 
 onready var player = $YSort/player
 onready var player_controller_joystick = $YSort/player/Controller/joystick
 onready var place_name = $TopUi/Label2
+onready var bug_king = $YSort/enemy/rat_king2
+onready var rat_king = $YSort/enemy/rat_king
+onready var logical_bugking = $YSort/enemy/bug_king
 
-
+onready var bugcollision = $YSort/enemy/bug_king/Hitbox/CollisionShape2D
+onready var logic_bug_heart = $YSort/enemy/bug_king/Stats
 #onready var path_arrow_traning = $YSort/path/path_arrow
 var current_map = "res://levels/Chapter2_maps/objectiaHall_inside.tscn"
-var starting_player_position = Vector2 (-7, 128)
+var starting_player_position = Vector2  (222, 265)
 
 #########
 
@@ -20,16 +24,28 @@ var starting_player_position = Vector2 (-7, 128)
 func _ready():
 	set_overall_initial_position()
 	set_player_position()
-	
+	bug_king_appearance()
+	enemy_wave1()
 	place_name.text = "Objecthia Hall"
 	resume.connect("pressed", self, "resume_the_game")
 	Global.set_map(current_map)
 	Musicmanager.set_music_path("res://Music and Sounds/bg music/guildInside.wav")
-	GlobalCanvasModulate.apply_trigger("morning")
+	GlobalCanvasModulate.apply_trigger("noon")
+func _process(delta):
+	bug_king_checking_heart()
+
 func set_player_position():
 	if Global.get_player_initial_position() == Vector2(0, 0):
 		Global.set_player_current_position(starting_player_position)
 		print("1 outside")
+	elif int(Dialogic.get_variable("gandalf")) == 19:
+		player.global_position = starting_player_position
+		Global.set_player_current_position(starting_player_position)
+		Hide_controller()
+		var new_dialog = Dialogic.start('c3stage5p2')
+		add_child(new_dialog)
+		new_dialog.connect("dialogic_signal", self, "value_activating")
+		new_dialog.connect("timeline_end", self, "end_interaction")
 	elif Global.from_level != null && Global.load_game_position == true:
 		player.global_position = Global.get_player_current_position()
 		Global.load_game_position = false
@@ -44,12 +60,12 @@ func set_player_position():
 			pass
 			#print("Player position set from ", target_node_path)
 	else:
+		#bug_king.queue_free()
 		print("3")
 		player.global_position = Global.get_player_current_position()
 
 func set_overall_initial_position():
 	Global.set_player_initial_position(Global.get_player_current_position())
-
 
 func resume_the_game() -> void:
 	get_tree().paused = false
@@ -62,10 +78,6 @@ func _on_pause_game_pressed():
 	topui.visible = false
 	player_controller.visible = false
 	pause_ui.show()
-
-
-func path_to_objecthia():
-	pass
 
 ############## interactions ################
 func end_interaction(timelineend):
@@ -83,142 +95,123 @@ func show_controller():
 
 func end_intructions(timelineend):
 	show_controller()
+	#get_tree().paused = false
+	print("timeline end trigger")
+	#bug_king.queue_free()
+
+func bug_king_appearance():
+	if int(Dialogic.get_variable("gandalf")) == 20:
+		bug_king.queue_free()
+	elif int(Dialogic.get_variable("gandalf")) == 21:
+		bug_king.queue_free()
+	elif int(Dialogic.get_variable("gandalf")) == 22:
+		bug_king.queue_free()
+		rat_king.queue_free()
+	else:
+		print("he is alive")
+
+func bug_king_checking_heart():
+	if logic_bug_heart.health == 1:
+		Global2.set_question(0, "Begin your attack into the enemy by defining a class. Create a class using 'class' keyword")
+		Global2.set_answers(0, "class")
+		Global2.set_feedback(0, "The answer should be 'class' check for any white spaces if your wrong")
+		#Global2.set_picture_path()
+		
+		Global2.set_question(1, "Put name into your class, this time name it as a 'Person' check for any white spaces if your wrong")
+		Global2.set_answers(1, "Person")
+		Global2.set_feedback(1, "The answer should be 'Person'")
+		#Global2.set_picture_path()
+		
+		Global2.set_question(2, "Put curly braces at your class person")
+		Global2.set_answers(2, "{}")
+		Global2.set_feedback(2, "You should put two curly braces from it, check for any white spaces if your still wrong")
+		#Global2.set_picture_path()
+		
+		Global2.set_question(3, "This class person must have a name! declare public fields string and named it as 'name'")
+		Global2.set_answers(3, "public string name;")
+		Global2.set_feedback(3, "The answer should be 'public string name;' check for semi-colon, spelling and whitespaces if you're still wrong")
+		#Global2.set_picture_path()
+		
+		Global2.set_question(4, "Do it again but make its datatype as an 'int' and named it as an 'age'")
+		Global2.set_answers(4, "public int age;")
+		Global2.set_feedback(4, "The answer should be 'public int age;' check for semi-colon, spelling and whitespaces if you're still wrong")
+		#Global2.set_picture_path()
+		
+		Global2.dialogue_name = "bug17"
+		Hide_controller()
+		get_tree().paused = true
+		#bugcollision.disabled = true
+		var new_dialog = Dialogic.start('c3stage5p4')
+		new_dialog.pause_mode = Node.PAUSE_MODE_PROCESS
+		add_child(new_dialog)
+		new_dialog.connect("timeline_end", self, "end_interaction")
+
+func enemy_wave1():
+	if int(Dialogic.get_variable("gandalf")) == 20: 
+		$YSort/enemy/stone10.queue_free()
+		$YSort/enemy/stone11.queue_free()
+		$YSort/enemy/blue5.queue_free()
+		$YSort/enemy/blue6.queue_free()
+		$YSort/enemy/blue7.queue_free()
+		$YSort/enemy/blue8.queue_free()
+	elif int(Dialogic.get_variable("gandalf")) == 22:
+		#pass
+		print("letting them all live")
+	else:
+		print("else and killing all enemies")
+		$YSort/enemy/snake1.queue_free()
+		$YSort/enemy/snake2.queue_free()
+		$YSort/enemy/snake3.queue_free()
+		$YSort/enemy/snake4.queue_free()
+		$YSort/enemy/snake5.queue_free()
+		$YSort/enemy/snake6.queue_free()
+		$YSort/enemy/snake7.queue_free()
+		$YSort/enemy/snake8.queue_free()
+		$YSort/enemy/snake9.queue_free()
+		$YSort/enemy/snake10.queue_free()
+		$YSort/enemy/snake11.queue_free()
+		$YSort/enemy/snake12.queue_free()
+		$YSort/enemy/stone8.queue_free()
+		$YSort/enemy/stone9.queue_free()
+		$YSort/enemy/stone10.queue_free()
+		$YSort/enemy/stone11.queue_free()
+		$YSort/enemy/blue5.queue_free()
+		$YSort/enemy/blue6.queue_free()
+		$YSort/enemy/blue7.queue_free()
+		$YSort/enemy/blue8.queue_free()
 
 
 
-func slime3(body_rid, body, body_shape_index, local_shape_index):
-	Global2.set_question(0, "Which loop guarantees that the code inside will run at least once, even if the condition is false initially?")
-	Global2.set_answers(0, "While loop")
-	Global2.set_answers(1, "Do-while loop")
-	Global2.set_answers(2, "For loop")
-	Global2.set_answers(3, "None of the above")
-	Global2.set_feedback(0, "Incorrect. A while loop checks the condition before running the code.")
-	Global2.set_feedback(1, "Correct! A do-while loop runs the code block at least once.")
-	Global2.set_feedback(2, "Incorrect. A for loop also checks the condition before executing the code.")
-	Global2.set_feedback(3, "Incorrect. The do-while loop guarantees at least one execution.")
+func rat_king(body_rid, body, body_shape_index, local_shape_index):
+	Global2.set_question(0, "Begin your attack into the enemy by defining a class. Create a class using 'class' keyword")
+	Global2.set_answers(0, "class")
+	Global2.set_feedback(0, "The answer should be 'class' check for any white spaces if your wrong")
+	Global2.set_picture_path(0,"res://intro/picture/question/chapter2/classess/stag5/first/Oct 21 - 1.png")
 	
+	Global2.set_question(1, "Put name into your class, this time name it as a 'Person' check for any white spaces if your wrong")
+	Global2.set_answers(1, "Person")
+	Global2.set_feedback(1, "The answer should be 'Person'")
+	Global2.set_picture_path(1,"res://intro/picture/question/chapter2/classess/stag5/first/Oct 21 - 2.png" )
 	
-	Global2.set_question(1, "Which loop is best suited for iterating a specific number of times?")
-	Global2.set_answers(4, "While loop")
-	Global2.set_answers(5, "Do-while loop")
-	Global2.set_answers(6, "For loop")
-	Global2.set_answers(7, "None of the above")
-	Global2.set_feedback(4, "Incorrect. A while loop is more flexible for unknown iterations. Consider the loop that is structured for a known count.")
-	Global2.set_feedback(5, "Incorrect. A do-while loop still depends on a condition and may not limit iterations.")
-	Global2.set_feedback(6, "Correct! The for loop is ideal for scenarios with a predefined number of iterations.")
-	Global2.set_feedback(7, "Incorrect. An infinite loop doesn't stop and isn't used for specific counts. Think about loops with clear starting and ending points.")
+	Global2.set_question(2, "Put curly braces at your class person")
+	Global2.set_answers(2, "{}")
+	Global2.set_feedback(2, "You should put two curly braces from it, check for any white spaces if your still wrong")
+	Global2.set_picture_path(2, "res://intro/picture/question/chapter2/classess/stag5/first/Oct 21 - 3.png")
 	
+	Global2.set_question(3, "This class person must have a name! declare public fields string and named it as 'name'")
+	Global2.set_answers(3, "public string name;")
+	Global2.set_feedback(3, "The answer should be 'public string name;' check for semi-colon, spelling and whitespaces if you're still wrong")
+	Global2.set_picture_path(3, "res://intro/picture/question/chapter2/classess/stag5/first/Oct 21 - 4.png")
 	
-	Global2.set_question(2, "In which loop is the condition checked after the execution of the code block?")
-	Global2.set_answers(8, "While loop")
-	Global2.set_answers(9, "Do-while loop")
-	Global2.set_answers(10, "For loop")
-	Global2.set_answers(11, "None of the above")
-	Global2.set_feedback(8, "Incorrect. The condition is checked before running the code block. Think about which loop allows for post-condition checks.")
-	Global2.set_feedback(9, "Incorrect. A for loop checks the condition before each iteration, not after.")
-	Global2.set_feedback(10, "Correct! This loop checks the condition after executing the code block.")
-	Global2.set_feedback(11, "Incorrect. The do-while loop is specifically designed for this purpose.")
+	Global2.set_question(4, "Do it again but make its datatype as an 'int' and named it as an 'age'")
+	Global2.set_answers(4, "public int age;")
+	Global2.set_feedback(4, "The answer should be 'public int age;' check for semi-colon, spelling and whitespaces if you're still wrong")
+	Global2.set_picture_path(4, "res://intro/picture/question/chapter2/classess/stag5/first/Oct 21 - 5.png")
 	
+	Global2.dialogue_name = "bug16"
+	Hide_controller()
+	var new_dialog = Dialogic.start('c3stage5p3')
+	add_child(new_dialog)
+	new_dialog.connect("dialogic_signal", self, "value_activating")
+	new_dialog.connect("timeline_end", self, "end_interaction")
 	
-	Global2.set_question(3, "Which loop can run continuously if the condition is not properly defined?")
-	Global2.set_answers(12, "For loop")
-	Global2.set_answers(13, "Do-while loop")
-	Global2.set_answers(14, "While loop")
-	Global2.set_answers(15, "All of the above")
-	Global2.set_feedback(12, "Incorrect. A for loop can run indefinitely if the condition is always true. Consider all loop types.")
-	Global2.set_feedback(13, "Incorrect. A do-while loop can also run indefinitely based on its condition.")
-	Global2.set_feedback(14, "Incorrect. A while loop can run indefinitely if the condition is never false.")
-	Global2.set_feedback(15, "Correct! Any of these loops can run indefinitely with a mismanaged condition.")
-	
-	
-	Global2.set_question(4, "What will happen if the condition of a while loop is never false?")
-	Global2.set_answers(16, "run once")
-	Global2.set_answers(17, "run contonuously")
-	Global2.set_answers(18, "not run")
-	Global2.set_answers(19, "None")
-	Global2.set_feedback(16, "Incorrect. It will keep running as long as the condition is true.")
-	Global2.set_feedback(17, "Correct! If the condition remains true, the loop will never stop.")
-	Global2.set_feedback(18, "Incorrect. It runs if the condition is true.")
-	Global2.set_feedback(19, "Incorrect. The correct answer is that it will run indefinitely.")
-	
-	
-	Global.load_game_position = true
-	Global2.load_enemy_data("res://Battlescenes/tres/bat2.tres")
-	Global2.correct_answer_ch1_2 = true
-	Global2.correct_answer_ch2_3 = true
-	Global2.correct_answer_ch3_3 = true
-	Global2.correct_answer_ch4_4 = true
-	Global2.correct_answer_ch5_2 = true
-	Global2.dialogue_name = "bug15"
-	print("quiz on bug 2 is activated")
-	print(Global.from_level)
-	SceneTransition.change_scene("res://intro/question_panel_withbugs.tscn")
-
-
-func slime4(body_rid, body, body_shape_index, local_shape_index):
-	Global2.set_question(0, "Which loop guarantees that the code inside will run at least once, even if the condition is false initially?")
-	Global2.set_answers(0, "While loop")
-	Global2.set_answers(1, "Do-while loop")
-	Global2.set_answers(2, "For loop")
-	Global2.set_answers(3, "None of the above")
-	Global2.set_feedback(0, "Incorrect. A while loop checks the condition before running the code.")
-	Global2.set_feedback(1, "Correct! A do-while loop runs the code block at least once.")
-	Global2.set_feedback(2, "Incorrect. A for loop also checks the condition before executing the code.")
-	Global2.set_feedback(3, "Incorrect. The do-while loop guarantees at least one execution.")
-	
-	
-	Global2.set_question(1, "Which loop is best suited for iterating a specific number of times?")
-	Global2.set_answers(4, "While loop")
-	Global2.set_answers(5, "Do-while loop")
-	Global2.set_answers(6, "For loop")
-	Global2.set_answers(7, "None of the above")
-	Global2.set_feedback(4, "Incorrect. A while loop is more flexible for unknown iterations. Consider the loop that is structured for a known count.")
-	Global2.set_feedback(5, "Incorrect. A do-while loop still depends on a condition and may not limit iterations.")
-	Global2.set_feedback(6, "Correct! The for loop is ideal for scenarios with a predefined number of iterations.")
-	Global2.set_feedback(7, "Incorrect. An infinite loop doesn't stop and isn't used for specific counts. Think about loops with clear starting and ending points.")
-	
-	
-	Global2.set_question(2, "In which loop is the condition checked after the execution of the code block?")
-	Global2.set_answers(8, "While loop")
-	Global2.set_answers(9, "Do-while loop")
-	Global2.set_answers(10, "For loop")
-	Global2.set_answers(11, "None of the above")
-	Global2.set_feedback(8, "Incorrect. The condition is checked before running the code block. Think about which loop allows for post-condition checks.")
-	Global2.set_feedback(9, "Incorrect. A for loop checks the condition before each iteration, not after.")
-	Global2.set_feedback(10, "Correct! This loop checks the condition after executing the code block.")
-	Global2.set_feedback(11, "Incorrect. The do-while loop is specifically designed for this purpose.")
-	
-	
-	Global2.set_question(3, "Which loop can run continuously if the condition is not properly defined?")
-	Global2.set_answers(12, "For loop")
-	Global2.set_answers(13, "Do-while loop")
-	Global2.set_answers(14, "While loop")
-	Global2.set_answers(15, "All of the above")
-	Global2.set_feedback(12, "Incorrect. A for loop can run indefinitely if the condition is always true. Consider all loop types.")
-	Global2.set_feedback(13, "Incorrect. A do-while loop can also run indefinitely based on its condition.")
-	Global2.set_feedback(14, "Incorrect. A while loop can run indefinitely if the condition is never false.")
-	Global2.set_feedback(15, "Correct! Any of these loops can run indefinitely with a mismanaged condition.")
-	
-	
-	Global2.set_question(4, "What will happen if the condition of a while loop is never false?")
-	Global2.set_answers(16, "run once")
-	Global2.set_answers(17, "run contonuously")
-	Global2.set_answers(18, "not run")
-	Global2.set_answers(19, "None")
-	Global2.set_feedback(16, "Incorrect. It will keep running as long as the condition is true.")
-	Global2.set_feedback(17, "Correct! If the condition remains true, the loop will never stop.")
-	Global2.set_feedback(18, "Incorrect. It runs if the condition is true.")
-	Global2.set_feedback(19, "Incorrect. The correct answer is that it will run indefinitely.")
-	
-	
-	Global.load_game_position = true
-	Global2.load_enemy_data("res://Battlescenes/tres/bat2.tres")
-	Global2.correct_answer_ch1_2 = true
-	Global2.correct_answer_ch2_3 = true
-	Global2.correct_answer_ch3_3 = true
-	Global2.correct_answer_ch4_4 = true
-	Global2.correct_answer_ch5_2 = true
-	Global2.dialogue_name = "bug14"
-	print("quiz on bug 2 is activated")
-	print(Global.from_level)
-	SceneTransition.change_scene("res://intro/question_panel_withbugs.tscn")
