@@ -31,7 +31,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Dialogue/Voice/level3s3/l3s3d2.wav",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3s3p2/level3s3p2_d1.wav",
 			"volume": 0
 		},
 		{
@@ -45,7 +45,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Dialogue/Voice/level3s3/l3s3d3.wav",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3s3p2/level3s3p2d2.wav",
 			"volume": 0
 		},
 		{
@@ -55,10 +55,18 @@
 			"text": "You've proven your capability with datatype and variables. Continue to refine your skills, and soon you'll be ready for even more complex enchantments"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3s3p2/level3s3p2d3.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Now we need to get into the mage guild cellar. There was  a door passage located at the upper part of this building. We need to get into it \nwithout making any commotion"
+			"text": "Now we need to get into the mage guild cellar. There is a door passage located at the upper part of this building. We need to get into it \nwithout making any commotion"
 		},
 		{
 			"event_id": "dialogic_022",

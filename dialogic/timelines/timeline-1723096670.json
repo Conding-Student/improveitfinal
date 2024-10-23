@@ -170,13 +170,21 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2/0stage2d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "Did you remember this shape?"
+			"question": "Do you remember this shape?"
 		},
 		{
 			"choice": "Yes",
@@ -192,10 +200,26 @@
 			"name": "explanation"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2/0stage2d2.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "This shape is very important because it dictates which outcome will happen. When the condition is true and when the condition is false."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2/0stage2d3.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
@@ -208,6 +232,14 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2/0stage2d4.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -216,6 +248,14 @@
 		{
 			"background": "res://Scenes/pictures/stage3/If_true.png",
 			"event_id": "dialogic_021"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2/0stage2d5.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
@@ -228,6 +268,14 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2/0stage2d6.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -238,10 +286,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2/0stage2d7.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The outcome will be based on the given condition if it was met or not. Wether A is greater than 0 or it is less than zero."
+			"text": "The outcome will be based on the given condition if it was met or not. Whether A is greater than 0 or it is less than zero."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2/0stage2d8.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
@@ -250,7 +314,7 @@
 
 			],
 			"portrait": "",
-			"question": "Did  you still track what i'm saying?"
+			"question": "Do you still track what i'm saying?"
 		},
 		{
 			"choice": "Yes ",
@@ -269,6 +333,14 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2/0stage2d9.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
@@ -291,10 +363,18 @@
 			"value": ""
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2/0stage2d10.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Let me explain it to you again Valen. This diamond Shape Signifies any decision that are to be done. To test wether the condition fulfill."
+			"text": "Let me explain it to you again Valen. This diamond Shape Signifies any decision that are to be done. To test whether the condition fulfill."
 		},
 		{
 			"anchor_id": "anchor-1726603100",

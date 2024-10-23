@@ -36,7 +36,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Dialogue/Voice/Stage2p1/st2p1d1.wav",
+			"file": "res://Dialogue/Voice/NEW/Merrick/stage2p1/0stage2p1d1.wav",
 			"volume": 0
 		},
 		{

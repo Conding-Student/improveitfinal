@@ -65,7 +65,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Dialogue/Voice/level2s5/l2s5d2.wav",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level2s5/0level2s5d1.wav",
 			"volume": 0
 		},
 		{
@@ -79,7 +79,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Dialogue/Voice/level2s5/l2s5d3c1.wav",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level2s5/0level2s5d2.wav",
 			"volume": 0
 		},
 		{
@@ -93,7 +93,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Dialogue/Voice/level2s5/l2s5d3c2.wav",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level2s5/level2s5d0.wav",
 			"volume": 0
 		},
 		{
@@ -107,7 +107,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Dialogue/Voice/level2s5/l2s5d3c3.wav",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level2s5/0level2s5d3.wav",
 			"volume": 0
 		},
 		{

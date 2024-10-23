@@ -31,6 +31,14 @@
 			"z_index": 0
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Market_dealer/market_man/market_mand1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1727620761.json",
 			"event_id": "dialogic_010",
 			"options": [
@@ -70,6 +78,14 @@
 			"name": "asking_to_buy"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Market_dealer/market_man/marketmand00.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1727620761.json",
 			"event_id": "dialogic_010",
 			"options": [
@@ -84,6 +100,14 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Market_dealer/market_man/market_mand2.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1727620761.json",
@@ -108,6 +132,14 @@
 			"value": "5"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Market_dealer/market_man/market_mand3.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1727620761.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -125,6 +157,14 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Market_dealer/market_man/marketmand01.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1727620761.json",
@@ -158,6 +198,14 @@
 			"value": ""
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Market_dealer/market_man/market_mand4.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1727620761.json",
 			"event_id": "dialogic_010",
 			"options": [
@@ -180,6 +228,14 @@
 			"value": "10"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Market_dealer/market_man/market_mand3.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1727620761.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -197,6 +253,14 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Market_dealer/market_man/marketmand01.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1727620761.json",

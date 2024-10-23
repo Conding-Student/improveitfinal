@@ -27,10 +27,26 @@
 			"wait_seconds": 1
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Datatypes and Variable are a fundamental C# concepts what you need to know in order to effectively make a syntax"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d2.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
@@ -39,16 +55,40 @@
 			"text": "Datatype defines what type of data is used for processing"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d3.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Meanwhile, variables refers to the memory address of which we store temporary data or values"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d4.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "This magic is essential for opening doors crafted by master enchanters to safeguard ancient treasures and forbidden knowledge"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d5.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
@@ -61,10 +101,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d6.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "The first is STRING"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d7.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
@@ -77,6 +133,14 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d8.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -87,14 +151,30 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d9.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The third are FLOAT and  DOUBLE which allows us to assign decimal values"
+			"text": "The third are FLOAT and DOUBLE which allows us to assign decimal values"
 		},
 		{
 			"background": "res://Scenes/pictures/stage3/tutorial/bool true and false.png",
 			"event_id": "dialogic_021"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d10.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
@@ -107,10 +187,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d11.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "The last one is CHAR. which only allows us to store one character when sorrounded by ' '"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Merrick/level3 s1/0level3s1d12.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
