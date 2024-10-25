@@ -1,10 +1,18 @@
 {
 	"events": [
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Valen/stage4chest/stage4chest.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "its been a little bit difficult but I successfully open the chest."
+			"text": "its been a little bit difficult but I successfully opened the chest."
 		},
 		{
 			"emit_signal": "chest_open",

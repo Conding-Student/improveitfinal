@@ -9,6 +9,14 @@
 			"set_theme": "theme-1721953720.cfg"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/game/introductionp1/introductionp1_d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -17,6 +25,14 @@
 		{
 			"background": "res://Scenes/pictures/intro/guilt.png",
 			"event_id": "dialogic_021"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/game/introductionp1/introductionp1_d2.wav",
+			"volume": 0
 		},
 		{
 			"character": "",

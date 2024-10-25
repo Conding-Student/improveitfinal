@@ -1,10 +1,18 @@
 {
 	"events": [
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/Valen/stage4door1/stage4door1d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I successfully open the door Mr. merrick"
+			"text": "I successfully opened the door Mr. merrick"
 		},
 		{
 			"emit_signal": "stage4door1",

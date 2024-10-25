@@ -213,7 +213,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Themes": {
@@ -345,7 +345,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				},
 				"citizen3": {
@@ -474,13 +474,13 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": false
+										"folded": true
 									}
 								}
 							},
 							"metadata": {
 								"color": null,
-								"folded": false
+								"folded": true
 							}
 						},
 						"ender": {
@@ -590,7 +590,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": false
+										"folded": true
 									}
 								},
 								"stage5": {
@@ -603,7 +603,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": false
+										"folded": true
 									}
 								}
 							},
@@ -630,7 +630,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				}
 			},

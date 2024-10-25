@@ -22,16 +22,40 @@
 			"z_index": 0
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/game/introduction/introductiond1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1726986872.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "In the world of Syntaxia, magic isn’t bound to ancient spells or runes. It flows through code C# programming magic. "
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/game/introduction/introductiond2.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1726986872.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "You’ve used this power, not to harm, but to survive. And every time you did, a part of you questioned it."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/game/introduction/introductiond3.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1726986872.json",
@@ -60,6 +84,14 @@
 			"z_index": 0
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/game/introduction/introductiond4.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
@@ -74,6 +106,14 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/game/introduction/introductiond5.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1726986872.json",
@@ -93,6 +133,14 @@
 			"value": ""
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/game/introduction/introductiond6.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1726986872.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -108,6 +156,14 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/game/introduction/introductiond7.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1726986872.json",
