@@ -15,16 +15,40 @@
 			"set_theme": "theme-1726986938.cfg"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Gandalf, how do we fight the bugs here? I tried smashing one, but it just came back the next day!"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d2.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Ah, yes. Physical force won’t work. Bugs in Syntaxia are bound to the code itself. Only through the magic of C# can they be truly subdued. "
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d3.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -37,16 +61,40 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d4.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "We begin with Assignment Operators. Think of it like telling the world what things should be. You start by assigning a value to something like how you claim your pouch is holding 50 coins."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d5.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "So, it’s like setting my inventory! But what if I earn more?"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d6.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -59,10 +107,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d7.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "This adds 10 coins to your pouch. There are others like -= for subtracting, and *= for multiplying."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d8.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -75,10 +139,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d9.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Good question. To fight effectively, you need to understand Unary and Comparison. Unary spells, like ++ or --, increase or decrease values by one."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d10.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -91,10 +171,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d11.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Precisely. And then, to know when to act, we use Comparison Operators. These let you check conditions:"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d12.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -107,10 +203,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d13.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I’ll be ready, Master. I’m starting to get it now. This magic… it feels powerful."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d14.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -168,6 +280,14 @@
 			"z_index": 0
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d15.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_010",
 			"options": [
@@ -213,6 +333,14 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/c2level1_tutorial/c2level1_tutorial_d16.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",

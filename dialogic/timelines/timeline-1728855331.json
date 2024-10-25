@@ -7,10 +7,18 @@
 			"value": "6"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You must go into the classoria right? Go and fetch the IDE tome to fulfill what you need. Talk with Analexius about it."
+			"text": "You must go into classoria right? Go and fetch the IDE tome to fulfill what you need. Inquire to Analexius about it."
 		},
 		{
 			"event_id": "dialogic_022",
@@ -30,14 +38,44 @@
 			"set_theme": "theme-1728115011.cfg"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd2.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Good. Let's take the rest of the day to solidify your understanding. Tomorrow, we'll begin your quest on the way through the Objecthia. \nI and Analexius are willing to lend you our help. Both of you must go there first I will try to follow soon."
+			"text": "Good. Let's take the rest of the day to solidify your understanding. Tomorrow, we'll begin your quest on the way through the Objecthia. "
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd3.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Analexius and I are willing to lend our help. Both of you must go there first. I will try to follow soon."
 		},
 		{
 			"background": "res://Scenes/pictures/chapter2/valObj1.png",
 			"event_id": "dialogic_021"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd4.wav",
+			"volume": 0
 		},
 		{
 			"character": "",
@@ -50,16 +88,40 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd5.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Valen and Analexius set off toward Objecthia, the Citadel of Object-Oriented Prestidigitation. Valen was determined, but Analexius was less enthusiastic."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd6.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Objecthia? Are you out of your mind? The Bug King lurks there, and it's swarming with bugs and glitches!"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd7.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -72,10 +134,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd8.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Analexius sighed, his reluctance evident. But as they passed through a nearby town, the people recognized Analexius from Classoria."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd9.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728895265.json",
@@ -84,16 +162,40 @@
 			"text": "\"It's the hero who debugged Classoria!\""
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd10.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Analexius, sensing the admiration, straightened up and puffed out his chest."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd11.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Yes, that's me! And now, we will bravely head to Objecthia to confront the Bug King and reclaim the legendary IDE Tome!"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd12.wav",
+			"volume": 0
 		},
 		{
 			"character": "",
@@ -106,22 +208,32 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd13.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "As they made their way through dense forests and rocky paths, they encountered numerous bugs and glitches."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/Gandalf/gandalfcatch/gandalfcatchd14.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Stay close, Analexius. We’re getting closer to Objecthia, and the number of bugs is increasing."
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Analexius nodded, clearly nervous but determined to live up to his newfound reputation."
 		},
 		{
 			"change_scene": "res://levels/Chapter2_maps/objectiaRoad.tscn",

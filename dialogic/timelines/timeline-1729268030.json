@@ -9,16 +9,40 @@
 			"event_id": "dialogic_021"
 		},
 		{
-			"character": "",
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/chapter3/stage4_5/c3stage4p1/c3stage4p1d1.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1726986872.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "As they approached Objecthia, the once-glorious citadel now lay in ruins, much like Classoria. The sight was disheartening."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/chapter3/stage4_5/c3stage4p1/c3stage4p1d2.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "This... this isn't what I imagined. It’s just like Classoria."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/chapter3/stage4_5/c3stage4p1/c3stage4p1d3.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728031425.json",

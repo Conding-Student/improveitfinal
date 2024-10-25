@@ -62,7 +62,7 @@
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(freezing for a moment, realization dawning) (So… I’m in the past. No wonder things feel off.) (slight frown, keeping his thoughts hidden)"
+			"text": "(So… I’m in the past. No wonder things feel off.)"
 		},
 		{
 			"animation": "instant_out.gd",
@@ -132,13 +132,13 @@
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Right… sounds believable. (What a joke.)"
+			"text": "Right… sounds believable. "
 		},
 		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(ignoring Val, continuing his story) Well… it might’ve lost interest and… wandered off, but the important thing is, I survived."
+			"text": "Well… it might’ve lost interest and… wandered off, but the important thing is, I survived."
 		},
 		{
 			"character": "character-1721952703.json",
@@ -156,19 +156,19 @@
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(irritated, but calm) I'm not here to amuse you."
+			"text": "I'm not here to amuse you."
 		},
 		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(snorts) Clearly. You look like a bug yourself. I bet you can’t even fight your own kin! "
+			"text": "Clearly. You look like a bug yourself. I bet you can’t even fight your own kin! "
 		},
 		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(clearing his throat, interrupting) That’s enough, Analexius. Val is no entertainer. He is… your fellow student."
+			"text": "That’s enough! Analexius. Val is no entertainer. He is… your fellow student."
 		},
 		{
 			"character": "character-1721952703.json",
@@ -186,7 +186,7 @@
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(tightly gripping his fist, his patience wearing thin) Care to say that again?"
+			"text": "Care to say that again?"
 		},
 		{
 			"event_id": "dialogic_024",
@@ -252,7 +252,7 @@
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(sighing, clearly tired of the conversation, but steady in his resolve) Believe what you want. I’m not here for you. I’m here to learn."
+			"text": "Believe what you want. I’m not here for you. I’m here to learn."
 		},
 		{
 			"character": "character-1728031425.json",
