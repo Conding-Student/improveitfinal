@@ -1,10 +1,18 @@
 {
 	"events": [
 		{
-			"character": "",
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/ender/bug7.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The deeper I explore, the enemies getting much more stronger."
+			"text": "The deeper I explore, the stronger they get"
 		},
 		{
 			"emit_signal": "badge23",

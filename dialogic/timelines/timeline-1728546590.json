@@ -9,6 +9,14 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage5/commanderbug/commanderbugd1.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -19,10 +27,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage5/commanderbug/commanderbugd2.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728717524.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Trying to flee, are we, human? There’s nowhere left for you to run. Classoria is ours."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage5/commanderbug/commanderbugd3.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -31,10 +55,26 @@
 			"text": "You think I’m running from you? I don’t have time to waste on your kind."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage5/commanderbug/commanderbugd4.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728717524.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Arrogant, just like the others. But they fell before us… and so will you."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage5/commanderbug/commanderbugd5.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -43,22 +83,40 @@
 			"text": "I’m not like the others. And I’m not here to fight you… unless you force me to"
 		},
 		{
-			"character": "character-1728717524.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Force you? You humans are nothing without your knowldege from C#. Your precious tome is gone. You’re finished!"
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage5/commanderbug/commanderbugd6.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728717524.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "But I’ll enjoy crushing you all the same."
+			"text": "Force you? You humans are nothing without your knowldege from C#. Your precious tome is gone. You’re finished! But I’ll enjoy crushing you all the same."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage5/commanderbug/commanderbugd7.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "You’ve already lost. You just don’t know it yet. And I don’t need the tome to deal with you."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage5/commanderbug/commanderbugd8.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728717524.json",

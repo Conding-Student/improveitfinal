@@ -9,6 +9,14 @@
 			"set_theme": "theme-1726986938.cfg"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -33,6 +41,14 @@
 			},
 			"type": 0,
 			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d2.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -65,6 +81,14 @@
 			"set_theme": "theme-1728115011.cfg"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d3.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -92,6 +116,14 @@
 			"z_index": 1
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d4.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -116,6 +148,14 @@
 			},
 			"type": 1,
 			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d5.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -148,6 +188,14 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d6.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -158,16 +206,40 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d7.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Here’s how it works. Imagine you’re facing different types of bugs. Instead of writing a series of if-else statements, which can get messy, \nYou can use a switch statement to decide how to handle each one based on its type. Like this:"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d8.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(curious) So, instead of checking if it’s a bug or an error, switch automatically finds the right one?"
+			"text": "So, instead of checking if it’s a bug or an error, switch automatically finds the right one?"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d9.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -176,42 +248,90 @@
 			"text": "Exactly. It’s faster and cleaner. Each case is a possible condition, and when one matches the value like \"glitch\" it executes that block of code."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d10.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Pfft, no need for all these fancy conditions. Just take the bugs down with brute force, like I did with that last one."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d11.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Or hide in a tree..."
+			"text": "More like hide in a tree..."
 		},
 		{
 			"background": "res://Dialogue/Picture/cvhapter2/training_defaulthighlight.jpg",
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d12.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(ignoring Analexius): But there’s more. If none of the cases match, the default block is executed. That’s your safeguard, in case you face something unexpected."
+			"text": "But there’s more. If none of the cases match, the default block is executed. That’s your safeguard, in case you face something unexpected."
 		},
 		{
 			"background": "res://Scenes/pictures/chapter2/training.jpg",
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d13.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(grinning): So, what happens if the bug I face has a stronger attack than Val’s outfit?"
+			"text": "So, what happens if the bug I face has a stronger attack than Val’s outfit?"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d14.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(clenching his fists): Keep talking, and I’ll show you what a real fight looks like."
+			"text": "Keep talking, and I’ll show you what a real fight looks like."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d15.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -224,6 +344,14 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d16.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -232,6 +360,14 @@
 		{
 			"background": "res://Dialogue/Picture/cvhapter2/training_val.jpg",
 			"event_id": "dialogic_021"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d17.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -244,10 +380,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d18.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(smiling slightly): That wasn’t too hard."
+			"text": "That wasn’t too hard."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d19.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -256,16 +408,40 @@
 			"text": "Well done, Val. The switch statement will serve you well in more complex situations, especially when you’re dealing with multiple types of bugs at once. \nIt’s the foundation for more advanced spells you’ll learn later."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d20.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Well, if Val wants to mess with code, let him. I’ll stick to fighting the real way."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d21.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Every mage has their own strengths. But even you, Analexius, can benefit from this knowledge. One day, your incredible power will meet an enemy that requires more than raw strength."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage3/c2stage3p1/c2stage3p1d22.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",

@@ -5,7 +5,15 @@
 			"event_id": "dialogic_021"
 		},
 		{
-			"character": "character-1721952703.json",
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/ender/bug9.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1726986872.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Valen stands over the fallen Bug Commander. Around him, the remaining bugs, who had been lurking in the shadows and watching \nthe battle, suddenly grow restless. As the commander’s body lies motionless, their confidence breaks. One by one, they begin to back away, their fear palpable in the air"

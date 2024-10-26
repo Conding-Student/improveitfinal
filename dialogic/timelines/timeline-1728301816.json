@@ -9,16 +9,40 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Valen stands before a massive, sealed door with five glowing locks. The door hums with a strange magic, blocking his path. He examines it, trying to figure out how to pass through."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d2.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(Thingking) This door… it's not a normal one. It feels like it's tied to some kind of sequence, maybe something repeating. "
+			"text": "This door… it's not a normal one. It feels like it's tied to some kind of sequence, maybe something repeating. "
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d3.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -27,10 +51,12 @@
 			"text": "There’s no key, no handle. How do I get through?"
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "(Valen steps back, deep in thought. He recalls Gandalf’s lessons about loops.)"
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d4.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -39,16 +65,40 @@
 			"text": "Gandalf once said, “in the world of C# magic, loops help us repeat actions until a condition is met. Different loops for different situations.”"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d5.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I remember… he taught me about while, do-while, and for loops."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d6.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "(The locks on the door shimmer as if responding to his thoughts.)"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d7.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -61,10 +111,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d8.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Maybe I need to unlock each part while the door is still sealed. I could imagine it like this:"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d9.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -84,21 +150,51 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(One of the locks clicks open slightly, as if responding to his thoughts.)"
+			"text": "..."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d10.wav",
+			"volume": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "One of the locks clicks open slightly, as if responding to his thoughts."
 		},
 		{
 			"background": "res://Dialogue/Picture/cvhapter2/valDoor1.png",
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d11.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "“The do-while loop,” Gandalf continued, “is a little different. It always executes at least once before checking the condition, making sure you perform the action at least once.”"
+			"text": "The do-while loop... is a little different. It always executes at least once before checking the condition, making sure you perform the action at least once."
 		},
 		{
 			"background": "res://Dialogue/Picture/cvhapter2/unit2s1/do while.png",
 			"event_id": "dialogic_021"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d12.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -107,7 +203,15 @@
 			"text": "What if I need to try something first before checking the door’s state? Something like:"
 		},
 		{
-			"character": "",
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d13.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I’d get at least one lock open before I even check."
@@ -124,23 +228,61 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
+			"text": "..."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d14.wav",
+			"volume": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
 			"text": "(Another lock clicks open, the magical barriers weakening slightly.)"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d15.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "“And the for loop,” Gandalf said, “is when you know exactly how many times you need to repeat something. You set the condition right from the start.”"
+			"text": "“And the for loop, is when you know exactly how many times you need to repeat something. You set the condition right from the start.”"
 		},
 		{
 			"background": "res://Dialogue/Picture/cvhapter2/unit2s1/forloop.png",
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d16.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "If I know there are exactly five locks, a for loop might be the most efficient here. Like this:"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d17.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -153,6 +295,14 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d18.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -163,10 +313,18 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level2/stage1/c2l2stage1p1/c2l2stage1p1d19.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I did it. Just like Gandalf said—different loops for different situations. The while loop checks first, the do-while always tries once,\n and the for loop is perfect when you know exactly how many steps you need."
+			"text": "I did it. Just like Gandalf said—different loops for different situations. The while loop checks first, the do-while always tries once,\nand the for loop is perfect when you know exactly how many steps you need."
 		},
 		{
 			"character": "",

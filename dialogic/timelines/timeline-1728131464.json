@@ -5,10 +5,26 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage4/c2stage4p1/c2stage4p1d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Valen and Analexius set out at dawn, the sky painted in shades of pink and gold. They walked through dense forests and across winding paths, \nMaking their way toward Classoria. Analexius, his usual playful demeanor replaced by irritation, begrudgingly accompanied Valen."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage4/c2stage4p1/c2stage4p1d2.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728031425.json",
@@ -19,6 +35,14 @@
 		{
 			"background": "res://Scenes/pictures/chapter2/analexius_pee.png",
 			"event_id": "dialogic_021"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage4/c2stage4p1/c2stage4p1d3.wav",
+			"volume": 0
 		},
 		{
 			"character": "",
@@ -44,6 +68,14 @@
 			"wait_seconds": 5
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage4/c2stage4p1/c2stage4p1d4.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -54,16 +86,32 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage4/c2stage4p1/c2stage4p1d5.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Realizing he accidentally peed on a bug, He is shocked and passes out. The bug checks on him, then drags him by the feet."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage4/c2stage4p1/c2stage4p1d6.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh Damn! there a lot of bats and enemy out here. Where the hell is he."
+			"text": "Oh Damn! theres a lot of bats and enemies out here. Where the hell is he!\t"
 		},
 		{
 			"definition": "1728021648-250",

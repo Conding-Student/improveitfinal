@@ -29,10 +29,26 @@
 			"set_theme": "theme-1726986938.cfg"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "The battles have drained me, Val, but knowledge… knowledge I still have in abundance"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d2.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -41,10 +57,26 @@
 			"text": "You’ve heard of the IDE tome, haven’t you? The ancient artifact believed to hold the power to end this war"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d3.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "The IDE tome? Thought that was just a myth."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d4.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -53,10 +85,26 @@
 			"text": "Most think that, but I’ve spent my life studying it. It’s real, and it's the key to end this long fought war against those disgusting  bugs and errors."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d5.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "With it, we could bring back peace here in syntaxia!"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d6.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -89,10 +137,18 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d7.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Suddenly, the door flies open with a loud creak, and Analexius bursts into the room, panting dramatically."
+			"text": "Suddenly, the door flies open with a loud creak, and Analexius, a boastful and obnoxious student of Gandalf bursts into the room, panting dramatically."
 		},
 		{
 			"background": "res://Scenes/pictures/chapter2/gandalf_house_inside.png",
@@ -123,16 +179,26 @@
 			"set_theme": "theme-1727127117.cfg"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d8.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Master! You won’t believe it! I, Analexius the Great, have vanquished one of those bugs—by my own hands! No magic, just sheer strength! \nI suffocated the filthy thing until it begged for mercy!"
 		},
 		{
-			"character": "character-1721952703.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Right… sounds believable. "
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d9.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728031425.json",
@@ -141,16 +207,26 @@
 			"text": "Well… it might’ve lost interest and… wandered off, but the important thing is, I survived."
 		},
 		{
-			"character": "character-1721952703.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "haha Impressive."
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d11.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hold on what’s this? Master, have you hired a walking rugged punching bag? Looks like he’s been through every form of bug torture imaginable!"
+			"text": "Hold on who's this? Master, have you hired a walking rugged punching bag? Looks like he’s been through every form of bug torture imaginable!"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d10.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -159,10 +235,26 @@
 			"text": "I'm not here to amuse you."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d12.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Clearly. You look like a bug yourself. I bet you can’t even fight your own kin! "
+			"text": "Clearly. You look like a bug yourself. I bet you're ugly even to your own kin! "
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d13.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -171,16 +263,26 @@
 			"text": "That’s enough! Analexius. Val is no entertainer. He is… your fellow student."
 		},
 		{
-			"character": "character-1721952703.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "What?"
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d14.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728031425.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Him? A student? You’re joking! This bug impersonator? Oh, this is going to be good. Maybe you’ll learn how to squash bugs instead of being one."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d15.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -213,6 +315,14 @@
 			"z_index": 0
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d16.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -221,6 +331,14 @@
 		{
 			"event_id": "dialogic_024",
 			"set_theme": "theme-1727127117.cfg"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d17.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728031425.json",
@@ -233,14 +351,30 @@
 			"set_theme": "theme-1726986938.cfg"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d18.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Yes, well, in your case, it turns out most of that aura was… pure strenght"
+			"text": "Yes, well, in your case, it turns out most of that aura was… pure luck"
 		},
 		{
 			"event_id": "dialogic_024",
 			"set_theme": "theme-1727127117.cfg"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d19.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728031425.json",
@@ -249,10 +383,26 @@
 			"text": "Luck? Me? Ha! That’s absurd. I’m pure talent. Unlike this… second-rate, try-hard copycat."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d20.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Believe what you want. I’m not here for you. I’m here to learn."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d21.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728031425.json",
@@ -263,6 +413,14 @@
 		{
 			"event_id": "dialogic_024",
 			"set_theme": "theme-1726986938.cfg"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p3/c2level1p3d22.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",

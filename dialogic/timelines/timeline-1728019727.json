@@ -29,10 +29,40 @@
 			"z_index": 0
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p2/c2level1p2d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hang on, old man. I’ve got you. Let me use magic to unlock your handcuffes"
+			"text": "Hang on, old man. I’ve got you. Let me use magic to unlock your handcuffs"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Music and Sounds/sound effects/magical_1.wav",
+			"volume": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "..."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p2/c2level1p2d2.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -41,22 +71,12 @@
 			"text": "You… know magic too?"
 		},
 		{
-			"character": "character-1721952703.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Enough to get by. You alright?"
-		},
-		{
-			"character": "character-1728009045.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "I’ve seen better days. But… yes, thanks to you, I’m still breathing."
-		},
-		{
-			"character": "character-1721952703.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Good. Would’ve been a shame if I saved you for nothing."
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p2/c2level1p2d3.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -65,10 +85,26 @@
 			"text": "You're… not just any traveler, are you? That was no ordinary display of skill… or C# magic. Who are you?"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p2/c2level1p2d4.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Name’s Val. Nothing fancy, just passing through."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p2/c2level1p2d5.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
@@ -77,22 +113,46 @@
 			"text": "I see… You can call me Gandalf Alaric Runeheart. And I believe we are no longer strangers."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p2/c2level1p2d6.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Guess not. What were those things, Gandalf? Not the kind of creatures you see every day."
 		},
 		{
-			"character": "character-1728009045.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "How come you don't know them? they are the bugs, errors, and glitches into this world. They were here to corrupt every fabric of life here in Syntaxia!"
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p2/c2level1p2d7.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1728009045.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "We are at war for more than a decade. They plague the world of Syntaxia due to the misuse of C# magic. Which is why, in this era, it was strictly prohibited to use C# magic."
+			"text": "Have you been living under a rock? they are the bugs, errors, and glitches into this world. They were here to corrupt every fabric of life here in Syntaxia!"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p2/c2level1p2d8.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1728009045.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We are at war for more than a decade. They plague the world of Syntaxia due to the misuse of C# magic. Which is why they strictly prohibited the use of C# magic."
 		},
 		{
 			"animation": "[Default]",
@@ -119,10 +179,18 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/NEW/timetravel/level1/stage1/c2level1p2/c2level1p2d9.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Though intrigued by Val’s sudden appearance and usage of list magic, Gandalf is already too exhausted after that fight and everything that has happened. \nThus, he invited Val to his house. Having nowhere else to go, Val followed him.  "
+			"text": "Though intrigued by Val’s sudden appearance and usage of c# magic, Gandalf is already too exhausted after that fight and everything that has happened. \nThus, he invited Val to his house. Having nowhere else to go, Val followed him.  "
 		},
 		{
 			"definition": "1728021648-250",
