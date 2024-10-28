@@ -23,6 +23,7 @@ func interaction_start():
 		new_dialog.connect("timeline_end", self, "end_interaction")
 	elif int(Dialogic.get_variable("gandalf")) == 2:
 		emit_signal("start_dialogue")
+		#Global2.complete_badge("badge16")
 		var new_dialog = Dialogic.start('c2level1_tutorial')
 		add_child(new_dialog)
 		new_dialog.connect("timeline_end", self, "earn_badge16")
@@ -30,6 +31,7 @@ func interaction_start():
 		emit_signal("start_dialogue")
 		var new_dialog = Dialogic.start('c2level1_tutorial')
 		add_child(new_dialog)
+		#new_dialog.connect("dialogic_signal", self, "earn_badge16pt2")
 		new_dialog.connect("timeline_end", self, "end_interaction")
 	elif int(Dialogic.get_variable("gandalf")) == 4:
 		emit_signal("start_dialogue")
@@ -71,11 +73,13 @@ func end_interaction_anal(timelineend):
 func end_interaction(timelineend):
 	emit_signal("end_dialogue")
 
+
+
 func earn_badge16(timelineend):
-	#print("badge16 is trigger")
+	print("badge16 is trigger")
 	Global2.complete_badge("badge16")
-	SceneTransition.change_scene("res://intro/stages_complete.tscn")
-	#badges.update_badges()
+	SceneTransition.change_scene("res://levels/Chapter2_maps/gandalfHouse_ground.tscn")
+	badges.update_badges()
 	emit_signal("end_dialogue")
 
 func _on_Area2D_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):

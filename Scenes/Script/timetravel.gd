@@ -5,7 +5,7 @@ var is_reversing = false  # To track whether the video is reversing or playing f
 
 func _ready():
 	$AnimationPlayer.play("Fadein")
-	yield(get_tree().create_timer(1), "timeout")
+	#yield(get_tree().create_timer(1), "timeout")
 	
 	video_player.play()
 	var new_dialog = Dialogic.start('timetravelling')
@@ -14,8 +14,8 @@ func _ready():
 
 func interaction_endpoint(timelineend):
 	$AnimationPlayer.play("FADE OUT")
-	yield(get_tree().create_timer(1), "timeout")
-	SceneTransition.change_scene("res://levels/stage_3_night/mageGuild_out_night_level3.tscn")
+	#yield(get_tree().create_timer(1), "timeout")
+	#SceneTransition.change_scene("res://levels/stage_3_night/mageGuild_out_night_level3.tscn")
 
 func _on_VideoPlayer_finished():
 	video_player.play()

@@ -291,30 +291,6 @@
 			"text": "Care to say that again?"
 		},
 		{
-			"event_id": "dialogic_024",
-			"set_theme": "theme-1726986938.cfg"
-		},
-		{
-			"animation": "[Default]",
-			"animation_length": 0,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1728009045.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": true,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 0,
-			"z_index": 0
-		},
-		{
 			"audio": "play",
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
@@ -327,10 +303,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Peace, Val. Analexius, that’s enough. I sense a unique potential in you, something… different. The same aura I felt in Analexius when I first took him in."
-		},
-		{
-			"event_id": "dialogic_024",
-			"set_theme": "theme-1727127117.cfg"
 		},
 		{
 			"audio": "play",
@@ -347,10 +319,6 @@
 			"text": "Oh please, Master, my aura is leagues ahead of his. I’m practically glowing with power!"
 		},
 		{
-			"event_id": "dialogic_024",
-			"set_theme": "theme-1726986938.cfg"
-		},
-		{
 			"audio": "play",
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
@@ -363,10 +331,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Yes, well, in your case, it turns out most of that aura was… pure luck"
-		},
-		{
-			"event_id": "dialogic_024",
-			"set_theme": "theme-1727127117.cfg"
 		},
 		{
 			"audio": "play",
@@ -409,10 +373,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "We’ll see how long that lasts."
-		},
-		{
-			"event_id": "dialogic_024",
-			"set_theme": "theme-1726986938.cfg"
 		},
 		{
 			"audio": "play",

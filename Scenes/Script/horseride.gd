@@ -4,7 +4,7 @@ onready var video_player = $VideoPlayer
 
 func _ready():
 	$AnimationPlayer.play("Fadein")
-	yield(get_tree().create_timer(2), "timeout")
+	#yield(get_tree().create_timer(2), "timeout")
 	var new_dialog = Dialogic.start('horseride')
 	add_child(new_dialog)
 	new_dialog.connect("timeline_end", self, "interaction_endpoint")

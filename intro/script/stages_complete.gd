@@ -40,6 +40,7 @@ func check_badges():
 
 		# Check if the badge is marked as complete in Global2
 		if Global2.is_badge_complete(badge_name):
+			print(Global2.is_badge_complete(badge_name))
 			# Display normal or semi badge depending on the milestone
 			if is_milestone_badge(i + 1):  # i + 1 to get the badge number (badge1 is index 0)
 				show_badge("semi", i)  # Show a semi badge
@@ -62,6 +63,7 @@ func show_badge(badge_type, index):
 		badge_display[1].visible = true  # Show the semi badge
 		current_badge = 1
 
+	print(badge_type)
 	# Update player stats and trigger save
 	PlayerStats.health = 5
 	Global.set_current_level(Global.current_level)

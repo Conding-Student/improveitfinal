@@ -82,12 +82,6 @@
 			"value": ""
 		},
 		{
-			"id": "1723102204-573",
-			"name": "manor_guard_orig",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1723102985-768",
 			"name": "paladin",
 			"type": 0,
@@ -100,16 +94,22 @@
 			"value": "0"
 		},
 		{
-			"id": "1723097011-648",
-			"name": "explore_town",
+			"id": "1728021648-250",
+			"name": "gandalf",
 			"type": 0,
 			"value": "0"
 		},
 		{
-			"id": "1728021648-250",
-			"name": "gandalf",
+			"id": "1723102204-573",
+			"name": "manor_guard_orig",
 			"type": 0,
-			"value": "19"
+			"value": "0"
+		},
+		{
+			"id": "1723097011-648",
+			"name": "explore_town",
+			"type": 0,
+			"value": "0"
 		}
 	]
 }

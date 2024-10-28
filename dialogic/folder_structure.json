@@ -213,7 +213,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": true
+				"folded": false
 			}
 		},
 		"Themes": {
@@ -438,7 +438,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": true
+								"folded": false
 							}
 						},
 						"chapter3": {
@@ -540,7 +540,7 @@
 									},
 									"metadata": {
 										"color": null,
-										"folded": true
+										"folded": false
 									}
 								},
 								"stage3": {
@@ -572,7 +572,7 @@
 							},
 							"metadata": {
 								"color": null,
-								"folded": true
+								"folded": false
 							}
 						},
 						"level2": {
@@ -630,7 +630,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				}
 			},

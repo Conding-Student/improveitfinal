@@ -159,7 +159,7 @@ func changescene():
 		print("badge17 is not yet trigger to change scene")
 
 func bug_question():
-	if Global2.is_badge_complete("badge16") or int(Dialogic.get_variable("gandalf")) == 16 or int(Dialogic.get_variable("gandalf")) == 17:
+	if Global2.is_badge_complete("badge16") or int(Dialogic.get_variable("gandalf")) == 16 or int(Dialogic.get_variable("gandalf")) == 17 or int(Dialogic.get_variable("gandalf")) == 3:
 		#can be remove
 		#$YSort/bugs/bug1.queue_free()
 		#$YSort/bugs/bug2.queue_free()

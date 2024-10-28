@@ -100,7 +100,8 @@ func _on_Stats_no_health():
 	enemyDeathEffect.global_position = global_position
 
 func quiz_type_sign():
-	if Global2.is_badge_complete("badge16"):
+	if int(Dialogic.get_variable("gandalf")) == 3:
+		#Global2.is_badge_complete("badge16"):
 		fight_sign.show()
 		hurtbox_collision.disabled = true
 

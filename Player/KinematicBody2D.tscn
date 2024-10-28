@@ -796,6 +796,7 @@ tracks/0/keys = {
 radius = 20.0
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
+z_index = 1
 collision_layer = 2
 script = ExtResource( 11 )
 cooldown_time = 0.6

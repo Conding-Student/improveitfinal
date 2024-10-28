@@ -279,7 +279,7 @@ func value_activating(param):
 			SceneTransition.change_scene("res://intro/stages_complete.tscn")
 		else:
 			#print("Some specified bat states are true.")
-			
+			Global2.complete_badge("badge16")
 			SceneTransition.change_scene("res://intro/evaluation.tscn")
 	elif param == "bug1":
 		print("badge receive 17")
@@ -291,7 +291,7 @@ func value_activating(param):
 			
 			SceneTransition.change_scene("res://intro/stages_complete.tscn")
 		else:
-			
+			Global2.complete_badge("badge16")
 			SceneTransition.change_scene("res://intro/evaluation.tscn")
 	else:
 		print("value in dialogic gas not yet been triggered")

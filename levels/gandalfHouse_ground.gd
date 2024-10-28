@@ -29,7 +29,13 @@ func _ready():
 	Musicmanager.set_music_path("res://Music and Sounds/bg music/guildInside.wav")
 	#gandalf_appearance()
 	anal_appearance()
+	anal_appearance()
 	morning_setup()
+	
+	if int(Dialogic.get_variable("gandalf")) == 3:
+		Global2.complete_badge("badge16")
+	else:
+		print("dialogic variable is not equal to 3")
 func set_player_position():
 	if Global.get_player_initial_position() == Vector2(0, 0):
 		Global.set_player_current_position(starting_player_position)

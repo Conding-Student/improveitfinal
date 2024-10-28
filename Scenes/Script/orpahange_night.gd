@@ -5,9 +5,9 @@ onready var video_player = $VideoPlayer
 func _ready():
 	Musicmanager.stop_music()
 	$AnimationPlayer.play("Fadein")
-	yield(get_tree().create_timer(2), "timeout")
+	#yield(get_tree().create_timer(2), "timeout")
 	$AnimationPlayer.play("FADE OUT")
-	yield(get_tree().create_timer(2), "timeout")
+	#yield(get_tree().create_timer(2), "timeout")
 	#var result = get_tree().change_scene("res://World/room/night/orphanage_room_night.tscn")
 	#if result != OK:
 		#print("Failed to change scene: ", result)
